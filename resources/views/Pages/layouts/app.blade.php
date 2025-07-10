@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/logos/footer-logo.png') }}" class="favicon-logo">
-  
+  <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
+
   @yield('metadata')
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   @yield('styles')
@@ -21,33 +22,18 @@
 
   <!-- javaScript for all pages -->
   <script type="module">
-    $(document).ready(function() {
-      $('.mobile-menu-button').click(function() {
-        $('#mobileNav').removeClass('-translate-x-full').addClass('translate-x-0');
-      });
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    const menu = document.getElementById('header-links');
 
-      $('.close-mobile-menu, #mobileNav a').click(function() {
-        $('#mobileNav').removeClass('translate-x-0').addClass('-translate-x-full');
-      });
+    toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
     });
 
-
-    // Toggle Level 1
-    document.querySelector('.toggle-l1').addEventListener('click', function() {
-      this.nextElementSibling.classList.toggle('hidden');
-      this.querySelector('svg').classList.toggle('rotate-180');
-    });
-
-    // Toggle Level 2
-    document.querySelectorAll('.toggle-l2').forEach(btn => {
-      btn.addEventListener('click', function() {
-        this.nextElementSibling.classList.toggle('hidden');
-        this.querySelector('svg').classList.toggle('rotate-180');
-      });
-    });
+    // Optional: hide on load for mobile
+    if (window.innerWidth < 768) {
+      menu.classList.add('hidden');
+    }
   </script>
-
-
   @yield('scripts')
 </body>
 

@@ -10,11 +10,11 @@
 
 @section('homepage')
 <!-- HERO SECTION -->
-<section class="relative w-full h-[70vh] bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('{{ asset('assets/images/allImages/hero-banner.webp') }}');">
+<section class="relative w-full md:h-[70vh] h-[50vh] bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('{{ asset('assets/images/allImages/hero-banner.webp') }}');">
   <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-  <div class="relative z-10 text-center px-4 max-w-4xl">
-    <h1 class="text-4xl md:text-5xl font-bold mb-6">Best Removalists Melbourne</h1>
+  <div class="relative z-10 text-center mt-[-100px] md:mt-0 px-4 max-w-4xl">
+    <h1 class="text-2xl md:text-5xl font-bold mb-6">Best Removalists Melbourne</h1>
     <p class="text-sm md:text-2xl leading-relaxed">
 
       <span class="mt-4 block">
@@ -27,7 +27,7 @@
   </div>
 
   <!-- Quote Form Box -->
-  <div class="absolute bottom-[-48px] left-1/2 transform -translate-x-1/2 z-20 w-full max-w-4xl px-4">
+  <div class="absolute md:bottom-[-48px] bottom-[-35%] left-1/2 transform -translate-x-1/2 z-20 w-full max-w-4xl px-4">
     <div class="bg-primary rounded-2xl lg:rounded-full flex flex-col lg:flex-row items-center md:items-end justify-center py-6 px-6 sm:px-8 lg:px-10 space-y-4 lg:space-y-0 lg:space-x-4">
 
       <!-- Moving From -->
@@ -44,14 +44,14 @@
 
       <!-- Get Quote Button -->
       <div class="w-full lg:w-auto pt-2 lg:pt-0">
-        <a href="#" class="bg-black text-white text-base font-medium px-8 py-3 rounded-lg hover:bg-gray-800 transition whitespace-nowrap w-full lg:w-auto block text-center shadow-lg">Get a Free Quote</a>
+        <a href="#" class="bg-black text-white text-base font-medium px-8 py-3 rounded-lg hover:bg-white hover:text-black border border-transparent hover:border-primary transition whitespace-nowrap w-full lg:w-auto block text-center shadow-lg">Get a Free Quote</a>
       </div>
 
     </div>
   </div>
 </section>
 
-<section class="bg-white text-black py-12 mt-10">
+<section class="bg-white text-black py-12 md:mt-10 mt-32">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
     <!-- Top Ratings -->
@@ -140,6 +140,7 @@
           <p class="mt-1 text-xs sm:text-sm lg:text-md text-center leading-4 sm:leading-5">Moving <br> Supplies</p>
         </div>
       </div>
+    </section>
   </div>
 </section>
 
@@ -156,7 +157,7 @@
       <p class="text-md mb-4">Stuck in a moving emergency? Our team is ready to act fast and help you with urgent relocation needs. <br>
         With years of experience, we deliver quick, reliable, and efficient moving solutions.</p>
       <p class="text-md mb-6">If we can’t assist immediately, we’ll connect you with someone who can — because your peace of mind matters.</p>
-      <a href="#" class="bg-primary text-white text-xl px-10 py-3 rounded-md hover:bg-primary/90 transition">Get a Quote</a>
+      <a href="#" class="bg-primary text-white text-xl px-10 py-3 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">Get a Quote</a>
     </div>
 
     <!-- Image -->
@@ -178,7 +179,7 @@
     </div>
 
     <!-- Button -->
-    <a href="#" class="bg-primary text-white text-lg font-semibold px-10 py-3 rounded-md hover:bg-primary/90 transition">Get a Free Quote</a>
+    <a href="#" class="bg-primary text-white text-lg font-semibold px-10 py-3 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">Get a Free Quote</a>
 
   </div>
 </section>
@@ -328,7 +329,7 @@
     </div>
 
     <!-- Button -->
-    <button class="mt-6 px-6 py-3 bg-primary text-black font-medium rounded-md hover:bg-primary">
+    <button class="mt-6 px-6 py-3 bg-primary text-black font-medium rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
       Get a Free Quote
     </button>
   </div>
@@ -519,18 +520,22 @@
 
   <!-- CTA Buttons -->
   <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
-    <button class="flex items-center gap-2 px-6 py-3 text-primary font-semibold border border-primary rounded-md bg-white hover:bg-green-50 transition">
+    <button class="flex items-center gap-2 px-6 py-3 text-primary font-semibold border border-primary rounded-md bg-white hover:bg-primary hover:text-white transition">
       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
         <path
           d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.11-.21c1.12.45 2.33.69 3.48.69a1 1 0 011 1v3.5a1 1 0 01-1 1C10.02 21.97 2 13.95 2 4.5a1 1 0 011-1H6.5a1 1 0 011 1c0 1.15.24 2.36.69 3.48a1 1 0 01-.21 1.11l-2.2 2.2z" />
       </svg>
       1300 163 694
     </button>
-    <button class="px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-dark transition">
+    <button class="px-6 py-3 bg-primary text-white rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
       Get a Quote
     </button>
   </div>
 
+
+</section>
+
+<section class="py-0 m-auto text-center" >
   <!-- Client Rating -->
   <div>
     <h3 class="text-3xl font-bold mb-3">What our clients say</h3>
@@ -655,7 +660,7 @@
 
   <!-- View More Button -->
   <div class="text-center mt-8">
-    <button class="bg-white text-green-700 border border-primary px-6 py-2 rounded-md text-lg font-medium hover:bg-green-50 transition">
+    <button class="bg-white text-green-700 border border-primary px-6 py-2 rounded-md text-lg font-medium hover:bg-primary hover:text-white transition">
       View More
     </button>
   </div>
@@ -756,7 +761,7 @@
 
   </div>
   <div class="text-center mt-8">
-    <a href="#" class="bg-primary text-black text-lg px-8 py-3 rounded-md hover:bg-primary/90 transition">See All Blogs</a>
+    <a href="#" class="bg-primary text-black text-lg px-8 py-3 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">See All Blogs</a>
   </div>
 
 
@@ -892,7 +897,7 @@
     <!-- Ask Question Button - Takes 4 columns on large screens -->
     <div class="m-auto mt-4 flex justify-center lg:justify-center lg:gap-8 lg:w-4/12">
       <div class="mt-8 lg:mt-0">
-        <button class="bg-primary hover:bg-primary/90 text-white px-16 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full lg:w-auto">
+        <button class="bg-primary hover:bg-white hover:text-black border border-transparent hover:border-primary text-white px-16 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full lg:w-auto">
           Ask your question
         </button>
       </div>

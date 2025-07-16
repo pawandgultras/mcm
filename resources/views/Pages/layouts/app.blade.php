@@ -12,7 +12,7 @@
   @yield('styles')
 </head>
 
-<body class="!font-poppins antialiased bg-white text-gray-900">
+<body class="font-poppins antialiased bg-white text-gray-900">
   @include('Pages.layouts.header')
   @yield('homepage')
   @yield('content')
@@ -35,6 +35,7 @@
     }
   </script>
   @yield('scripts')
+  
 </body>
 
 </html>

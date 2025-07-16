@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;    
+
+
+.services-heading-main_div {
+    @apply relative z-10 text-start mt-[-100px] md:mt-0 px-4 max-w-4xl;
+}
+.services-heading {
+    @apply text-3xl md:text-5xl font-bold text-black leading-tight mb-8;
+}
+
+.services-subheading {
+    @apply text-[20px] text-black font-normal leading-7  max-w-lg mb-8 tracking-tight;
+}
+
+.custom-arrow::before{
+    display: none;
+}
+
+.testimonial-card .custom-arrow svg{
+    color: white !important;
+}
+
+p{
+    @apply !font-inter;
+
+}

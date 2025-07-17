@@ -9,40 +9,38 @@
 @endsection
 
 @section('content')
-<section class="bg-white text-black py-12 md:mt-10 mt-20">
-    <div class="max-w-7xl mx-auto md:px-4 sm:px-6 ">
-        <div class="grid grid-rows-1 md:grid-cols-5 gap-10 items-center">
+<section class="bg-white text-black py-4 sm:py-6 md:py-8 mt-4 sm:mt-20 md:mt-10">
+    <div class="md:max-w-7xl lg:max-w-8xl  xl:max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 items-center">
 
             <!-- Left Content -->
-            <div class="space-y-8 col-span-3">
-
+            <div class="space-y-6 sm:space-y-8 lg:col-span-3 order-2 lg:order-1">
 
                 <x-heading-subheading
                     mainClass="services-heading-main_div"
                     headingClass="services-heading"
-                    subheadingClass="services-subheading "
+                    subheadingClass="services-subheading"
                     heading="Local Removalists"
                     subheading="Our friendly team of local removalists handle the heavy lifting so that you can enjoy making your new house a home." />
 
-
                 <!-- Quote Form -->
-                <div class="bg-primary rounded-full px-10 py-4 max-w-2xl">
-                    <div class="flex flex-col md:flex-row gap-4 items-end">
+                <div class="bg-primary rounded-2xl sm:rounded-full px-6 sm:px-8 lg:px-10 py-4 sm:py-4 max-w-full sm:max-w-2xl">
+                    <div class="flex flex-col sm:flex-row md:flex-row gap-3 sm:gap-4 items-stretch sm:items-end">
                         <!-- Moving From -->
-                        <div class="flex-1">
-                            <label class="block text-sm font-medium text-black mb-2">Moving from</label>
-                            <input type="text" placeholder="Enter Location" class="w-full py-2 px-4 rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20">
+                        <div class="flex-1 min-w-0">
+                            <label class="block text-xs sm:text-sm font-medium text-black mb-2">Moving from</label>
+                            <input type="text" placeholder="Enter Location" class="w-full py-2 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20">
                         </div>
 
                         <!-- Moving To -->
-                        <div class="flex-1">
-                            <label class="block text-sm font-medium text-black mb-2">Moving to</label>
-                            <input type="text" placeholder="Enter Location" class="w-full py-2 px-4 rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20">
+                        <div class="flex-1 min-w-0">
+                            <label class="block text-xs sm:text-sm font-medium text-black mb-2">Moving to</label>
+                            <input type="text" placeholder="Enter Location" class="w-full py-2 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20">
                         </div>
 
                         <!-- Quote Button -->
-                        <div class="flex-shrink-0">
-                            <button class="bg-black text-white px-6 py-2 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition whitespace-nowrap font-medium">
+                        <div class="flex-shrink-0 w-full sm:w-auto">
+                            <button class="w-full sm:w-auto bg-black text-white px-4 sm:px-6 py-2 text-sm sm:text-base rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition whitespace-nowrap font-medium">
                                 Get a Free Quote
                             </button>
                         </div>
@@ -50,162 +48,163 @@
                 </div>
 
                 <!-- Service Links -->
-                <div class="flex flex-wrap gap-6 pt-2 px-6">
-                    <a href="#" class="text-black font-semibold text-xl border-b-2 border-black pb-1 hover:text-primary hover:border-primary transition">
+                <div class="flex flex-wrap gap-3 sm:gap-4 lg:gap-6 pt-2 px-2 sm:px-4 lg:px-6 justify-center sm:justify-start">
+                    <a href="#" class="text-black font-semibold text-base sm:text-lg lg:text-xl border-b-2 border-black pb-1 hover:text-primary hover:border-primary transition">
                         Interstate
                     </a>
-                    <a href="#" class="text-black font-semibold text-xl border-b-2 border-black pb-1 hover:text-primary hover:border-primary transition">
+                    <a href="#" class="text-black font-semibold text-base sm:text-lg lg:text-xl border-b-2 border-black pb-1 hover:text-primary hover:border-primary transition">
                         Business
                     </a>
-                    <a href="#" class="text-black font-semibold text-xl border-b-2 border-black pb-1 hover:text-primary hover:border-primary transition">
+                    <a href="#" class="text-black font-semibold text-base sm:text-lg lg:text-xl border-b-2 border-black pb-1 hover:text-primary hover:border-primary transition">
                         Storage
                     </a>
                 </div>
 
-                <section class="bg-white text-black md:py-8 ">
-                    <div class="max-w-6xl mx-auto m:px-4 sm:px-6 text-start">
-
+                <!-- Ratings Section -->
+                <section class="bg-white text-black py-4 sm:py-6 md:py-8">
+                    <div class="max-w-6xl mx-auto px-2 sm:px-4 lg:px-6 text-center sm:text-start">
                         <!-- Top Ratings -->
-                        <div class="flex flex-wrap items-center justify-start md:gap-4 sm:gap-6 mb-6 text-sm">
+                        <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-4 lg:gap-6 mb-6 text-sm">
                             <!-- Experience -->
-                            <div class="text-start">
-                                <p class="text-primary font-semibold md:text-lg sm:text-base">10 Years</p>
-                                <p class="text-black font-medium md:text-lg sm:text-sm">Experience</p>
+                            <div class="text-center sm:text-start">
+                                <p class="text-primary font-semibold text-base sm:text-lg">10 Years</p>
+                                <p class="text-black font-medium text-sm sm:text-base lg:text-lg">Experience</p>
                             </div>
-                            <div class="border-[1.5px] border-primary h-16"></div>
+
+                            <!-- Divider - Hidden on mobile -->
+                            <div class="hidden sm:block border-[1.5px] border-primary h-12 lg:h-16"></div>
 
                             <!-- Google Rating -->
                             <div class="flex items-center gap-2">
                                 <div class="flex flex-col items-center gap-0">
-                                    <span class="text-yellow-500 md:text-xl sm:text-base">★★★★★</span>
-                                    <span class="text-black md:text-xl sm:text-sm">(4.2) 166</span>
+                                    <span class="text-yellow-500 text-base sm:text-lg lg:text-xl">★★★★★</span>
+                                    <span class="text-black text-sm sm:text-base lg:text-xl">(4.2) 166</span>
                                 </div>
-                                <img src="{{ asset('assets/images/allImages/Google.webp') }}" alt="Google" class="md:h-16 sm:h-10">
+                                <img src="{{ asset('assets/images/allImages/Google.webp') }}" alt="Google" class="h-8 sm:h-10 lg:h-16 w-auto">
                             </div>
-                            <div class="border-[1.5px] border-primary h-12"></div>
+
+                            <!-- Divider - Hidden on mobile -->
+                            <div class="hidden sm:block border-[1.5px] border-primary h-10 lg:h-12"></div>
 
                             <!-- Trustpilot -->
                             <div class="flex items-center">
-                                <img src="{{ asset('assets/images/allImages/Trustpilot.webp') }}" alt="Trustpilot" class="md:h-16 w-32 sm:h-12 ">
+                                <img src="{{ asset('assets/images/allImages/Trustpilot.webp') }}" alt="Trustpilot" class="h-8 sm:h-10 lg:h-16 w-24 sm:w-28 lg:w-32 object-contain">
                             </div>
                         </div>
-
                     </div>
-
-
                 </section>
             </div>
 
-
-
             <!-- Right Content - Truck Image -->
-            <div class="col-span-2 ">
-                <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}" alt="Melbourne Central Movers Truck" class="w-full h-auto rounded-lg shadow-lg">
+            <div class="lg:col-span-2 order-1 lg:order-2 relative">
+                <div class="relative">
+                    <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}" alt="Melbourne Central Movers Truck" class="w-full h-auto rounded-lg shadow-lg">
 
-                <!-- Optional: Add some decorative elements -->
-                <div class="absolute -top-4 -right-4 w-20 h-20 bg-primary rounded-full opacity-20"></div>
-                <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-primary rounded-full opacity-30"></div>
+                    <!-- Decorative elements - Hidden on mobile for better performance -->
+                    <div class="hidden sm:block absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-12 sm:w-16 lg:w-20 h-12 sm:h-16 lg:h-20 bg-primary rounded-full opacity-20"></div>
+                    <div class="hidden sm:block absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 w-10 sm:w-12 lg:w-16 h-10 sm:h-12 lg:h-16 bg-primary rounded-full opacity-30"></div>
+                </div>
             </div>
 
         </div>
     </div>
 </section>
 
-<section class="py-10 bg-white text-center">
-    <div class="max-w-5xl mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-3">Our Moving Services</h2>
-        <p class="text-sm text-gray mb-6">
-            Our team’s goal is to deliver a standard of excellence that surpasses customer expectations and delivers on service, quality
-            and value. You can place your trust in our professional team to remove the stress and make your move easy.
-        </p>
+
+<section class="py-4 sm:py-6 md:py-8 lg:py-6 bg-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="mb-6 sm:mb-8 md:mb-10">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-black">Our Moving Services</h2>
+            <p class="text-sm sm:text-base md:text-lg text-gray mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed">
+                Our team's goal is to deliver a standard of excellence that surpasses customer expectations and delivers on service, quality
+                and value. You can place your trust in our professional team to remove the stress and make your move easy.
+            </p>
+        </div>
 
         <!-- Progress Bar -->
-        <div class="h-2 w-full bg-black relative mb-6">
-            <div id="slick-progress" class="absolute top-0 left-0 h-2 bg-primary transition-all duration-300" style="width: 0%"></div>
+        <div class="h-1.5 sm:h-2 w-full bg-black relative mb-6 sm:mb-8 rounded-full">
+            <div id="slick-progress" class="absolute top-0 left-0 h-full bg-primary transition-all duration-300 rounded-full" style="width: 0%"></div>
         </div>
 
         <!-- Slick Slider -->
         <div class="slick-moving-services relative">
             <!-- Slide 1 -->
-            <div class="px-2">
-                <div class="relative rounded-md overflow-hidden shadow-md h-72">
+            <div class="px-2 sm:px-3">
+                <div class="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-64 sm:h-72 md:h-80">
                     <img src="{{ asset('assets/images/allImages/Our Moving Services 1.webp') }}" alt="House Moving" class="w-full h-full object-cover" />
 
                     <!-- Overlay -->
-                    <div class="text-start absolute inset-0 bg-gradient-to-t from-black/10 via-black/10 to-transparent p-4 flex flex-col justify-end">
-                        <h3 class="text-white text-lg font-semibold mb-1 italic">House Moving</h3>
-                        <p class="text-white text-sm mb-2">Safe and efficient moving for homes of all sizes.</p>
-                        <a href="#" class="text-primary font-semibold text-sm italic underline">Learn more...</a>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
+                        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">House Moving</h3>
+                        <p class="text-white text-xs sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Safe and efficient moving for homes of all sizes.</p>
+                        <a href="#" class="text-primary font-semibold text-xs sm:text-sm md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
-
             </div>
 
-            <div class="px-2">
-                <div class="relative rounded-md overflow-hidden shadow-md h-72">
+            <!-- Slide 2 -->
+            <div class="px-2 sm:px-3">
+                <div class="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-64 sm:h-72 md:h-80">
                     <img src="{{ asset('assets/images/allImages/Our Moving Services 2.webp') }}" alt="Packing Services" class="w-full h-full object-cover" />
 
                     <!-- Overlay -->
-                    <div class="text-start absolute inset-0 bg-gradient-to-t from-black/10 via-black/10 to-transparent p-4 flex flex-col justify-end">
-                        <h3 class="text-white text-lg font-semibold mb-1 italic">Packing Services</h3>
-                        <p class="text-white text-sm mb-2">Full or partial packing with quality materials and care.</p>
-                        <a href="#" class="text-primary font-semibold text-sm italic underline">Learn more...</a>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
+                        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Packing Services</h3>
+                        <p class="text-white text-xs sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Full or partial packing with quality materials and care.</p>
+                        <a href="#" class="text-primary font-semibold text-xs sm:text-sm md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
-
             </div>
 
-            <div class="px-2">
-                <div class="relative rounded-md overflow-hidden shadow-md h-72">
-                    <img src="{{ asset('assets/images/allImages/Our Moving Services 3.webp') }}" alt="Packing Services" class="w-full h-full object-cover" />
+            <!-- Slide 3 -->
+            <div class="px-2 sm:px-3">
+                <div class="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-64 sm:h-72 md:h-80">
+                    <img src="{{ asset('assets/images/allImages/Our Moving Services 3.webp') }}" alt="Storage Solutions" class="w-full h-full object-cover" />
 
                     <!-- Overlay -->
-                    <div class="text-start absolute inset-0 bg-gradient-to-t from-black/10 via-black/10 to-transparent p-4 flex flex-col justify-end">
-                        <h3 class="text-white text-lg font-semibold mb-1 italic">Packing Services</h3>
-                        <p class="text-white text-sm mb-2">Full or partial packing with quality materials and care.</p>
-                        <a href="#" class="text-primary font-semibold text-sm italic underline">Learn more...</a>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
+                        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Storage Solutions</h3>
+                        <p class="text-white text-xs sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Secure storage facilities for your belongings.</p>
+                        <a href="#" class="text-primary font-semibold text-xs sm:text-sm md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
-
             </div>
 
-            <div class="px-2">
-                <div class="relative rounded-md overflow-hidden shadow-md h-72">
-                    <img src="{{ asset('assets/images/allImages/Our Moving Services 4.webp') }}" alt="Packing Services" class="w-full h-full object-cover" />
+            <!-- Slide 4 -->
+            <div class="px-2 sm:px-3">
+                <div class="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-64 sm:h-72 md:h-80">
+                    <img src="{{ asset('assets/images/allImages/Our Moving Services 4.webp') }}" alt="Business Moving" class="w-full h-full object-cover" />
 
                     <!-- Overlay -->
-                    <div class="text-start absolute inset-0 bg-gradient-to-t from-black/10 via-black/10 to-transparent p-4 flex flex-col justify-end">
-                        <h3 class="text-white text-lg font-semibold mb-1 italic">Packing Services</h3>
-                        <p class="text-white text-sm mb-2">Full or partial packing with quality materials and care.</p>
-                        <a href="#" class="text-primary font-semibold text-sm italic underline">Learn more...</a>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
+                        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Business Moving</h3>
+                        <p class="text-white text-xs sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Professional commercial relocation services.</p>
+                        <a href="#" class="text-primary font-semibold text-xs sm:text-sm md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
-
             </div>
 
-            <div class="px-2">
-                <div class="relative rounded-md overflow-hidden shadow-md h-72">
-                    <img src="{{ asset('assets/images/allImages/Our Moving Services 1.webp') }}" alt="Packing Services" class="w-full h-full object-cover" />
+            <!-- Slide 5 -->
+            <div class="px-2 sm:px-3">
+                <div class="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-64 sm:h-72 md:h-80">
+                    <img src="{{ asset('assets/images/allImages/Our Moving Services 1.webp') }}" alt="Interstate Moving" class="w-full h-full object-cover" />
 
                     <!-- Overlay -->
-                    <div class="text-start absolute inset-0 bg-gradient-to-t from-black/10 via-black/10 to-transparent p-4 flex flex-col justify-end">
-                        <h3 class="text-white text-lg font-semibold mb-1 italic">Packing Services</h3>
-                        <p class="text-white text-sm mb-2">Full or partial packing with quality materials and care.</p>
-                        <a href="#" class="text-primary font-semibold text-sm italic underline">Learn more...</a>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
+                        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Interstate Moving</h3>
+                        <p class="text-white text-xs sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Long-distance moving across state borders.</p>
+                        <a href="#" class="text-primary font-semibold text-xs sm:text-sm md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-
-
-
 </section>
 
 <!-- What Makes Us the Best Removalists Section -->
-<section class="bg-white py-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 ">
+<section class="bg-white py-4 mb-8">
+    <div class="mx-auto px-4 sm:px-6 md:px-8 ms:max-w-6xl sm:max-w-5xl lg:max-w-7xl xl:max-w-8xl">
         <!-- Section Header -->
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
@@ -365,284 +364,283 @@
     </div>
 </section>
 
-<section class="py-6 bg-gray mb-6">
-    <div class="max-w-5xl  mx-auto px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center">
+<section class="py-4 sm:py-6 md:py-8 bg-gray">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
 
-        <!-- Call Section -->
-        <div class="flex flex-row items-center space-y-1 space-x-2">
-            <div class="">
-                <img src="{{ asset('assets/images/servicesImages/Need Help to Moving.webp') }}" alt="Phone Icon" class="w-16 h-16 object-cover rounded-full" />
-            </div>
-            <div class="text-start text-white">
-                <p class="text-sm font-medium">Need Help to Moving?</p>
-                <p class="font-bold text-lg">Call - 1300 163 694</p>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="flex flex-row items-center space-y-1 space-x-2">
-            <div class="">
-                <img src="{{ asset('assets/images/servicesImages/MCM Removalists.webp') }}" alt="Truck Icon" class="w-16 h-16 object-cover rounded-full" />
-            </div>
-            <div class="text-start text-white">
-                <p class="text-sm font-medium">MCM Removalists</p>
-                <p class="font-bold text-lg">Contact Us Now!</p>
-            </div>
-        </div>
-
-        <!-- Quote Section -->
-        <div class="flex flex-row items-center space-y-1 space-x-2">
-            <div class="">
-                <img src="{{ asset('assets/images/servicesImages/Request Online Quote.webp') }}" alt="Quote Icon" class="w-16 h-16 object-cover rounded-full" />
-            </div>
-            <div class="text-start text-white">
-                <p class="text-sm font-medium ">Click Here!</p>
-                <p class="font-bold text-lg">Request Online Quote</p>
+            <!-- Call Section -->
+            <div class="flex flex-row items-center gap-3 sm:gap-4 text-center md:text-left">
+                <div class="flex-shrink-0">
+                    <img src="{{ asset('assets/images/servicesImages/Need Help to Moving.webp') }}" alt="Phone Icon" class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full" />
+                </div>
+                <div class="text-white">
+                    <p class="text-xs sm:text-sm md:text-base font-medium">Need Help to Moving?</p>
+                    <p class="font-bold text-sm sm:text-lg md:text-xl">Call - 1300 163 694</p>
+                </div>
             </div>
 
-        </div>
-    </div>
-</section>
-
-<section class="px-4 sm:px-6 md:px-8  py-6 sm:py-8 lg:py-10">
-    <div class="grid md:grid-cols-2 gap-8 sm:gap-10  items-start mx-auto max-w-5xl">
-        <!-- Left: Text Content -->
-        <div>
-            <!-- Heading -->
-            <h2 class="text-3xl font-bold text-black mb-3">What Can We Move?</h2>
-            <p class="text-primary text-[17px] mb-1 font-medium">
-                MCM can handle all your removalist requirements.
-            </p>
-            <p class="text-primary text-[17px] mb-6 font-medium">
-                Here are just some of the items we can move for you.
-            </p>
-
-            <!-- Checklist (text only, no icons) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-black text-[16px] whatCanWeMove">
-                <p>Pool tables</p>
-                <p>Large screen TVs</p>
-                <p>Bulky items</p>
-                <p>Antique items</p>
-                <p>Fragile items</p>
-                <p>Heavy glass tables</p>
-                <p>Heavy furniture</p>
-                <p>Expensive furniture</p>
-                <p>Pianos Heavy</p>
-                <p>Pot Plants</p>
-                <p>Glass tables</p>
+            <!-- Contact Section -->
+            <div class="flex flex-row items-center gap-3 sm:gap-4 text-center md:text-left">
+                <div class="flex-shrink-0">
+                    <img src="{{ asset('assets/images/servicesImages/MCM Removalists.webp') }}" alt="Truck Icon" class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full" />
+                </div>
+                <div class="text-white">
+                    <p class="text-xs sm:text-sm md:text-base font-medium">MCM Removalists</p>
+                    <p class="font-bold text-sm sm:text-lg md:text-xl">Contact Us Now!</p>
+                </div>
             </div>
 
-            <!-- Business Hours -->
-            <div class="mt-10">
-                <button class="bg-primary text-black py-3 px-6 rounded-md text-xl font-medium hover:bg-white hover:text-primary hover:border-primary hover:border">Get a Quote</button>
-            </div>
-        </div>
-
-        <!-- Right: Image Boxes (without images) -->
-        <div class="relative min-h-[500px]">
-            <div class="absolute top-0 right-0 w-2/4 rounded-lg overflow-hidden z-20 shadow-lg bg-gray-200 ">
-
-                <img src="{{ asset('assets/images/allImages/What Can We Move- Back.webp') }}" alt="..." class="w-full h-auto object-cover">
+            <!-- Quote Section -->
+            <div class="flex flex-row items-center gap-3 sm:gap-4 text-center md:text-left">
+                <div class="flex-shrink-0">
+                    <img src="{{ asset('assets/images/servicesImages/Request Online Quote.webp') }}" alt="Quote Icon" class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full" />
+                </div>
+                <div class="text-white">
+                    <p class="text-xs sm:text-sm md:text-base font-medium">Click Here!</p>
+                    <p class="font-bold text-sm sm:text-lg md:text-xl">Request Online Quote</p>
+                </div>
             </div>
 
-            <!-- Green Background Box -->
-            <div class="absolute top-28 right-20 w-2/4 h-80 bg-primary rounded-md z-10"></div>
-
-            <!-- Bottom Image Placeholder -->
-            <div class="absolute top-48 left-24 rounded-lg overflow-hidden z-30 shadow-lg bg-gray-200 w-[300px] h-auto">
-                <img src="{{ asset('assets/images/allImages/What Can We Move- Front.webp') }}" alt="..." class="w-full h-auto object-cover">
-            </div>
         </div>
     </div>
 </section>
 
 <!-- Moving Process Section -->
-<section class="bg-white py-16">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+<section class="bg-white py-8 sm:py-8 md:py-8 lg:py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-3 sm:mb-4 md:mb-6">
                 Moving Process
             </h2>
-            <p class="text-lg text-primary font-medium">
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-primary font-medium">
                 Effortless Move, Simplify Process
             </p>
         </div>
-        <div class="grid md:grid-cols-5 gap-8 items-start">
-            <div class="space-y-0 col-span-2">
-                <div class="process-item bg-white rounded-lg py-2 px-4 cursor-pointer transition-all" data-step="contact">
+
+        <!-- Process Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 items-start">
+            
+            <!-- Left Side - Process Steps -->
+            <div class="lg:col-span-2 space-y-0 sm:space-y-0">
+                
+                <!-- Step 1: Contact us & Quotation -->
+                <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="contact">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-lg font-semibold text-black">Contact us & Quotation</h3>
-                        <div class="w-12 h-auto flex items-center justify-center activeshow">
-                            <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Contact us & Quotation Icon">
-                        </div>
-                        <div class="w-12 h-auto flex items-center justify-center inactiveshow hidden">
-                            <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="Contact us & Quotation Icon">
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Contact us & Quotation</h3>
+                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                            <div class="activeshow">
+                                <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Contact us & Quotation Icon" class="w-full h-full object-contain">
+                            </div>
+                            <div class="inactiveshow hidden">
+                                <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="Contact us & Quotation Icon" class="w-full h-full object-contain">
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-1 h-1 bg-gray-200 rounded">
-                        <div class="h-full bg-primary rounded w-full"></div>
+                    <div class="mt-2 sm:mt-3 h-1 bg-gray-200 rounded">
+                        <div class="h-full bg-primary rounded w-full transition-all duration-300"></div>
                     </div>
                 </div>
 
-                <div class="process-item bg-white rounded-lg py-2 px-4 cursor-pointer transition-all" data-step="booking">
+                <!-- Step 2: Booking -->
+                <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="booking">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-lg font-semibold text-black">Booking</h3>
-                        <div class="w-12 h-auto flex items-center justify-center activeshow">
-                            <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Contact us & Quotation Icon">
-                        </div>
-                        <div class="w-12 h-auto flex items-center justify-center inactiveshow hidden">
-                            <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="Contact us & Quotation Icon">
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Booking</h3>
+                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                            <div class="activeshow">
+                                <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Booking Icon" class="w-full h-full object-contain">
+                            </div>
+                            <div class="inactiveshow hidden">
+                                <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="Booking Icon" class="w-full h-full object-contain">
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-1 h-1 bg-gray-200 rounded">
-                        <div class="h-full bg-gray rounded w-0"></div>
+                    <div class="mt-2 sm:mt-3 h-1 bg-gray-200 rounded">
+                        <div class="h-full bg-gray-400 rounded w-0 transition-all duration-300"></div>
                     </div>
                 </div>
 
-                <div class="process-item bg-white rounded-lg py-2 px-4 cursor-pointer transition-all" data-step="before">
+                <!-- Step 3: Before Moving Day -->
+                <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="before">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-lg font-semibold text-black">Before Moving Day</h3>
-                        <div class="w-12 h-auto flex items-center justify-center activeshow">
-                            <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Contact us & Quotation Icon">
-                        </div>
-                        <div class="w-12 h-auto flex items-center justify-center inactiveshow hidden">
-                            <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="Contact us & Quotation Icon">
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Before Moving Day</h3>
+                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                            <div class="activeshow">
+                                <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Before Moving Day Icon" class="w-full h-full object-contain">
+                            </div>
+                            <div class="inactiveshow hidden">
+                                <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="Before Moving Day Icon" class="w-full h-full object-contain">
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-1 h-1 bg-gray-200 rounded">
-                        <div class="h-full bg-gray rounded w-0"></div>
+                    <div class="mt-2 sm:mt-3 h-1 bg-gray-200 rounded">
+                        <div class="h-full bg-gray-400 rounded w-0 transition-all duration-300"></div>
                     </div>
                 </div>
 
-                <!-- Moving Day -->
-                <div class="process-item bg-white rounded-lg py-2 px-4 cursor-pointer transition-all" data-step="moving">
+                <!-- Step 4: Moving Day -->
+                <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="moving">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-lg font-semibold text-black">Moving Day</h3>
-                        <div class="w-12 h-auto flex items-center justify-center activeshow">
-                            <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Contact us & Quotation Icon">
-                        </div>
-                        <div class="w-12 h-auto flex items-center justify-center inactiveshow hidden">
-                            <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="Contact us & Quotation Icon">
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Moving Day</h3>
+                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                            <div class="activeshow">
+                                <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Moving Day Icon" class="w-full h-full object-contain">
+                            </div>
+                            <div class="inactiveshow hidden">
+                                <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="Moving Day Icon" class="w-full h-full object-contain">
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-1 h-1 bg-gray-200 rounded">
-                        <div class="h-full bg-gray rounded w-0"></div>
+                    <div class="mt-2 sm:mt-3 h-1 bg-gray-200 rounded">
+                        <div class="h-full bg-gray-400 rounded w-0 transition-all duration-300"></div>
                     </div>
                 </div>
 
-                <!-- After the move -->
-                <div class="process-item bg-white rounded-lg py-2 px-4 cursor-pointer transition-all" data-step="after">
+                <!-- Step 5: After the move -->
+                <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="after">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-lg font-semibold text-black">After the move</h3>
-                        <div class="w-12 h-auto flex items-center justify-center activeshow">
-                            <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Contact us & Quotation Icon">
-                        </div>
-                        <div class="w-12 h-auto flex items-center justify-center inactiveshow hidden">
-                            <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="Contact us & Quotation Icon">
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">After the move</h3>
+                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                            <div class="activeshow">
+                                <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="After the move Icon" class="w-full h-full object-contain">
+                            </div>
+                            <div class="inactiveshow hidden">
+                                <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="After the move Icon" class="w-full h-full object-contain">
+                            </div>
                         </div>
                     </div>
-                    <div class="mt-1 h-1 bg-gray-200 rounded">
-                        <div class="h-full bg-gray rounded w-0"></div>
+                    <div class="mt-2 sm:mt-3 h-1 bg-gray-200 rounded">
+                        <div class="h-full bg-gray-400 rounded w-0 transition-all duration-300"></div>
                     </div>
                 </div>
             </div>
 
             <!-- Right Side - Content Display -->
-            <div class="bg-gray-50 rounded-lg p-6 min-h-[400px] relative col-span-3 shadow-[0_4px_30px_rgba(0,0,0,0.25)]">
-                <!-- Box Icons -->
-                <div class="absolute top-4 left-4">
-                    <div class="w-8 h-8 bg-orange-400 rounded transform rotate-12 opacity-80"></div>
+            <div class="lg:col-span-3 bg-gray-50 rounded-lg p-4 sm:p-6 lg:p-8 min-h-[300px] sm:min-h-[300px] md:min-h-[300px] relative shadow-[0_4px_30px_rgba(0,0,0,0.25)]">
+                <!-- Decorative Box Icons -->
+                <div class="absolute top-3 sm:top-4 left-3 sm:left-4">
+                    <div class="w-6 h-6 sm:w-8 sm:h-8 bg-orange-400 rounded transform rotate-12 opacity-80"></div>
                 </div>
-                <div class="absolute bottom-4 right-4">
-                    <div class="w-6 h-6 bg-orange-400 rounded transform -rotate-12 opacity-60"></div>
+                <div class="absolute bottom-3 sm:bottom-4 right-3 sm:right-4">
+                    <div class="w-4 h-4 sm:w-6 sm:h-6 bg-orange-400 rounded transform -rotate-12 opacity-60"></div>
                 </div>
 
                 <!-- Content for Contact us & Quotation -->
                 <div class="process-content active" data-content="contact">
-                    <ul class="space-y-3 text-gray">
+                    <ul class="space-y-3 sm:space-y-4 text-gray-700">
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Contact us for price by <span class="text-primary font-semibold">filling out the form</span> or call us <span class="text-primary font-semibold">1300 163 694</span> or via <span class="text-primary font-semibold">facebook</span>.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                Contact us for price by <span class="text-primary font-semibold">filling out the form</span> or call us <span class="text-primary font-semibold">1300 163 694</span> or via <span class="text-primary font-semibold">facebook</span>.
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Our sales representative will contact you within 30 minutes to take your requirements and ask questions about your move.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                Our sales representative will contact you within 30 minutes to take your requirements and ask questions about your move.
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Once we gather enough information, our sales staff will then make the best suggestion regarding the following: truck size, pricing and general suggestions. Our staff will give you enough information to make an informed decision and to make you feel comfortable booking in a move with us on the spot.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                Once we gather enough information, our sales staff will then make the best suggestion regarding the following: truck size, pricing and general suggestions. Our staff will give you enough information to make an informed decision and to make you feel comfortable booking in a move with us on the spot.
+                            </span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Content for Booking -->
-                <div class="process-content" data-content="booking">
-                    <ul class="space-y-3 text-gray">
+                <div class="process-content hidden" data-content="booking">
+                    <ul class="space-y-3 sm:space-y-4 text-gray-700">
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Once you decide to book with us, we'll secure your preferred moving date and time slot.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                Once you decide to book with us, we'll secure your preferred moving date and time slot.
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>We'll send you a confirmation email with all the details including crew information and contact numbers.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                We'll send you a confirmation email with all the details including crew information and contact numbers.
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>A deposit may be required to secure your booking, with the balance due on completion of the move.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                A deposit may be required to secure your booking, with the balance due on completion of the move.
+                            </span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Content for Before Moving Day -->
-                <div class="process-content" data-content="before">
-                    <ul class="space-y-3 text-gray">
+                <div class="process-content hidden" data-content="before">
+                    <ul class="space-y-3 sm:space-y-4 text-gray-700">
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>We'll call you 24-48 hours before your move to confirm all details and answer any questions.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                We'll call you 24-48 hours before your move to confirm all details and answer any questions.
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Pack and prepare your belongings, or let us handle the packing for you with our professional packing service.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                Pack and prepare your belongings, or let us handle the packing for you with our professional packing service.
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Ensure parking permits are arranged if required, and clear pathways for easy access.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                Ensure parking permits are arranged if required, and clear pathways for easy access.
+                            </span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Content for Moving Day -->
-                <div class="process-content" data-content="moving">
-                    <ul class="space-y-3 text-gray">
+                <div class="process-content hidden" data-content="moving">
+                    <ul class="space-y-3 sm:space-y-4 text-gray-700">
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Our professional team arrives on time, ready to handle your move with care and efficiency.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                Our professional team arrives on time, ready to handle your move with care and efficiency.
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>We'll wrap and protect your furniture, load everything safely, and transport to your new location.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                We'll wrap and protect your furniture, load everything safely, and transport to your new location.
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Upon arrival, we'll unload and place items in their designated rooms as per your instructions.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                Upon arrival, we'll unload and place items in their designated rooms as per your instructions.
+                            </span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Content for After the move -->
-                <div class="process-content" data-content="after">
-                    <ul class="space-y-3 text-gray">
+                <div class="process-content hidden" data-content="after">
+                    <ul class="space-y-3 sm:space-y-4 text-gray-700">
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>We'll do a final walkthrough with you to ensure everything is in its right place.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                We'll do a final walkthrough with you to ensure everything is in its right place.
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Payment is collected upon completion, and we'll provide you with a receipt for your records.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                Payment is collected upon completion, and we'll provide you with a receipt for your records.
+                            </span>
                         </li>
                         <li class="flex items-start">
                             <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>We'll follow up within a few days to ensure you're completely satisfied with our service.</span>
+                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
+                                We'll follow up within a few days to ensure you're completely satisfied with our service.
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -650,7 +648,6 @@
         </div>
     </div>
 </section>
-
 
 
 <section
@@ -1093,7 +1090,7 @@
 @section('scripts')
 
 <script type="module">
- 
+
 </script>
 
 <script type="module" src="{{ asset('assets/js/services.js') }}"></script>

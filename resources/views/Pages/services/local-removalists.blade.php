@@ -9,38 +9,42 @@
 @endsection
 
 @section('content')
-<section class="bg-white text-black py-4 sm:py-6 md:py-8 mt-4 sm:mt-20 md:mt-10">
-    <div class="md:max-w-7xl lg:max-w-8xl  xl:max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 items-center">
+
+<section class="bg-gray text-white py-8 md:py-16 hidden md:block">
+    <div class="md:max-w-[1380px]  mx-auto px-4 sm:px-6 ">
+        <div class="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 md:gap-12 lg:gap-16 items-center">
 
             <!-- Left Content -->
-            <div class="space-y-6 sm:space-y-8 lg:col-span-3 order-2 lg:order-1">
-
-                <x-heading-subheading
-                    mainClass="services-heading-main_div"
-                    headingClass="services-heading"
-                    subheadingClass="services-subheading"
-                    heading="Local Removalists"
-                    subheading="Our friendly team of local removalists handle the heavy lifting so that you can enjoy making your new house a home." />
+            <div class="space-y-6 sm:space-y-8 order-2 lg:order-1">
+                
+                <!-- Main Heading -->
+                <div>
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                        Local Removalists
+                    </h1>
+                    <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
+                        Our friendly team of local removalists handle the heavy lifting so that you can enjoy making your new house a home.
+                    </p>
+                </div>
 
                 <!-- Quote Form -->
-                <div class="bg-primary rounded-2xl sm:rounded-full px-6 sm:px-8 lg:px-10 py-4 sm:py-4 max-w-full sm:max-w-2xl">
-                    <div class="flex flex-col sm:flex-row md:flex-row gap-3 sm:gap-4 items-stretch sm:items-end">
+                <div class="bg-primary rounded-full px-10 sm:px-8 py-3 sm:py-5 max-w-3xl">
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-end">
                         <!-- Moving From -->
                         <div class="flex-1 min-w-0">
-                            <label class="block text-xs sm:text-sm font-medium text-black mb-2">Moving from</label>
-                            <input type="text" placeholder="Enter Location" class="w-full py-2 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20">
+                            <label class="block text-xs sm:text-sm font-medium text-black mb-1 ml-2 sm:mb-2">Moving from</label>
+                            <input type="text" placeholder="Enter Location" class="w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
                         </div>
 
                         <!-- Moving To -->
                         <div class="flex-1 min-w-0">
-                            <label class="block text-xs sm:text-sm font-medium text-black mb-2">Moving to</label>
-                            <input type="text" placeholder="Enter Location" class="w-full py-2 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20">
+                            <label class="block text-xs sm:text-sm font-medium text-black mb-1 ml-2 sm:mb-2">Moving to</label>
+                            <input type="text" placeholder="Enter Location" class="w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
                         </div>
 
                         <!-- Quote Button -->
                         <div class="flex-shrink-0 w-full sm:w-auto">
-                            <button class="w-full sm:w-auto bg-black text-white px-4 sm:px-6 py-2 text-sm sm:text-base rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition whitespace-nowrap font-medium">
+                            <button class="w-full sm:w-auto bg-black text-white px-4 sm:px-6 py-1 hover:bg-white hover:text-black hover:outline-black outline-2 sm:py-2 text-sm sm:text-base rounded-md hover:bg-gray-800 transition font-medium whitespace-nowrap">
                                 Get a Free Quote
                             </button>
                         </div>
@@ -48,61 +52,54 @@
                 </div>
 
                 <!-- Service Links -->
-                <div class="flex flex-wrap gap-3 sm:gap-4 lg:gap-6 pt-2 px-2 sm:px-4 lg:px-6 justify-center sm:justify-start">
-                    <a href="#" class="text-black font-semibold text-base sm:text-lg lg:text-xl border-b-2 border-black pb-1 hover:text-primary hover:border-primary transition">
+                <div class="flex flex-wrap gap-4 sm:gap-6 lg:gap-8 justify-center sm:justify-start">
+                    <a href="#" class="text-white font-semibold text-base sm:text-lg border-b-2 border-white pb-1 hover:text-primary hover:border-primary transition">
                         Interstate
                     </a>
-                    <a href="#" class="text-black font-semibold text-base sm:text-lg lg:text-xl border-b-2 border-black pb-1 hover:text-primary hover:border-primary transition">
+                    <a href="#" class="text-white font-semibold text-base sm:text-lg border-b-2 border-white pb-1 hover:text-primary hover:border-primary transition">
                         Business
                     </a>
-                    <a href="#" class="text-black font-semibold text-base sm:text-lg lg:text-xl border-b-2 border-black pb-1 hover:text-primary hover:border-primary transition">
+                    <a href="#" class="text-white font-semibold text-base sm:text-lg border-b-2 border-white pb-1 hover:text-primary hover:border-primary transition">
                         Storage
                     </a>
                 </div>
 
                 <!-- Ratings Section -->
-                <section class="bg-white text-black py-4 sm:py-6 md:py-8">
-                    <div class="max-w-6xl mx-auto px-2 sm:px-4 lg:px-6 text-center sm:text-start">
-                        <!-- Top Ratings -->
-                        <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-4 lg:gap-6 mb-6 text-sm">
-                            <!-- Experience -->
-                            <div class="text-center sm:text-start">
-                                <p class="text-primary font-semibold text-base sm:text-lg">10 Years</p>
-                                <p class="text-black font-medium text-sm sm:text-base lg:text-lg">Experience</p>
-                            </div>
-
-                            <!-- Divider - Hidden on mobile -->
-                            <div class="hidden sm:block border-[1.5px] border-primary h-12 lg:h-16"></div>
-
-                            <!-- Google Rating -->
-                            <div class="flex items-center gap-2">
-                                <div class="flex flex-col items-center gap-0">
-                                    <span class="text-yellow-500 text-base sm:text-lg lg:text-xl">★★★★★</span>
-                                    <span class="text-black text-sm sm:text-base lg:text-xl">(4.2) 166</span>
-                                </div>
-                                <img src="{{ asset('assets/images/allImages/Google.webp') }}" alt="Google" class="h-8 sm:h-10 lg:h-16 w-auto">
-                            </div>
-
-                            <!-- Divider - Hidden on mobile -->
-                            <div class="hidden sm:block border-[1.5px] border-primary h-10 lg:h-12"></div>
-
-                            <!-- Trustpilot -->
-                            <div class="flex items-center">
-                                <img src="{{ asset('assets/images/allImages/Trustpilot.webp') }}" alt="Trustpilot" class="h-8 sm:h-10 lg:h-16 w-24 sm:w-28 lg:w-32 object-contain">
-                            </div>
-                        </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 sm:gap-6 lg:gap-8 text-center sm:text-left">
+                    <!-- Experience -->
+                    <div class="text-center sm:text-left">
+                        <p class="text-primary font-bold text-lg sm:text-xl">10 Years</p>
+                        <p class="text-white font-medium text-sm sm:text-base">Experience</p>
                     </div>
-                </section>
+
+                    <!-- Divider - Hidden on mobile -->
+                    <div class="hidden sm:block border-l-2 border-primary h-10 lg:h-12"></div>
+
+                    <!-- Google Rating -->
+                    <div class="flex items-center gap-3">
+                        <div class="flex flex-col items-center">
+                            <div class="flex text-yellow-400 text-sm sm:text-base">
+                                <span>★★★★★</span>
+                            </div>
+                            <span class="text-white text-sm sm:text-base">(4.2) 166</span>
+                        </div>
+                        <img src="{{ asset('assets/images/allImages/Google.webp') }}" alt="Google" class="h-8 sm:h-10 lg:h-12 w-auto">
+                    </div>
+
+                    <!-- Divider - Hidden on mobile -->
+                    <div class="hidden sm:block border-l-2 border-primary h-8 lg:h-10"></div>
+
+                    <!-- Trustpilot -->
+                    <div class="flex items-center">
+                        <img src="{{ asset('assets/images/allImages/Trustpilot.webp') }}" alt="Trustpilot" class="h-8 sm:h-10 lg:h-16 w-24 sm:w-28 lg:w-32 object-contain ">
+                    </div>
+                </div>
             </div>
 
             <!-- Right Content - Truck Image -->
-            <div class="lg:col-span-2 order-1 lg:order-2 relative">
+            <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}" alt="Melbourne Central Movers Truck" class="w-full h-auto rounded-lg shadow-lg">
-
-                    <!-- Decorative elements - Hidden on mobile for better performance -->
-                    <div class="hidden sm:block absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-12 sm:w-16 lg:w-20 h-12 sm:h-16 lg:h-20 bg-primary rounded-full opacity-20"></div>
-                    <div class="hidden sm:block absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 w-10 sm:w-12 lg:w-16 h-10 sm:h-12 lg:h-16 bg-primary rounded-full opacity-30"></div>
+                    <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[460px] rounded-lg">
                 </div>
             </div>
 
@@ -110,9 +107,52 @@
     </div>
 </section>
 
+<section class="block md:hidden bg-white text-black ">
+  <!-- Background Image Section -->
+  <div class="relative w-full">
+    <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}"
+         alt="Moving Team"
+         class="w-full h-64 object-cover " />
+    <div class="absolute inset-0 bg-black/40 rounded-lg"></div>
+
+    <!-- Text Overlay -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
+      <h2 class="text-3xl font-bold mb-2">Stress-Free Moves Start Here</h2>
+      <p class="text-md">Trusted Removalists for Home, Office & Storage</p>
+      <p class="text-md mt-1">Over 13 years of experience with 4.8★ ratings</p>
+    </div>
+  </div>
+
+  <!-- Quote Form -->
+  <div class="bg-primary p-6 mx-4 rounded-xl shadow-lg -mt-10 z-10 relative">
+    <input type="text" placeholder="From suburb"
+           class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+    <input type="text" placeholder="To suburb"
+           class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+    <button class="w-full bg-black hover:bg-white text-white hover:text-black py-2 font-semibold rounded-md transition">
+      Get a Quote
+    </button>
+  </div>
+
+  <!-- Ratings Section -->
+  <div class="flex flex-col items-center mt-6">
+    <div class="flex gap-1 text-yellow-400 text-xl">
+      <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+    </div>
+    <p class="text-sm mt-1 text-gray-700">4.8 from 3755+ reviews</p>
+
+    <!-- Social icons (if needed) -->
+    <div class="flex gap-4 mt-2">
+      <img src="{{ asset('assets/images/allImages/Google.webp') }}" class="h-12" alt="Google" />
+      <img src="{{ asset('assets/images/allImages/Trustpilot.webp') }}" class="h-12" alt="Trustpilot" />
+    </div>
+  </div>
+</section>
+
+
 
 <section class="py-4 sm:py-6 md:py-8 lg:py-6 bg-white text-center">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="md:max-w-7xl w-full mx-auto md:px-4 px-10 lg:px-8">
         <!-- Section Header -->
         <div class="mb-6 sm:mb-8 md:mb-10">
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-black">Our Moving Services</h2>
@@ -136,9 +176,9 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">House Moving</h3>
-                        <p class="text-white text-xs sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Safe and efficient moving for homes of all sizes.</p>
-                        <a href="#" class="text-primary font-semibold text-xs sm:text-sm md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">House Moving</h3>
+                        <p class="text-white text-base md:text-base mb-2 sm:mb-3 leading-relaxed">Safe and efficient moving for homes of all sizes.</p>
+                        <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
             </div>
@@ -150,9 +190,9 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Packing Services</h3>
-                        <p class="text-white text-xs sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Full or partial packing with quality materials and care.</p>
-                        <a href="#" class="text-primary font-semibold text-xs sm:text-sm md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Packing Services</h3>
+                        <p class="text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Full or partial packing with quality materials and care.</p>
+                        <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
             </div>
@@ -164,9 +204,9 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Storage Solutions</h3>
-                        <p class="text-white text-xs sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Secure storage facilities for your belongings.</p>
-                        <a href="#" class="text-primary font-semibold text-xs sm:text-sm md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Storage Solutions</h3>
+                        <p class="text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Secure storage facilities for your belongings.</p>
+                        <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
             </div>
@@ -178,9 +218,9 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Business Moving</h3>
-                        <p class="text-white text-xs sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Professional commercial relocation services.</p>
-                        <a href="#" class="text-primary font-semibold text-xs sm:text-sm md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Business Moving</h3>
+                        <p class="text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Professional commercial relocation services.</p>
+                        <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
             </div>
@@ -192,9 +232,9 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Interstate Moving</h3>
-                        <p class="text-white text-xs sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Long-distance moving across state borders.</p>
-                        <a href="#" class="text-primary font-semibold text-xs sm:text-sm md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Interstate Moving</h3>
+                        <p class="text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Long-distance moving across state borders.</p>
+                        <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
             </div>
@@ -207,10 +247,10 @@
     <div class="mx-auto px-4 sm:px-6 md:px-8 ms:max-w-6xl sm:max-w-5xl lg:max-w-7xl xl:max-w-8xl">
         <!-- Section Header -->
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+            <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">
                 What Makes Us the Best Removalists in Melbourne?
             </h2>
-            <p class="text-lg text-primary font-medium max-w-3xl mx-auto">
+            <p class="md:text-lg text-base text-primary font-medium max-w-3xl mx-auto">
                 At MCM, we don't just move furniture — we move lives. Here's why our clients trust us time and again.
             </p>
         </div>
@@ -366,38 +406,38 @@
 
 <section class="py-4 sm:py-6 md:py-8 bg-gray">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
+        <div class="flex md:flex-row items-center justify-between md:gap-4 gap-2">
 
             <!-- Call Section -->
-            <div class="flex flex-row items-center gap-3 sm:gap-4 text-center md:text-left">
+            <div class="flex flex-col md:flex-row items-center md:gap-3 gap-1 text-center md:text-left">
                 <div class="flex-shrink-0">
-                    <img src="{{ asset('assets/images/servicesImages/Need Help to Moving.webp') }}" alt="Phone Icon" class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full" />
+                    <img src="{{ asset('assets/images/servicesImages/Need Help to Moving.webp') }}" alt="Phone Icon" class="md:w-12 md:h-12 w-10 h-10 object-cover rounded-full" />
                 </div>
                 <div class="text-white">
-                    <p class="text-xs sm:text-sm md:text-base font-medium">Need Help to Moving?</p>
-                    <p class="font-bold text-sm sm:text-lg md:text-xl">Call - 1300 163 694</p>
+                    <p class="text-[8px] md:text-base font-medium">Need Help to Moving?</p>
+                    <p class="font-bold text-[10px] md:text-xl">Call - 1300 163 694</p>
                 </div>
             </div>
 
             <!-- Contact Section -->
-            <div class="flex flex-row items-center gap-3 sm:gap-4 text-center md:text-left">
+            <div class="flex flex-col md:flex-row items-center md:gap-3 gap-1 text-center md:text-left">
                 <div class="flex-shrink-0">
-                    <img src="{{ asset('assets/images/servicesImages/MCM Removalists.webp') }}" alt="Truck Icon" class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full" />
+                    <img src="{{ asset('assets/images/servicesImages/MCM Removalists.webp') }}" alt="Truck Icon" class="md:w-12 md:h-12 w-10 h-10 object-cover rounded-full" />
                 </div>
                 <div class="text-white">
-                    <p class="text-xs sm:text-sm md:text-base font-medium">MCM Removalists</p>
-                    <p class="font-bold text-sm sm:text-lg md:text-xl">Contact Us Now!</p>
+                    <p class="text-[8px] md:text-sm font-medium">MCM Removalists</p>
+                    <p class="font-bold text-[10px] md:text-xl">Contact Us Now!</p>
                 </div>
             </div>
 
             <!-- Quote Section -->
-            <div class="flex flex-row items-center gap-3 sm:gap-4 text-center md:text-left">
+            <div class="flex flex-col md:flex-row items-center md:gap-3 gap-1 text-center md:text-left">
                 <div class="flex-shrink-0">
-                    <img src="{{ asset('assets/images/servicesImages/Request Online Quote.webp') }}" alt="Quote Icon" class="w-12 h-12 sm:w-16 sm:h-16 object-cover rounded-full" />
+                    <img src="{{ asset('assets/images/servicesImages/Request Online Quote.webp') }}" alt="Quote Icon" class="md:w-12 md:h-12 w-10 h-10 object-cover rounded-full" />
                 </div>
                 <div class="text-white">
-                    <p class="text-xs sm:text-sm md:text-base font-medium">Click Here!</p>
-                    <p class="font-bold text-sm sm:text-lg md:text-xl">Request Online Quote</p>
+                    <p class="text-[8px] md:text-sm font-medium">Click Here!</p>
+                    <p class="font-bold text-[10px] md:text-xl">Request Online Quote</p>
                 </div>
             </div>
 
@@ -651,7 +691,7 @@
 
 
 <section
-    class="text-center text-black py-12 px-4 bg-cover bg-center bg-no-repeat my-10"
+    class="text-center text-black py-6 md:py-12 px-4 bg-cover bg-center bg-no-repeat md:my-10 my-0"
     style="background-image: url('{{ asset('assets/images/allImages/Since opening in Melbourne in 2004.webp') }}');">
     <h2 class="text-2xl md:text-3xl font-bold mb-10">
         Since opening in Melbourne in 2004
@@ -676,7 +716,7 @@
     </div>
 
     <!-- CTA Buttons -->
-    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+    <div class="flex flex-row justify-center items-center gap-4 md:mb-12 mb-6">
         <button class="flex items-center gap-2 px-6 py-3 text-primary font-semibold border border-primary rounded-md bg-white hover:bg-primary hover:text-white transition">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -695,22 +735,24 @@
 <section class="py-0 m-auto text-center">
     <!-- Client Rating -->
     <div>
-        <h3 class="text-3xl font-bold mb-3">What our clients say</h3>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-2">
-            <span class="text-3xl font-bold">4.2</span>
+        <h3 class="text-2xl md:text-4xl font-bold text-black mb-2">What our clients say</h3>
+        <div class="flex flex-row items-center justify-center gap-2">
+            <span class="text-2xl md:text-4xl font-bold text-black">4.2</span>
             <span class="text-sm">Out of <br> 5 Star</span>
-            <div class="flex gap-1 text-yellow-400 text-3xl">
+           <div class="flex md:flex-row flex-col items-center md:gap-2">
+             <div class="flex gap-1 text-yellow-400 md:text-3xl text-xl">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span class="text-gray-300">★</span>
-            </div>
+            </div> 
             <div class="flex items-start flex-col gap-0">
-                <img src="{{ asset('assets/images/allImages/Google.webp') }}" alt="Google" class="h-20 w-auto ml-2" />
+                <img src="{{ asset('assets/images/allImages/Google.webp') }}" alt="Google" class="md:h-20 h-10 w-auto ml-2" />
             </div>
+           </div>
         </div>
     </div>
 </section>
 
 <section class="bg-primary py-8 sm:py-10 lg:py-12 px-4 text-black">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-7xl mx-auto md:px-4 px-8 lg:px-8">
         <!-- Testimonial Card -->
         <div class="testimonial-card">
             <div class="px-3">
@@ -824,16 +866,16 @@
     </div>
 </section>
 
-<section class="bg-white py-16">
+<section class="bg-white md:py-16 py-12">
 
-    <h2 class="text-3xl font-bold text-center mb-8">MCM Blogs</h2>
+    <h2 class="text-2xl md:text-4xl font-bold text-center text-black mb-2">MCM Blogs</h2>
 
     <div
         class="py-16 px-4 bg-cover bg-center bg-no-repeat"
         style="background-image: url('{{ asset('assets/images/allImages/MCM Blogs BG.webp') }}'); ">
 
 
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-7xl mx-auto md:px-4 px-6 lg:px-8">
             <div class="blog-slider">
                 <div class="px-3">
                     <div class="bg-white rounded-xl shadow-md overflow-hidden p-4 h-full flex flex-col">
@@ -944,14 +986,14 @@
 
 </section>
 
-<section class="bg-white py-12 sm:py-14 lg:py-16 px-4">
+<section class="bg-white md:py-12 pb-10 sm:py-0 px-4">
     <div class="max-w-6xl mx-auto">
         <!-- Section Header -->
         <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-bold text-black mb-4">
+            <h2 class="text-2xl md:text-4xl font-bold text-black mb-2">
                 Frequently Asked Questions.
             </h2>
-            <p class="text-gray-600 max-w-4xl mx-auto text-lg">
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-primary font-medium">
                 Moving soon? Here at The MCM we understand that you might have some moving questions when preparing for your upcoming relocation. Here are some of our most frequently asked questions (FAQ's) by our customers.
             </p>
         </div>
@@ -963,7 +1005,7 @@
                 <ul class="space-y-0">
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1 text-lg font-semibold text-black pr-4">What factors affect the cost of hiring removalists?</span>
+                            <span class="flex-1 md:text-xl text-md font-semibold text-black pr-4">What factors affect the cost of hiring removalists?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -972,7 +1014,7 @@
                         </button>
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
-                                <p class="text-gray-600 leading-relaxed">
+                                <p class="text-gray-600 md:text-base text-xs leading-relaxed">
                                     Several factors influence the cost of hiring removalists, including the distance of your move, the size and weight of your belongings, the time of year, additional services required (like packing or storage), and accessibility at both locations. We provide transparent pricing with no hidden fees.
                                 </p>
                             </div>
@@ -981,7 +1023,7 @@
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1 text-lg font-semibold text-black pr-4">Are there any hidden fees with Melbourne Central Movers?</span>
+                            <span class="flex-1  md:text-xl text-md font-semibold text-black pr-4">Are there any hidden fees with Melbourne Central Movers?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -990,7 +1032,7 @@
                         </button>
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
-                                <p class="text-gray-600 leading-relaxed">
+                                <p class="text-gray-600 md:text-base text-xs leading-relaxed">
                                     No, we pride ourselves on transparent pricing. All costs are clearly outlined in your quote, and we don't charge any hidden fees. What you see in your estimate is what you pay, with no surprise charges.
                                 </p>
                             </div>
@@ -999,7 +1041,7 @@
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1 text-lg font-semibold text-black pr-4">Are your removalists experienced and insured?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Are your removalists experienced and insured?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1008,7 +1050,7 @@
                         </button>
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
-                                <p class="text-gray-600 leading-relaxed">
+                                <p class="text-gray-600 md:text-base text-xs leading-relaxed">
                                     Yes, all our removalists are highly experienced professionals with years of training in safe moving practices. We are fully licensed and insured, providing you with peace of mind knowing your belongings are protected throughout the moving process.
                                 </p>
                             </div>
@@ -1017,7 +1059,7 @@
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1 text-lg font-semibold text-black pr-4">Can I book a moving service for a specific time?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Can I book a moving service for a specific time?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1026,7 +1068,7 @@
                         </button>
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
-                                <p class="text-gray-600 leading-relaxed">
+                                <p class="text-gray-600 md:text-base text-xs leading-relaxed">
                                     Yes, we offer flexible scheduling to accommodate your preferred moving time. We recommend booking in advance to secure your preferred date and time slot, especially during peak moving seasons.
                                 </p>
                             </div>
@@ -1035,7 +1077,7 @@
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1 text-lg font-semibold text-black pr-4">What should I do if I need to reschedule my move?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">What should I do if I need to reschedule my move?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1044,7 +1086,7 @@
                         </button>
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
-                                <p class="text-gray-600 leading-relaxed">
+                                <p class="text-gray-600 md:text-base text-xs leading-relaxed">
                                     We understand that plans can change. Please contact us as soon as possible if you need to reschedule. We'll do our best to accommodate your new preferred date and time, subject to availability.
                                 </p>
                             </div>
@@ -1053,7 +1095,7 @@
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1 text-lg font-semibold text-black pr-4">How do I get started with Melbourne Central Movers?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">How do I get started with Melbourne Central Movers?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1062,7 +1104,7 @@
                         </button>
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
-                                <p class="text-gray-600 leading-relaxed">
+                                <p class="text-gray-600 md:text-base text-xs leading-relaxed">
                                     Getting started is easy! Simply contact us for a free quote by phone, email, or through our online form. We'll assess your moving needs and provide you with a detailed, transparent estimate. Once you're ready, we'll schedule your move at your convenience.
                                 </p>
                             </div>
@@ -1090,9 +1132,8 @@
 @section('scripts')
 
 <script type="module">
-
-</script>
-
-<script type="module" src="{{ asset('assets/js/services.js') }}"></script>
+    
+    </script>
+    <script type="module" src="{{ asset('assets/js/services.js') }}"></script>
 
 @endsection

@@ -7,7 +7,7 @@
       <a href="/" class="flex items-center">
         <img src="{{ asset('assets/images/logos/header-logo.webp') }}" alt="Logo" class="h-16 md:h-20 w-auto">
       </a>
-      <button class="md:hidden block text-white focus:outline-none" id="mobile-menu-toggle">
+      <button class="md:hidden block text-white focus:outline-none " id="mobile-menu-toggle">
         <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -15,7 +15,7 @@
     </div>
 
     <!-- Main Menu -->
-    <div class="w-full md:w-auto" id="header-links">
+    <div class="w-full md:w-auto hidden" id="header-links">
 
       <!-- Top Row -->
       <div class="bg-black text-white text-sm font-medium">

@@ -22,6 +22,7 @@ $(document).ready(function () {
             settings: {
                 slidesToShow: 1
             }
+            
         }
         ],
 
@@ -37,6 +38,7 @@ $(document).ready(function () {
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
               </button>`,
+        
     });
 
     $('.slick-moving-services').on('afterChange', function (event, slick, currentSlide) {

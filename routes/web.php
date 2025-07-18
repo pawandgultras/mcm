@@ -18,15 +18,20 @@ Route::get('/contact', function () {
 Route::group(['prefix' => 'services'], function () {
     Route::get('/local-removalists', function () {
         return view('Pages.services.local-removalists');
-    })->name('services.local-removalists');
 
-    Route::get('/graphic-design', function () {
-        return view('Pages.services.graphic-design');
-    })->name('services.graphic-design');
+    })->name('local-removalists');
 
-    Route::get('/seo', function () {
-        return view('Pages.services.seo');
-    })->name('services.seo');
+    Route::get('/removalists-melbourne', function () {
+        return view('Pages.services.removalists-melbourne');
+    })->name('removalists-melbourne');
+
+    Route::get('/house-removalists', function () {
+        return view('Pages.services.house-removalists');
+    })->name('house-removalists');
+
+    Route::get('/office-removalists', function () {
+        return view('Pages.services.office-removalists');
+    })->name('office-removalists');
 });
 
 

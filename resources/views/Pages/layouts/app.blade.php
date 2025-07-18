@@ -10,6 +10,15 @@
   @yield('metadata')
   @vite(['resources/css/app.css', 'resources/js/app.js'])
   @yield('styles')
+  <style>
+    .clamp-2-lines {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
 </head>
 
 <body class="font-poppins antialiased bg-white text-gray-900">

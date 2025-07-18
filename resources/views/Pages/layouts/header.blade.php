@@ -15,7 +15,7 @@
     </div>
 
     <!-- Main Menu -->
-    <div class="w-full md:w-auto hidden" id="header-links">
+    <div class="w-full md:w-auto hidden md:block" id="header-links">
 
       <!-- Top Row -->
       <div class="bg-black text-white text-sm font-medium">

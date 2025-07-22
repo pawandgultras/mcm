@@ -10,7 +10,7 @@
 
 @section('homepage')
 <!-- HERO SECTION -->
-<section class="relative w-full md:h-[70vh] h-[50vh] bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('{{ asset('assets/images/allImages/truck5.png') }}');">
+<section class="relative w-full md:h-[70vh] h-[50vh] bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('{{ asset('assets/images/allImages/hero-banner.webp') }}');">
   <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
   <x-heading-subheading

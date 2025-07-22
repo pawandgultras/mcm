@@ -42,7 +42,7 @@
 
 <section class="bg-gray text-white py-8 md:py-16 hidden md:block">
     <div class="md:max-w-[1380px]  mx-auto px-4 sm:px-6 ">
-        <div class="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 md:gap-12 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 md:gap-12 lg:gap-16 items-start">
 
             <!-- Left Content -->
             <div class="space-y-6 sm:space-y-8 order-2 lg:order-1">
@@ -127,9 +127,9 @@
             </div>
 
             <!-- Right Content - Truck Image -->
-            <div class="order-1 lg:order-2 relative">
+            <div class="order-1 lg:order-2 relative w-full h-[500px]">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/allImages/9.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[520px] rounded-lg object-cover">
+                    <img src="{{ asset('assets/images/allImages/truck1.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[440px] rounded-lg object-cover">
                 </div>
             </div>
 

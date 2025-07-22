@@ -11,7 +11,7 @@
 
 <section class="bg-gray text-white py-8 md:py-16 hidden md:block">
     <div class="md:max-w-[1380px]  mx-auto px-4 sm:px-6 ">
-        <div class="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 md:gap-12 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 md:gap-12 lg:gap-16 items-start">
 
             <!-- Left Content -->
             <div class="space-y-6 sm:space-y-8 order-2 lg:order-1">
@@ -23,7 +23,7 @@
                     </h1>
                     <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
                         Moving out of your flat can feel stressful, but it doesn’t have to be. At Melbourne Central Movers, we make your flat move smooth, simple, and quick. Whether you are moving from a small studio or a large apartment, our friendly team is ready to help you every step of the way.
-                        We understand the challenges of moving in Melbourne, from tight staircases to busy streets and parking issues. Our experienced flat removalists handle your furniture and belongings with care, ensuring they reach your new place safely and on time. We use the right tools and clean, well-maintained trucks to protect your items during the move
+                        We understand the challenges of moving in Melbourne, from tight staircases to busy streets and parking issues. 
                     </p>
                 </div>
 
@@ -99,7 +99,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[460px] rounded-lg">
+                    <img src="{{ asset('assets/images/allImages/truck4.png') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[440px] rounded-lg object-cover">
                 </div>
             </div>
 

@@ -36,9 +36,9 @@ Route::group(['prefix' => 'services'], function () {
         return view('Pages.services.furniture-removalists');
     })->name('furniture-removalists');
     
-    Route::get('/antique-removal', function () {
-        return view('Pages.services.antique-removal');
-    })->name('antique-removal');
+    Route::get('/antique-removalists', function () {
+        return view('Pages.services.antique-removalists');
+    })->name('antique-removalists');
 
     Route::get('/commercial-removalists', function () {
         return view('Pages.services.commercial-removalists');

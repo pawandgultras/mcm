@@ -12,7 +12,7 @@
 
 <section class="bg-gray text-white py-8 md:py-16 hidden md:block">
     <div class="md:max-w-[1380px]  mx-auto px-4 sm:px-6 ">
-        <div class="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 md:gap-12 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 md:gap-12 lg:gap-16 items-start">
 
             <!-- Left Content -->
             <div class="space-y-6 sm:space-y-8 order-2 lg:order-1">
@@ -23,7 +23,7 @@
                         Commercial Removalists in Melbourne
                     </h1>
                     <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
-                        Looking for trusted commercial removalists in Melbourne? At Melbourne Central Movers, we provide efficient and reliable commercial moving services designed for businesses of all sizes. Whether you’re relocating a small retail store, a large corporate office, or a warehouse, our expert team ensures minimal downtime and maximum care for your business assets. We handle everything from office furniture and IT systems to stock and heavy equipment, delivering a professional service every time. With our precise planning and dedicated staff, your business relocation is safe with us.
+                        Looking for trusted commercial removalists in Melbourne? At Melbourne Central Movers, we provide efficient and reliable commercial moving services designed for businesses of all sizes. Whether you’re relocating a small retail store, a large corporate office, or a warehouse, our expert team ensures minimal downtime and maximum care for your business assets. 
 
 
                     </p>
@@ -101,7 +101,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[460px] rounded-lg">
+                    <img src="{{ asset('assets/images/allImages/truck5.png') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] rounded-lg">
                 </div>
             </div>
 

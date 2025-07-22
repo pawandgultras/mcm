@@ -52,9 +52,11 @@
               <a href="{{route('local-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Local Removals</a>
               <a href="{{route('furniture-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Furniture Removals</a>
               <a href="{{route('office-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Office Removals</a>
+              <a href="{{route('removalists-melbourne')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Removalists Melbourne</a>
               <a href="{{route('flat-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Flat Removals</a>
               <a href="{{route('commercial-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Commercial Removals</a>
               <a href="{{route('hotel-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Hotel Removals</a>
+              <a href="{{route('antique-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Antique Removals</a>
             </div>
           </div>
 

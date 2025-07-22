@@ -10,14 +10,14 @@
 
 @section('homepage')
 <!-- HERO SECTION -->
-<section class="relative w-full md:h-[70vh] h-[50vh] bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('{{ asset('assets/images/allImages/hero-banner.webp') }}');">
+<section class="relative w-full md:h-[70vh] h-[50vh] bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('{{ asset('assets/images/allImages/truck5.png') }}');">
   <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
   <x-heading-subheading
     mainClass="home-banner_heading_main_div"
     headingClass="home-banner_heading"
     subheadingClass="home-banner_subheading"
-    heading="Best Removalists Melbourne"
+    heading="Welcome to Melbourne Central Movers "
     subheading="Are You Looking for Removalists Melbourne? Move with Melbourne Central Movers, Australia’s Biggest Trusted Moving Company helping you move for over 10 years. Hire Movers Melbourne Now." />
 
 
@@ -149,9 +149,7 @@
     <div class="flex-1">
       <h3 class="text-xl md:text-3xl font-bold mb-2">MCM Moving Services – Here When You Need Us Most</h3>
       <p class="text-primary font-bold text-md mb-4">We Provide Emergency Moving Assistance</p>
-      <p class="text-md mb-4">Stuck in a moving emergency? Our team is ready to act fast and help you with urgent relocation needs. <br>
-        With years of experience, we deliver quick, reliable, and efficient moving solutions.</p>
-      <p class="text-md mb-6">If we can’t assist immediately, we’ll connect you with someone who can — because your peace of mind matters.</p>
+      <p class="text-md mb-4">At Melbourne Central Movers, we’re ready when you need us. Our team ensures your move is smooth, safe, and stress-free, whether you’re shifting a single room or an entire office. Let us handle the heavy lifting so you can focus on settling into your new space with ease. We’re here to make your moving day simpler, faster, and worry-free.</p>
       <a href="#" class="bg-primary text-white text-xl px-10 py-3 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">Get a Quote</a>
     </div>
 
@@ -236,8 +234,83 @@
   </div>
 </section>
 
+
+<section class="bg-white py-12 px-4 md:px-10">
+  <div class="mx-auto px-4 sm:px-6 md:px-8 ms:max-w-6xl sm:max-w-5xl lg:max-w-7xl xl:max-w-8xl">
+    <h2 class="text-2xl md:text-4xl font-bold text-black mb-4 text-center">Tips for a Smooth House Move in Melbourne</h2>
+    <p class="md:text-lg text-base text-primary font-medium max-w-3xl mx-auto text-center mb-10">Planning your house move properly can save you time, money, and stress. Here’s how to ensure a seamless relocation in Melbourne:</p>
+
+    <!-- Roadmap line -->
+    <div class="relative">
+      <div class="absolute top-0 left-0 w-full h-1 border-t-4 border-dashed border-primary/30 z-0 transition-all duration-300 mb-10" id="road-line"></div>
+
+      <!-- Step boxes -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 relative z-10 justify-between justify-items-stretch items-stretch">
+
+        <!-- Step Template -->
+        <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300" data-step="1">
+          <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">1</div>
+          <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg min-h-[260px]">
+            <img src="{{ asset('assets/images/icons/footer-location.webp') }}" alt="Step 1" class="w-8 h-8 mb-1 ">
+            <h3 class="font-semibold text-base mb-1">Start Early and Declutter:</h3>
+            <p class="text-[12px] text-gray-600">
+              Begin preparing for your move at least 2–3 weeks in advance. Sort your belongings and decide what to keep, donate, or dispose of. This reduces moving costs and makes unpacking easier.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300" data-step="2">
+          <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">2</div>
+          <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg min-h-[260px]">
+            <img src="{{ asset('assets/images/icons/moving-home.webp') }}" alt="Step 2" class="w-8 h-8 mb-1 ">
+            <h3 class="font-semibold text-base mb-1">Create a Moving Checklist:</h3>
+            <p class="text-[12px] text-gray-600">
+              List every task you need to complete before moving day, including notifying your utility providers, updating your address, and arranging parking permits for the moving truck in your Melbourne suburb.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300" data-step="3">
+          <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">3</div>
+          <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg min-h-[260px]">
+            <img src="{{ asset('assets/images/icons/packing.webp') }}" alt="Step 3" class="w-8 h-8 mb-1 ">
+            <h3 class="font-semibold text-base mb-1">Use High-Quality Packing Materials:</h3>
+            <p class="text-[12px] text-gray-600">
+              Invest in sturdy boxes, bubble wrap, and packing tape to protect your belongings. Label each box with its contents and the room it belongs to in your new home for easy unpacking.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300" data-step="4">
+          <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">4</div>
+          <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg min-h-[260px]">
+            <img src="{{ asset('assets/images/icons/How it works in 4 steps-2.webp') }}" alt="Step 4" class="w-8 h-8 mb-1 ">
+            <h3 class="font-semibold text-base mb-1">Prepare an Essentials Box:</h3>
+            <p class="text-[12px] text-gray-600">
+              Pack a separate box with items you’ll need on your first day, such as toiletries, chargers, snacks, important documents, and a change of clothes.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300" data-step="5">
+          <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">5</div>
+          <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg min-h-[260px]">
+            <img src="{{ asset('assets/images/icons/How it works in 4 steps-3.webp') }}" alt="Step 5" class="w-8 h-8 mb-1 ">
+            <h3 class="font-semibold text-base mb-1">Plan for Access and Timing:</h3>
+            <p class="text-[12px] text-gray-600">
+              Check if your building requires booking elevators or has restrictions for moving times. Avoid peak Melbourne traffic hours to save time on moving day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <section class="py-10 bg-white text-center">
-  <div class="max-w-5xl mx-auto px-4">
+  <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-3xl font-bold mb-3">Our Moving Services</h2>
     <p class="text-sm text-gray-700 mb-6">
       Our team’s goal is to deliver a standard of excellence that surpasses customer expectations
@@ -910,7 +983,36 @@
 
 
 <script type="module">
-  
+  $(document).ready(function() {
+    $('.step-box').hover(
+      function() {
+        $(this).find('.step-circle')
+          .removeClass('bg-yellow-400')
+          .addClass('bg-primary scale-110');
+
+        $(this).addClass('transform -translate-y-2');
+        $('#road-line').removeClass('border-primary/30').addClass('border-primary');
+
+        $(this).find('.box')
+          .removeClass('border')
+          .addClass('border-2')
+          .addClass('border-primary');
+      },
+      function() {
+        $(this).find('.step-circle')
+          .removeClass('bg-primary scale-110')
+          .addClass('bg-yellow-400');
+
+        $(this).removeClass('transform -translate-y-2');
+        $('#road-line').removeClass('border-primary').addClass('border-primary/30');
+
+          $(this).find('.box')
+          .removeClass('border-2')
+          .addClass('border')
+          .removeClass('border-primary');
+      }
+    );
+  });
 
   $(document).ready(function() {
     const $slider = $('.slick-moving-services');
@@ -925,13 +1027,13 @@
       responsive: [{
           breakpoint: 1280,
           settings: {
-            slidesToShow: 3
+            slidesToShow: 4
           }
         },
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 3
           }
         },
         {

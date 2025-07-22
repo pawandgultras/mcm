@@ -18,7 +18,6 @@ Route::get('/contact', function () {
 Route::group(['prefix' => 'services'], function () {
     Route::get('/local-removalists', function () {
         return view('Pages.services.local-removalists');
-
     })->name('local-removalists');
 
     Route::get('/removalists-melbourne', function () {
@@ -32,6 +31,41 @@ Route::group(['prefix' => 'services'], function () {
     Route::get('/office-removalists', function () {
         return view('Pages.services.office-removalists');
     })->name('office-removalists');
+
+    Route::get('/furniture-removalists', function () {
+        return view('Pages.services.furniture-removalists');
+    })->name('furniture-removalists');
+    
+    Route::get('/antique-removal', function () {
+        return view('Pages.services.antique-removal');
+    })->name('antique-removal');
+
+    Route::get('/commercial-removalists', function () {
+        return view('Pages.services.commercial-removalists');
+    })->name('commercial-removalists');
+
+    Route::get('/flat-removalists', function () {
+        return view('Pages.services.flat-removalists');
+    })->name('flat-removalists');
+
+    Route::get('/hotel-removalists', function () {
+        return view('Pages.services.hotel-removalist');
+    })->name('hotel-removalists');
+
+    Route::get('/packing-service', function () {
+        return view('Pages.services.packing-service');
+    })->name('packing-service');
+
+    Route::get('/piano-removals', function () {
+        return view('Pages.services.piano-removals');
+    })->name('piano-removals');
+
+    Route::get('/retirement-moving', function () {
+        return view('Pages.services.retirement-moving');
+    })->name('retirement-moving');
+
+    
+
 });
 
 

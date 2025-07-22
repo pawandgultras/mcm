@@ -1,39 +1,9 @@
 @extends('Pages.layouts.app')
 @section('metadata')
-<title> MCM - Furniture Removalists in Melbourne</title>
+<title> MCM - Commercial Removalists in Melbourne</title>
 
 <link rel="stylesheet" href="{{ asset('assets/css/services.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
-<style>
-    .hover-red-rise {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    }
-
-    .hover-red-rise::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2%;
-        background-color: #78be3c;
-        /* Tailwind red-500 with opacity */
-        transition: height 0.4s ease-in-out;
-        z-index: 0;
-        border-radius: 0 0 0.75rem 0.75rem;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-    }
-
-    .hover-red-rise:hover::before {
-        height: 100%;
-    }
-
-    .hover-red-rise:hover .content {
-        color: white;
-        position: relative;
-        z-index: 10;
-    }
-</style>
 
 
 @endsection
@@ -50,10 +20,12 @@
                 <!-- Main Heading -->
                 <div>
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                        Furniture Removalists in Melbourne
+                        Commercial Removalists in Melbourne
                     </h1>
                     <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
-                        Searching for reliable furniture removalists in Melbourne? At Melbourne Central Movers, we specialise in safe and efficient furniture relocation services tailored for homes, offices, and commercial spaces. Our expert team is trained to handle everything from heavy wardrobes to delicate antiques, ensuring each piece reaches its destination in perfect condition. With our modern equipment and proven techniques, we make your furniture move smoothly, stress-free, and affordably.
+                        Looking for trusted commercial removalists in Melbourne? At Melbourne Central Movers, we provide efficient and reliable commercial moving services designed for businesses of all sizes. Whether you’re relocating a small retail store, a large corporate office, or a warehouse, our expert team ensures minimal downtime and maximum care for your business assets. We handle everything from office furniture and IT systems to stock and heavy equipment, delivering a professional service every time. With our precise planning and dedicated staff, your business relocation is safe with us.
+
+
                     </p>
                 </div>
 
@@ -129,7 +101,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/allImages/furniture-3.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[520px] rounded-lg object-cover">
+                    <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[460px] rounded-lg">
                 </div>
             </div>
 
@@ -185,9 +157,9 @@
     <div class="md:max-w-7xl w-full mx-auto md:px-4 px-10 lg:px-8">
         <!-- Section Header -->
         <div class="mb-6 sm:mb-8 md:mb-10">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-black">Our Furniture Moving Services</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-black">Our Commercial Moving Services</h2>
             <p class="text-sm sm:text-base md:text-lg text-gray mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed">
-              We offer a comprehensive range of furniture moving solutions designed to protect your belongings and provide peace of mind. Whether it’s a single-item delivery or a full household relocation, we handle it all with care and professionalism.
+                We offer customised moving solutions for commercial spaces, ensuring your operations continue smoothly and your relocation is handled with expertise.
             </p>
         </div>
 
@@ -205,9 +177,9 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Home Furniture Removals</h3>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Office Relocations</h3>
                         <p class="clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">
-                           Moving heavy furniture within or between homes can be challenging. Our team carefully lifts, transports, and reassembles items like beds, sofas, and dining sets, ensuring no scratches or damage along the way. We use protective padding and specialised tools to make the process safe and efficient.
+                            Our team manages office moves with care, handling furniture, electronics, and confidential files securely. We work around your business hours to minimise disruption and set up your new workspace so employees can get back to work quickly and efficiently.
                         </p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
@@ -221,8 +193,8 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Office Furniture Removals</h3>
-                        <p class="clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">We understand the importance of keeping office operations running smoothly during a move. From modular workstations to large conference tables, our professionals dismantle, pack, transport, and set up your furniture quickly, helping your business get back on track without unnecessary downtime.</p>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Retail Shop Moves</h3>
+                        <p class="clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">For retail businesses, we move inventory, displays, and fixtures with precision. Whether it’s a boutique or a large outlet, we plan and execute the move efficiently so your shop can reopen without delays and lost revenue.</p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
@@ -235,8 +207,8 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Antique & Delicate Furniture Handling</h3>
-                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Delicate and valuable pieces require extra attention. Our movers use high-grade wraps, custom crating, and gentle handling techniques to ensure antiques, heirlooms, and designer furniture remain in pristine condition from start to finish.</p>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Warehouse & Industrial Moves</h3>
+                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">We specialise in relocating warehouses and industrial units, handling heavy-duty machinery, shelving systems, and stock. Using advanced equipment, we move large volumes safely and keep your supply chain on track during the transition.</p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
@@ -249,9 +221,8 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Single Item & Small Moves</h3>
-                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Need to move just one or two pieces? Our single-item furniture moving service is perfect for quick, affordable relocations within Melbourne. Ideal for students, renters, or small households, we offer the same level of care for every move, no matter the size.
-
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">IT & Equipment Relocation</h3>
+                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Sensitive IT systems are packed using anti-static materials and transported with extreme care. Our team ensures servers, computers, and electronics are relocated securely to maintain business continuity.
                         </p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
@@ -265,50 +236,13 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Furniture Disassembly & Reassembly</h3>
-                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">To ensure safe and easy transport, we offer full disassembly and reassembly services. Whether it’s a complex bed frame, dining table, or office workstation, our team carefully takes it apart, protects each piece, and rebuilds it at your new location—saving you time and effort.</p>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Packing & Unpacking Services</h3>
+                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Our professional packers handle your assets with top-quality materials, ensuring everything is ready for transit. We also offer unpacking and placement services to make your new workspace functional faster.</p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
             </div>
-            <!-- Slide 5 -->
-            <div class="px-2 sm:px-3">
-                <div class="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-64 sm:h-72 md:h-80">
-                    <img src="{{ asset('assets/images/allImages/Our Moving Services 1.webp') }}" alt="Interstate Moving" class="w-full h-full object-cover" />
 
-                    <!-- Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Protective Packaging & Equipment</h3>
-                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">We use high-quality materials like heavy-duty blankets, shrink wrap, corner protectors, and straps to safeguard your furniture during the move. Our vehicles are equipped with tail lifts, trolleys, and secure tie-downs to keep your items stable and protected in transit.</p>
-                        <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="px-2 sm:px-3">
-                <div class="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-64 sm:h-72 md:h-80">
-                    <img src="{{ asset('assets/images/allImages/Our Moving Services 1.webp') }}" alt="Interstate Moving" class="w-full h-full object-cover" />
-
-                    <!-- Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">In-Home Furniture Rearrangement</h3>
-                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Want to reorganise your space without moving homes? Our team can assist with shifting furniture within your home or office—ideal for renovations, staging, or seasonal redecoration. We move heavy items safely without damaging your floors or walls.</p>
-                        <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="px-2 sm:px-3">
-                <div class="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-64 sm:h-72 md:h-80">
-                    <img src="{{ asset('assets/images/allImages/Our Moving Services 1.webp') }}" alt="Interstate Moving" class="w-full h-full object-cover" />
-
-                    <!-- Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Same-Day & Emergency Moves</h3>
-                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Need urgent help with furniture moving? We offer fast-response services for same-day or last-minute moves. Whether it’s due to a sudden relocation, delivery issue, or time-sensitive need, our team is ready to assist on short notice with speed and reliability.
-                        </p>
-                        <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -319,10 +253,10 @@
         <!-- Section Header -->
         <div class="text-center mb-12">
             <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">
-                Why Choose Us for Furniture Removals in Melbourne?
+                Why Choose Us for Commercial Removals in Melbourne?
             </h2>
             <p class="md:text-lg text-base text-primary font-medium max-w-3xl mx-auto">
-                At Melbourne Central Movers, we take pride in being one of the most trusted and recommended moving companies in Melbourne. Here’s what sets us apart:
+                We’re not just movers — we’re handlers of history. Here’s why residents across Melbourne trust us with their most valuable pieces:
             </p>
         </div>
 
@@ -336,10 +270,9 @@
                         <img src="{{ asset('assets/images/servicesImages/Friendly & Professional.webp') }}" alt="Friendly & Professional" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Trained & Experienced Furniture Movers</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Business-Focused Expertise</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 block">
-                  Our team is specially trained to handle all types of furniture with care, from bulky sofas to fragile glass cabinets. With years of experience, we ensure safe lifting, loading, and transport every time.
-
+                    We understand how important it is to keep your operations running. Our team creates detailed moving plans and works after hours if needed to avoid business interruptions.
 
                 </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
@@ -356,10 +289,9 @@
                         <img src="{{ asset('assets/images/servicesImages/End-to-End Moving Solutions.webp') }}" alt="End-to-End Moving Solutions" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Protective Measures for Every Move</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Comprehensive Moving Solutions</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                   We use high-quality blankets, straps, and padding to secure your furniture during transit. Fragile or high-value items receive special attention with customised packing solutions.
-                </p>
+                    From dismantling furniture to setting up workstations, we manage all aspects of your move with precision. You’ll have a single point of contact for a seamless experience. </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
@@ -374,12 +306,9 @@
                         <img src="{{ asset('assets/images/servicesImages/Local Know-How.webp') }}" alt="Local Know-How" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Affordable & Transparent Pricing</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Experienced & Professional Team</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                  Clear, upfront quotes mean no surprises. We offer flexible options to suit different budgets and requirements, making professional furniture moving accessible to everyone.
-
-
-                </p>
+                    Our commercial movers are trained to handle complex office layouts and heavy equipment, ensuring your assets arrive safely and are placed exactly where needed. </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
@@ -394,10 +323,9 @@
                         <img src="{{ asset('assets/images/servicesImages/People-Focused Approach.webp') }}" alt="People-Focused Approach" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Flexible Scheduling for Your Convenience</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Affordable & Transparent Pricing</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                   To fit around your lifestyle or business hours, we provide after-hours and weekend moving services. This helps reduce stress and avoids disruption to your daily routine.
-                </p>
+                    With clear quotes and no hidden costs, our pricing is tailored to fit your project size and budget while delivering premium service. </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
@@ -412,11 +340,9 @@
                         <img src="{{ asset('assets/images/servicesImages/Flexible & Transparent.webp') }}" alt="Flexible & Transparent" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Local Melbourne Expertise</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Reliable and Timely Service</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                   Our in-depth knowledge of Melbourne’s streets and building access points allows us to plan routes efficiently and avoid delays.
-
-
+                    We stick to schedules, communicate proactively, and ensure your relocation happens on time without unexpected delays.
                 </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
@@ -432,10 +358,9 @@
                         <img src="{{ asset('assets/images/servicesImages/Customised for You.webp') }}" alt="Customised for You" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">End-to-End Support & Setup</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Local Knowledge & Interstate Capabilities</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                   From dismantling furniture at your old place to reassembling it in your new location, we manage the process entirely. Our goal is to make sure your space is ready to use right away.
-                </p>
+                    Whether moving within Melbourne or to another state, our local expertise and interstate network make transitions effortless. </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
@@ -449,281 +374,22 @@
                         <img src="{{ asset('assets/images/servicesImages/Fast. Careful. Affordable..webp') }}" alt="Customised for You" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Commitment to Customer Satisfaction</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Dedicated Support Throughout</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                 We pride ourselves on clear communication and friendly service. Our team stays in touch at every stage to ensure your move goes exactly as planned.
-                </p>
+                    From your initial consultation to post-move assistance, our support team is available to answer questions and ensure satisfaction. </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
                     </button>
                 </div>
             </div>
-           
+
+
+
 
         </div>
     </div>
 </section>
-
-
-<!-- Section 1 -->
-<section class="w-full flex flex-col lg:flex-row items-stretch mt-8">
-    <!-- Left Content -->
-    <div class="w-full lg:w-1/2 bg-primary text-white px-6 py-16 flex flex-col justify-center items-center text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">What to Think Before Hiring a House Moving Company</h2>
-        <p class="text-base md:text-lg max-w-3xl mb-6">
-            Choosing the right house removalists in Melbourne is key to a smooth move. Here’s what you should consider before making your decision: </p>
-        <ul class="list-disc list-outside text-left mb-6 max-w-[80%] mx-auto space-y-3">
-            <li><strong>Experience and Expertise:</strong> Check how long the company has been operating in Melbourne and whether they specialise in house moves similar to yours.</li>
-            <li><strong>Transparent Pricing:</strong> Ask for a clear, written quote that details the costs involved, including potential extra charges for stairs, heavy items, or longer travel distances.</li>
-            <li><strong>Insurance Options:</strong> Ensure the company offers transit insurance and enquire about comprehensive coverage options for valuable or fragile items.</li>
-            <li><strong>Customer Reviews:</strong> Read online reviews and testimonials to understand the experiences of other customers with the removalists.</li>
-            <li><strong>Range of Services:</strong> Consider whether the company offers additional services like packing, unpacking, furniture assembly, and provision of packing materials for a complete moving solution.</li>
-            <li><strong>Local Knowledge:</strong> A removalist with experience navigating Melbourne’s roads and building access requirements will be able to plan your move efficiently, avoiding delays.</li>
-            <li><strong>Communication and Customer Support:</strong> Choose a company that communicates clearly, responds promptly to your queries, and provides support throughout the moving process.</li>
-        </ul>
-
-        <!-- CTA Button -->
-        <a href="#" class="relative group inline-block mt-4">
-            <span class="relative z-10 block px-8 py-3 text-white font-semibold bg-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                GET DISCOUNTED QUOTE NOW
-            </span>
-            <span class="absolute inset-0 bg-red-600 transform scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-500 ease-in-out z-0"></span>
-        </a>
-    </div>
-
-    <!-- Right Image -->
-    <div class="w-full lg:w-1/2">
-        <img src="{{ asset('assets/images/allImages/furniture-2.webp') }}" alt="Movers Trucks" class="w-full h-full object-cover" />
-    </div>
-</section>
-
-<!-- Section 2 -->
-<section class="w-full flex flex-col lg:flex-row items-stretch">
-    <!-- Left Content -->
-    <div class="w-full lg:w-1/2 bg-primary text-white px-6 py-16 flex flex-col justify-center items-center text-center order-1 lg:order-2">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">We Care for Your Valuables!</h2>
-        <p class="text-base md:text-lg max-w-3xl mb-6">
-            Our team handles your belongings with extreme care and professionalism. Whether you're
-            moving across the street or across the city, we ensure each item arrives in perfect condition.
-        </p>
-
-        <!-- CTA Button -->
-        <a href="#" class="relative group inline-block mt-4">
-            <span class="relative z-10 block px-8 py-3 text-white font-semibold bg-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                BOOK YOUR MOVE TODAY
-            </span>
-            <span class="absolute inset-0 bg-red-600 transform scale-y-0 origin-bottom group-hover:scale-y-100 transition-transform duration-500 ease-in-out z-0"></span>
-        </a>
-    </div>
-
-    <!-- Right Image -->
-    <div class="w-full lg:w-1/2 order-1 lg:order-0">
-        <img src="{{ asset('assets/images/allImages/furniture-1.webp') }}" alt="Safe Moving" class="w-full h-full object-cover" />
-    </div>
-</section>
-
-
-
-
-<section class="bg-white py-12 px-4 md:px-10">
-    <div class="mx-auto md:px-8 max-w-6xl lg:max-w-7xl xl:max-w-8xl">
-        <h2 class="text-2xl md:text-4xl font-bold text-black mb-4 text-center">Tips for a Smooth House Move in Melbourne</h2>
-        <p class="md:text-lg text-base text-primary font-medium max-w-3xl mx-auto text-center mb-10">Planning your house move properly can save you time, money, and stress. Here’s how to ensure a seamless relocation in Melbourne:</p>
-
-        <!-- Roadmap line -->
-        <div class="relative">
-            <div class="absolute top-0 left-0 w-full h-1 border-t-4 border-dashed border-primary/30 z-0 transition-all duration-300 mb-10" id="road-line"></div>
-
-            <!-- Step boxes -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 md:gap-6 gap-4 relative z-10 justify-between justify-items-stretch items-stretch">
-
-                <!-- Step Template -->
-                <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300" data-step="1">
-                    <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">1</div>
-                    <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg md:min-h-[300px] min-h-[140px]">
-                        <img src="{{ asset('assets/images/icons/footer-location.webp') }}" alt="Step 1" class="w-8 h-8 mb-1 ">
-                        <h3 class="font-semibold md:text-[18px] text-[14px] mb-1 tracking-tight">Start Early and Declutter:</h3>
-                        <p class="md:text-[14px] text-[10px] text-gray-600">
-                            Begin preparing for your move at least 2–3 weeks in advance. Sort your belongings and decide what to keep, donate, or dispose of. This reduces moving costs and makes unpacking easier.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300" data-step="2">
-                    <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">2</div>
-                    <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg md:min-h-[300px] min-h-[140px]">
-                        <img src="{{ asset('assets/images/icons/moving-home.webp') }}" alt="Step 2" class="w-8 h-8 mb-1 ">
-                        <h3 class="font-semibold md:text-[18px] text-[14px] mb-1 tracking-tight">Create a Moving Checklist:</h3>
-                        <p class="md:text-[14px] text-[10px] text-gray-600">
-                            List every task you need to complete before moving day, including notifying your utility providers, updating your address, and arranging parking permits for the moving truck in your Melbourne suburb.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300" data-step="3">
-                    <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">3</div>
-                    <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg md:min-h-[300px] min-h-[140px]">
-                        <img src="{{ asset('assets/images/icons/packing.webp') }}" alt="Step 3" class="w-8 h-8 mb-1 ">
-                        <h3 class="font-semibold md:text-[18px] text-[14px] mb-1 tracking-tight">Use High-Quality Packing Materials:</h3>
-                        <p class="md:text-[14px] text-[10px] text-gray-600">
-                            Invest in sturdy boxes, bubble wrap, and packing tape to protect your belongings. Label each box with its contents and the room it belongs to in your new home for easy unpacking.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300" data-step="4">
-                    <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">4</div>
-                    <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg md:min-h-[300px] min-h-[140px]">
-                        <img src="{{ asset('assets/images/icons/How it works in 4 steps-2.webp') }}" alt="Step 4" class="w-8 h-8 mb-1 ">
-                        <h3 class="font-semibold md:text-[18px] text-[14px] mb-1 tracking-tight">Prepare an Essentials Box:</h3>
-                        <p class="md:text-[14px] text-[10px] text-gray-600">
-                            Pack a separate box with items you’ll need on your first day, such as toiletries, chargers, snacks, important documents, and a change of clothes.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300" data-step="5">
-                    <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">5</div>
-                    <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg md:min-h-[300px] min-h-[140px]">
-                        <img src="{{ asset('assets/images/icons/How it works in 4 steps-3.webp') }}" alt="Step 5" class="w-8 h-8 mb-1 ">
-                        <h3 class="font-semibold md:text-[18px] text-[14px] mb-1 tracking-tight">Plan for Access and Timing:</h3>
-                        <p class="md:text-[14px] text-[10px] text-gray-600">
-                            Check if your building requires booking elevators or has restrictions for moving times. Avoid peak Melbourne traffic hours to save time on moving day.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="step-box group text-left max-w-xs mx-auto cursor-pointer transition-all duration-300 md:hidden block" data-step="6">
-                    <div class="step-circle bg-yellow-400 text-white text-xl font-bold rounded-full w-10 h-10  items-center justify-center mx-auto mb-8 mt-[-20px] transition-all duration-300 md:flex hidden">6</div>
-                    <div class="box bg-white border rounded-xl shadow-md p-5 transition-all duration-300 group-hover:shadow-lg md:min-h-[300px] min-h-[140px]">
-                        <img src="{{ asset('assets/images/icons/How it works in 4 steps-3.webp') }}" alt="Step 5" class="w-8 h-8 mb-1 ">
-                        <h3 class="font-semibold md:text-[18px] text-[14px] mb-1 tracking-tight">Communicate with Your Movers:</h3>
-                        <p class="md:text-[14px] text-[10px] text-gray-600">
-                            Share your moving plan with your removalists, including any fragile or heavy items, access details, and special instructions. Good communication helps your movers prepare the right equipment and team for your relocation.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="py-10 bg-gray-50">
-    <div class="mx-auto px-4  md:px-8 md:max-w-6xl  lg:max-w-7xl xl:max-w-8xl">
-        <!-- Section Header -->
-        <div class="text-center mb-12">
-            <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">
-                What We Can Move
-            </h2>
-            <p class="md:text-lg text-base text-primary font-medium max-w-3xl mx-auto">
-                At Melbourne Central Movers, we handle a wide range of household items with care and expertise, ensuring your belongings arrive safely at your new home.
-            </p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 md:gap-6 gap-4">
-
-            <!-- Card -->
-            <div class="relative rounded-xl  md:min-h-[350px] min-h-[150px] p-6 overflow-hidden group hover-red-rise transition-all duration-300 cursor-pointer">
-                <div class="relative z-10 content text-center flex flex-col items-center">
-                    <div class="bg-red-100 rounded-full p-2 mb-3">
-                        <img src="{{ asset('assets/images/icons/Personalised Service.webp') }}" alt="Chair Icon" class="md:h-16 md:w-16 w-12 h-12">
-                    </div>
-                    <h3 class="md:text-[22px] text-[16px] font-bold mb-2 transition-colors duration-300">Furniture of All Sizes</h3>
-                    <p class="md:text-[16px] text-[12px]">
-                        Beds, sofas, wardrobes, dining tables, and office furniture, including dismantling and reassembly where needed.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Repeat the same structure for other cards -->
-            <div class="relative rounded-xl  md:min-h-[350px] min-h-[150px] p-6 overflow-hidden group hover-red-rise transition-all duration-300 cursor-pointer">
-                <div class="relative z-10 content text-center flex flex-col items-center">
-                    <div class="bg-red-100 rounded-full p-2 mb-3">
-                        <img src="{{ asset('assets/images/icons/Personalised Service.webp') }}" alt="Chair Icon" class="md:h-16 md:w-16 w-12 h-12">
-                    </div>
-                    <h3 class="md:text-[22px] text-[16px] font-bold mb-2 transition-colors duration-300">Appliances</h3>
-                    <p class="md:text-[16px] text-[12px]">
-                        Fridges, washing machines, dishwashers, and ovens, securely packed and transported using protective wraps and trolleys.
-                    </p>
-                </div>
-            </div>
-
-            <div class="relative rounded-xl  md:min-h-[350px] min-h-[150px] p-6 overflow-hidden group hover-red-rise transition-all duration-300 cursor-pointer">
-                <div class="relative z-10 content text-center flex flex-col items-center">
-                    <div class="bg-red-100 rounded-full p-2 mb-3">
-                        <img src="{{ asset('assets/images/icons/Personalised Service.webp') }}" alt="Chair Icon" class="md:h-16 md:w-16 w-12 h-12">
-                    </div>
-                    <h3 class="md:text-[22px] text-[16px] font-bold mb-2 transition-colors duration-300">Fragile and Delicate Items</h3>
-                    <p class="md:text-[16px] text-[12px]">
-                        Glassware, artwork, mirrors, and lamps, carefully packed with premium materials to prevent damage.
-                    </p>
-                </div>
-            </div>
-
-            <div class="relative rounded-xl  md:min-h-[350px] min-h-[150px] p-6 overflow-hidden group hover-red-rise transition-all duration-300 cursor-pointer">
-                <div class="relative z-10 content text-center flex flex-col items-center">
-                    <div class="bg-red-100 rounded-full p-2 mb-3">
-                        <img src="{{ asset('assets/images/icons/Personalised Service.webp') }}" alt="Chair Icon" class="md:h-16 md:w-16 w-12 h-12">
-                    </div>
-                    <h3 class="md:text-[22px] text-[16px] font-bold mb-2 transition-colors duration-300">Electronics</h3>
-                    <p class="md:text-[16px] text-[12px]">
-                        TVs, computers, and entertainment systems packed securely for safe transport.
-                    </p>
-                </div>
-            </div>
-
-            <div class="relative rounded-xl  md:min-h-[350px] min-h-[150px] p-6 overflow-hidden group hover-red-rise transition-all duration-300 cursor-pointer">
-                <div class="relative z-10 content text-center flex flex-col items-center">
-                    <div class="bg-red-100 rounded-full p-2 mb-3">
-                        <img src="{{ asset('assets/images/icons/Personalised Service.webp') }}" alt="Chair Icon" class="md:h-16 md:w-16 w-12 h-12">
-                    </div>
-                    <h3 class="md:text-[22px] text-[16px] font-bold mb-2 transition-colors duration-300">Specialty Items</h3>
-                    <p class="md:text-[16px] text-[12px]">
-                        Pianos, antiques, and large mirrors moved using specialised equipment and techniques.
-                    </p>
-                </div>
-            </div>
-            <div class="relative rounded-xl  md:min-h-[350px] min-h-[150px] p-6 overflow-hidden group hover-red-rise transition-all duration-300 cursor-pointer">
-                <div class="relative z-10 content text-center flex flex-col items-center">
-                    <div class="bg-red-100 rounded-full p-2 mb-3">
-                        <img src="{{ asset('assets/images/icons/Personalised Service.webp') }}" alt="Chair Icon" class="md:h-16 md:w-16 w-12 h-12">
-                    </div>
-                    <h3 class="md:text-[22px] text-[16px] font-bold mb-2 transition-colors duration-300">Outdoor Items</h3>
-                    <p class="md:text-[16px] text-[12px]">
-                        Barbecues, garden furniture, and potted plants moved with care.
-                    </p>
-                </div>
-            </div>
-            <div class="relative rounded-xl  md:min-h-[350px] min-h-[150px] p-6 overflow-hidden group hover-red-rise transition-all duration-300 cursor-pointer">
-                <div class="relative z-10 content text-center flex flex-col items-center">
-                    <div class="bg-red-100 rounded-full p-2 mb-3">
-                        <img src="{{ asset('assets/images/icons/Personalised Service.webp') }}" alt="Chair Icon" class="md:h-16 md:w-16 w-12 h-12">
-                    </div>
-                    <h3 class="md:text-[22px] text-[16px] font-bold mb-2 transition-colors duration-300">Garage and Shed Contents</h3>
-                    <p class="md:text-[16px] text-[12px]">
-                        Tools, bicycles, and equipment, securely packed and organised during transport.
-                    </p>
-                </div>
-            </div>
-            <div class="relative rounded-xl  md:min-h-[350px] min-h-[150px] p-6 overflow-hidden group hover-red-rise transition-all duration-300 cursor-pointer">
-                <div class="relative z-10 content text-center flex flex-col items-center">
-                    <div class="bg-red-100 rounded-full p-2 mb-3">
-                        <img src="{{ asset('assets/images/icons/Personalised Service.webp') }}" alt="Chair Icon" class="md:h-16 md:w-16 w-12 h-12">
-                    </div>
-                    <h3 class="md:text-[22px] text-[16px] font-bold mb-2 transition-colors duration-300">Clothing and Personal Belongings</h3>
-                    <p class="md:text-[16px] text-[12px]">
-                        Wardrobe boxes provided for garments, with personal items neatly packed, labelled, and transported to ensure easy unpacking and access.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
 
 <section class="py-4 sm:py-6 md:py-8 bg-gray">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -772,23 +438,19 @@
         <!-- Section Header -->
         <div class="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
             <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-3 sm:mb-4 md:mb-6">
-          How Our Furniture Moving Process Works
-            </h2>
-            <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-primary font-medium">
-                At Melbourne Central Movers (MCM), we follow a clear and structured moving process to ensure every relocation is smooth, secure, and stress-free. Here’s how we make your move simple from start to finish:
+                How Our Commercial Moving Process Works </h2>
+            <p class="md:text-lg text-base text-primary font-medium max-w-3xl mx-auto">
+                Moving antiques is different from a standard home move. Our team follows a step-by-step process designed for maximum safety:
             </p>
         </div>
 
         <!-- Process Container -->
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 items-start">
 
-            <!-- Left Side - Process Steps -->
             <div class="lg:col-span-2 space-y-0 sm:space-y-0">
-
-                <!-- Step 1: Contact us & Quotation -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="contact">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Initial Consultation & Quote</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Consultation & Free Quote</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
                                 <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Contact us & Quotation Icon" class="w-full h-full object-contain">
@@ -806,7 +468,7 @@
                 <!-- Step 2: Booking -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="booking">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Planning & Preparation</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Pre-Move Planning</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
                                 <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Booking Icon" class="w-full h-full object-contain">
@@ -824,7 +486,7 @@
                 <!-- Step 3: Before Moving Day -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="before">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Secure Packing & Loading</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Professional Packing & Preparation</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
                                 <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Before Moving Day Icon" class="w-full h-full object-contain">
@@ -842,7 +504,7 @@
                 <!-- Step 4: Moving Day -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="moving">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Careful Transportation</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Safe Loading & Transport</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
                                 <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Moving Day Icon" class="w-full h-full object-contain">
@@ -860,7 +522,7 @@
                 <!-- Step 5: After the move -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="after">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Unloading & Reassembly</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Unloading & Workspace Setup</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
                                 <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="After the move Icon" class="w-full h-full object-contain">
@@ -874,16 +536,16 @@
                         <div class="h-full bg-gray-400 rounded w-0 transition-all duration-300"></div>
                     </div>
                 </div>
-                <!-- Step 6: After the move -->
+                <!-- Step 5: After the move -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="final">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Final Inspection & Sign-Off</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Final Walkthrough & Handover</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
-                                <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="final the move Icon" class="w-full h-full object-contain">
+                                <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="After the move Icon" class="w-full h-full object-contain">
                             </div>
                             <div class="inactiveshow hidden">
-                                <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="final the move Icon" class="w-full h-full object-contain">
+                                <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="After the move Icon" class="w-full h-full object-contain">
                             </div>
                         </div>
                     </div>
@@ -891,6 +553,7 @@
                         <div class="h-full bg-gray-400 rounded w-0 transition-all duration-300"></div>
                     </div>
                 </div>
+
             </div>
 
             <!-- Right Side - Content Display -->
@@ -906,16 +569,15 @@
                 <!-- Content for Contact us & Quotation -->
                 <div class="process-content active" data-content="contact">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                       <p>
-                         We discuss your furniture moving needs, assess access points, and provide a detailed quote tailored to your situation. Every detail is considered to avoid surprises later.
-                       </p>
+                        <p>
+                            We assess your business’s relocation needs, including inventory size, access points, and timelines, then provide a clear and detailed quote. </p>
                     </ul>
                 </div>
 
                 <!-- Content for Booking -->
                 <div class="process-content hidden" data-content="booking">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                      <p> Our team develops a plan for dismantling, packing, and transportation. We confirm timings and a guide to help you prepare for moving day.</p>
+                        <p>Our specialists coordinate logistics, crew schedules, and packing requirements to design a tailored plan for a hassle-free move.</p>
                     </ul>
                 </div>
 
@@ -923,17 +585,15 @@
                 <div class="process-content hidden" data-content="before">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
                         <p>
-                      We use premium materials and advanced techniques to pack furniture safely. Items are then loaded using trolleys and straps to prevent damage.
-                        </p>
+                            We pack all items securely using premium materials, label boxes for easy identification, and prepare your workspace for dismantling and moving.
                     </ul>
                 </div>
 
                 <!-- Content for Moving Day -->
                 <div class="process-content hidden" data-content="moving">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                     <p> Our modern trucks are equipped with protective linings and suspension systems to keep furniture stable and secure during transit.
-
-</p>
+                        <p>Using forklifts, trolleys, and protective equipment, we load assets safely and transport them efficiently, ensuring nothing is damaged.
+                        </p>
                     </ul>
                 </div>
 
@@ -941,18 +601,17 @@
                 <div class="process-content hidden" data-content="after">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
                         <p>
-                     At your new location, we unload everything with precision and reassemble furniture as required. Placement is done according to your instructions for a seamless setup.
-                        </p>
+                            On arrival, we unload carefully, place furniture, connect IT systems, and set up your office or facility according to your layout plan. </p>
                     </ul>
                 </div>
                 <!-- Content for After the move -->
                 <div class="process-content hidden" data-content="final">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
                         <p>
-                          We walk you through the completed move, ensuring every piece is in place and perfect condition before concluding.
-                        </p>
+                            A final inspection with your team ensures all assets are accounted for and everything is in place for your operations to resume.</p>
                     </ul>
                 </div>
+
             </div>
         </div>
     </div>
@@ -1260,8 +919,7 @@
         <!-- Section Header -->
         <div class="text-center mb-12">
             <h2 class="text-2xl md:text-4xl font-bold text-black mb-2">
-              FAQs – Furniture Removalists in Melbourne
-            </h2>
+                FAQs – Commercial Removalists in Melbourne </h2>
             <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-primary font-medium">
                 Moving soon? Here at The MCM we understand that you might have some moving questions when preparing for your upcoming relocation. Here are some of our most frequently asked questions (FAQ's) by our customers.
             </p>
@@ -1274,7 +932,7 @@
                 <ul class="space-y-0">
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1 md:text-xl text-md font-semibold text-black pr-4">Do you move large furniture items like wardrobes and pool tables?</span>
+                            <span class="flex-1 md:text-xl text-md font-semibold text-black pr-4">Can you move large warehouses and industrial spaces?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1284,7 +942,24 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                    Yes, we specialise in moving bulky and heavy items safely. Our team has the tools and expertise to handle challenging pieces without causing damage.
+                                    Yes, we handle large-scale commercial relocations, including heavy machinery, shelving units, and bulk inventory, with specialised equipment and trained staff. </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="border-b-2 border-gray">
+                        <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
+                            <span class="flex-1  md:text-xl text-md font-semibold text-black pr-4">Do you work outside business hours?</span>
+                            <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+                            <div class="pb-5 pr-12">
+                                <p class="text-gray-600 md:text-base text-xs leading-relaxed">
+                                    Absolutely. We offer evening, overnight, and weekend services to prevent disruption to your business operations.
                                 </p>
                             </div>
                         </div>
@@ -1292,7 +967,7 @@
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-xl text-md font-semibold text-black pr-4">Are my furniture items insured during the move?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Are my business assets insured during the move?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1302,9 +977,7 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                We provide basic transit insurance for all moves and offer comprehensive insurance options for added peace of mind.
-
-
+                                    Yes, every move includes basic transit insurance, and we offer additional coverage options for high-value items or sensitive equipment.
                                 </p>
                             </div>
                         </div>
@@ -1312,7 +985,7 @@
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Do you dismantle and reassemble furniture?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Do you move IT equipment safely?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1322,16 +995,14 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                  Absolutely. Our movers can dismantle furniture for easier transport and reassemble it at your new home or office.
-
-                                </p>
+                                    We use anti-static wraps and secure packaging to transport servers, computers, and electronics without damage. </p>
                             </div>
                         </div>
                     </li>
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Can you move delicate or antique furniture?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">How far in advance should I book a commercial move?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1341,15 +1012,14 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                 Yes, we have experience moving antiques and fragile items. We use customised packing and careful handling techniques to protect them.
-                                </p>
+                                    Booking at least 2–3 weeks in advance is ideal for planning, but we can also handle urgent relocations when needed. </p>
                             </div>
                         </div>
                     </li>
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Do you offer furniture moving services after hours?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Can you manage multi-site relocations?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1359,15 +1029,14 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                 Yes, we provide flexible scheduling, including evenings and weekends, to suit your convenience.
-                                </p>
+                                    Yes, we coordinate complex moves involving multiple offices or business locations, ensuring all sites are operational quickly. </p>
                             </div>
                         </div>
                     </li>
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">How is the cost of furniture moving calculated?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Do you provide packing materials and services?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1377,29 +1046,12 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                               Pricing is based on item size, distance, complexity, and any additional services. All quotes are upfront and transparent.
-                                </p>
+                                    Yes, we supply high-quality packing materials and offer full packing and unpacking services for businesses of any size. </p>
                             </div>
                         </div>
                     </li>
-                    <li class="border-b-2 border-gray">
-                        <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Do you provide single-item furniture moving?</span>
-                            <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
-                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                </svg>
-                            </div>
-                        </button>
-                        <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
-                            <div class="pb-5 pr-12">
-                                <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                 Yes, our single-item service is ideal for moving one or two pieces quickly and affordably within Melbourne.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                   
+
+
                 </ul>
             </div>
         </div>
@@ -1422,36 +1074,7 @@
 @section('scripts')
 
 <script type="module">
- $(document).ready(function() {
-        $('.step-box').hover(
-            function() {
-                $(this).find('.step-circle')
-                    .removeClass('bg-yellow-400')
-                    .addClass('bg-primary scale-110');
 
-                $(this).addClass('transform -translate-y-2');
-                $('#road-line').removeClass('border-primary/30').addClass('border-primary');
-
-                $(this).find('.box')
-                    .removeClass('border')
-                    .addClass('border-2')
-                    .addClass('border-primary');
-            },
-            function() {
-                $(this).find('.step-circle')
-                    .removeClass('bg-primary scale-110')
-                    .addClass('bg-yellow-400');
-
-                $(this).removeClass('transform -translate-y-2');
-                $('#road-line').removeClass('border-primary').addClass('border-primary/30');
-
-                $(this).find('.box')
-                    .removeClass('border-2')
-                    .addClass('border')
-                    .removeClass('border-primary');
-            }
-        );
-    });
 </script>
 <script type="module" src="{{ asset('assets/js/services.js') }}"></script>
 

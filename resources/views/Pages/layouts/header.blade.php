@@ -4,7 +4,7 @@
 
     <!-- Logo and Mobile Toggle -->
     <div class="flex items-center justify-between w-full md:w-auto">
-      <a href="/" class="flex items-center">
+      <a href="{{ url('/') }}" class="flex items-center">
         <img src="{{ asset('assets/images/logos/header-logo.webp') }}" alt="Logo" class="h-16 md:h-20 w-auto">
       </a>
       <button class="md:hidden block text-white focus:outline-none " id="mobile-menu-toggle">
@@ -20,7 +20,7 @@
       <!-- Top Row -->
       <div class="bg-black text-white text-sm font-medium">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row md:justify-end md:items-center space-y-2 md:space-y-0 md:space-x-4 py-2">
-          <a href="/about" class="hover:text-primary">About Us</a>
+          <a href="" class="hover:text-primary">About Us</a>
           <span class="text-primary hidden md:inline">|</span>
           <a href="/contact" class="hover:text-primary">Contact Us</a>
           <span class="text-primary hidden md:inline">|</span>
@@ -42,22 +42,19 @@
           <!-- Moving Home -->
           <div class="relative group">
             <div class="flex items-center gap-1 hover:text-primary cursor-pointer">
-              <a href="/moving-home" class="py-3">Moving Home</a>
+              <a href="#" class="py-3">Moving Home</a>
               <svg class="w-4 h-4 text-white group-hover:text-primary transition" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.108l3.71-3.877a.75.75 0 111.08 1.04l-4.25 4.44a.75.75 0 01-1.08 0l-4.25-4.44a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
               </svg>
             </div>
             <div class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg pt-2 w-60 z-50">
-              <a href="/moving-home/house-removals" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">House Removals</a>
-              <a href="/moving-home/flat-removals" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Flat Removals</a>
-              <a href="/moving-home/packing-service" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Packing Service</a>
-              <a href="/moving-home/retirement-moving" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Retirement Moving</a>
-              <a href="/moving-home/antiques-removals" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Antiques Removals</a>
-              <a href="/moving-home/piano-removals" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Piano Removals</a>
-              <a href="/moving-home/video-survey" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Get a Video Survey</a>
-              <a href="/moving-home/areas-we-cover" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Areas We Cover</a>
-              <a href="/moving-home/insurance" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Insurance</a>
-              <a href="/moving-home/stamp-duty-calculator" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Stamp Duty Calculator</a>
+              <a href="{{route('house-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">House Removals</a>
+              <a href="{{route('local-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Local Removals</a>
+              <a href="{{route('furniture-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Furniture Removals</a>
+              <a href="{{route('office-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Office Removals</a>
+              <a href="{{route('flat-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Flat Removals</a>
+              <a href="{{route('commercial-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Commercial Removals</a>
+              <a href="{{route('hotel-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Hotel Removals</a>
             </div>
           </div>
 

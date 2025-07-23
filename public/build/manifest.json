@@ -19,22 +19,26 @@
     "file": "assets/slick-BlUtDIuC.woff",
     "src": "node_modules/slick-carousel/slick/fonts/slick.woff"
   },
+  "public/assets/images/icons/Call- green.webp": {
+    "file": "assets/Call- green-BmJYPDbs.webp",
+    "src": "public/assets/images/icons/Call- green.webp"
+  },
   "public/assets/images/icons/What Can We Move-icon.webp": {
     "file": "assets/What Can We Move-icon-DO-XuxmG.webp",
     "src": "public/assets/images/icons/What Can We Move-icon.webp"
   },
   "resources/css/app.css": {
-    "file": "assets/app-CHS_yfib.css",
+    "file": "assets/app-BXJDGiCf.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-C1lA9GeK.js",
+    "file": "assets/app-KwHPKZ9W.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app-jFNxzNn6.css"
+      "assets/app-Bk2fsTF4.css"
     ],
     "assets": [
       "assets/ajax-loader-BcnMEykj.gif",
@@ -42,7 +46,8 @@
       "assets/slick-BlUtDIuC.woff",
       "assets/slick-DWzRxEMf.ttf",
       "assets/slick-BlzDm7g2.svg",
-      "assets/What Can We Move-icon-DO-XuxmG.webp"
+      "assets/What Can We Move-icon-DO-XuxmG.webp",
+      "assets/Call- green-BmJYPDbs.webp"
     ]
   }
 }

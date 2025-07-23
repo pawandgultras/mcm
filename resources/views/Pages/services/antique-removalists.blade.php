@@ -22,7 +22,7 @@
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                         Antique Removal Services in Melbourne
                     </h1>
-                    <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
+                    <p class="text-base md:text-md text-gray-300 leading-relaxed">
                         Antique items carry more than just financial value — they hold history, memories, and often, emotional significance. At Melbourne Central Movers, we offer professional antique removal services in Melbourne designed to transport your treasured possessions with the highest level of care and precision.
                         Whether you're relocating a single antique cabinet, a full collection of vintage furniture, or delicate heirlooms, our trained removalists have the skills and experience to handle your items safely from pickup to placement.
                     </p>
@@ -100,7 +100,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/allImages/truck5.png') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[460px] rounded-lg">
+                    <img src="{{ asset('assets/images/allImages/mcm-banner (1).webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] rounded-lg object-cover">
                 </div>
             </div>
 

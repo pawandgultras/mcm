@@ -19,10 +19,10 @@
 
                 <!-- Main Heading -->
                 <div>
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white md:mb-4 mb-6 leading-tight">
                         Commercial Removalists in Melbourne
                     </h1>
-                    <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
+                    <p class="text-base md:text-md text-gray-300 leading-relaxed ">
                         Looking for trusted commercial removalists in Melbourne? At Melbourne Central Movers, we provide efficient and reliable commercial moving services designed for businesses of all sizes. Whether you’re relocating a small retail store, a large corporate office, or a warehouse, our expert team ensures minimal downtime and maximum care for your business assets. 
 
 
@@ -101,7 +101,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/allImages/truck5.png') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] rounded-lg">
+                    <img src="{{ asset('assets/images/allImages/mcm-banner (2).webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] rounded-lg object-cover">
                 </div>
             </div>
 

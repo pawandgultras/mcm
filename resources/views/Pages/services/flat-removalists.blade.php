@@ -21,7 +21,7 @@
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                         Flat Removalists in Melbourne
                     </h1>
-                    <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
+                    <p class="text-base md:text-md text-gray-300 leading-relaxed">
                         Moving out of your flat can feel stressful, but it doesn’t have to be. At Melbourne Central Movers, we make your flat move smooth, simple, and quick. Whether you are moving from a small studio or a large apartment, our friendly team is ready to help you every step of the way.
                         We understand the challenges of moving in Melbourne, from tight staircases to busy streets and parking issues. 
                     </p>
@@ -99,7 +99,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/allImages/truck4.png') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[440px] rounded-lg object-cover">
+                    <img src="{{ asset('assets/images/allImages/mcm-banner (3).webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] rounded-lg object-cover">
                 </div>
             </div>
 

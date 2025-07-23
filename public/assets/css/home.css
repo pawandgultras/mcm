@@ -1,57 +1,94 @@
-@media screen and (max-width: 768px) {
-    .lapmenu {
-        display: flex; /* Show the buttons on small screens */
-    }
-    .top-lapmenu {
-      display: none; /* Hide the buttons on small screens */
-    }
-    
-}
-
 @media (min-width: 769px) and (max-width: 1180px) {
     .lapmenu {
-        display: none; /* Show the buttons on larger screens */
+        display: none;
+        /* Show the buttons on larger screens */
     }
 
-    .top-lapmenu{
-        display: flex; /* Show the buttons on larger screens */
+    .top-lapmenu {
+        display: flex;
+        /* Show the buttons on larger screens */
     }
-    
-  
+
+
 }
 
 @media (min-width: 1181px) {
     .lapmenu {
-        display: flex; /* Show the buttons on larger screens */
+        display: flex;
+        /* Show the buttons on larger screens */
     }
 
-    .top-lapmenu{
-        display: none; /* Hide the buttons on larger screens */
+    .top-lapmenu {
+        display: none;
+        /* Hide the buttons on larger screens */
     }
 }
 
 
-.home-banner_heading_main_div{
+.home-banner_heading_main_div {
     @apply relative z-10 text-center mt-[-100px] md:mt-0 px-4 max-w-4xl;
 }
 
-.home-banner_heading{
+.home-banner_heading {
     @apply text-2xl md:text-5xl font-bold mb-6;
 }
 
-.home-banner_subheading{
+.home-banner_subheading {
     @apply text-sm md:text-2xl leading-relaxed max-w-xl mx-auto;
 }
 
-.whatCanWeMove p::before{
+.whatCanWeMove p::before {
     @apply !font-semibold;
     content: '';
     background: url('../../assets/images/icons/What Can We Move-icon.webp');
-    width: 24px; 
-    height: 24px; 
+    width: 24px;
+    height: 24px;
     background-size: cover;
     display: inline-block;
-    margin-right: 3px; 
+    margin-right: 3px;
     vertical-align: middle;
     color: black;
+}
+
+.form-description-list {
+    list-style-type: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+.form-description-list::before {
+    content: "";
+    background: url('../../assets/images/icons/What Can We Move-icon.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    color: #4caf50;
+}
+
+.address-form-contact::before {
+    content: "";
+    background: url('../../assets/images/icons/Call- green.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+}
+
+#not-sure:checked {
+    color: #4caf50;
+    font-weight: bold;
+    border-color: #4caf50;
+    outline: none;
+
 }

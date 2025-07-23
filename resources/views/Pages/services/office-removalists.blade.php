@@ -20,7 +20,7 @@
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                         Office Removalists in Melbourne
                     </h1>
-                    <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
+                    <p class="text-base md:text-md text-gray-300 leading-relaxed">
                         Searching for professional office removalists in Melbourne? At Melbourne Central Movers, we provide smooth, secure, and efficient office relocation services to help your business transition with minimal disruption. Whether it’s a small workspace or a large corporate office, our trained team handles your move with care, precision, and speed. We specialise in moving IT equipment, furniture, and sensitive documents safely across Melbourne and surrounding areas.
                     </p>
                 </div>
@@ -97,7 +97,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[460px] rounded-lg">
+                    <img src="{{ asset('assets/images/allImages/mcm-banner (8).webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] object-cover rounded-lg">
                 </div>
             </div>
 

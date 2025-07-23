@@ -25,6 +25,7 @@
   @include('Pages.layouts.header')
   @yield('homepage')
   @yield('content')
+  @yield('form')
   @include('Pages.layouts.footer')
 
 

@@ -23,26 +23,25 @@
 
   <!-- Quote Form Box -->
   <div class="absolute md:bottom-[-48px] bottom-[-35%] left-1/2 transform -translate-x-1/2 z-20 w-full max-w-4xl px-4">
-    <div class="bg-primary rounded-2xl lg:rounded-full flex flex-col lg:flex-row items-center md:items-end justify-center py-6 px-6 sm:px-8 lg:px-10 space-y-4 lg:space-y-0 lg:space-x-4">
+    <form action="{{ route('enquiry') }}" method="GET" class="bg-primary rounded-2xl lg:rounded-full flex flex-col lg:flex-row items-center md:items-end justify-center py-6 px-6 sm:px-8 lg:px-10 space-y-4 lg:space-y-0 lg:space-x-4">
 
       <!-- Moving From -->
       <div class="flex flex-col w-full lg:w-auto">
         <div class="text-sm font-medium text-black mb-2 text-center lg:text-left lg:mb-1">Moving from</div>
-        <input type="text" placeholder="Enter Location" class="w-full lg:w-60 py-3 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20">
+        <input type="text" name="moving_from" placeholder="Enter Location" class="w-full lg:w-60 py-3 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20">
       </div>
 
       <!-- Moving To -->
       <div class="flex flex-col w-full lg:w-auto">
         <div class="text-sm font-medium text-black mb-2 text-center lg:text-left lg:mb-1">Moving to</div>
-        <input type="text" placeholder="Enter Location" class="w-full lg:w-60 py-3 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20">
+        <input type="text" name="moving_to" placeholder="Enter Location" class="w-full lg:w-60 py-3 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20">
       </div>
 
       <!-- Get Quote Button -->
       <div class="w-full lg:w-auto pt-2 lg:pt-0">
-        <a href="#" class="bg-black text-white text-base font-medium px-8 py-3 rounded-lg hover:bg-white hover:text-black border border-transparent hover:border-primary transition whitespace-nowrap w-full lg:w-auto block text-center shadow-lg">Get a Free Quote</a>
+        <button type="submit" class="bg-black text-white text-base font-medium px-8 py-3 rounded-lg hover:bg-white hover:text-black border border-transparent hover:border-primary transition whitespace-nowrap w-full lg:w-auto block text-center shadow-lg">Get a Free Quote</button>
       </div>
-
-    </div>
+    </form>
   </div>
 </section>
 
@@ -1006,7 +1005,7 @@
         $(this).removeClass('transform -translate-y-2');
         $('#road-line').removeClass('border-primary').addClass('border-primary/30');
 
-          $(this).find('.box')
+        $(this).find('.box')
           .removeClass('border-2')
           .addClass('border')
           .removeClass('border-primary');

@@ -52,7 +52,7 @@
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                         House Removalists in Melbourne
                     </h1>
-                    <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
+                    <p class="text-base md:text-md text-gray-300 leading-relaxed">
                         Looking for reliable house removalists in Melbourne? At Melbourne Central Movers, we make moving easy with professional, safe, and affordable house relocation services. Whether you’re shifting from a compact apartment or a spacious family home, our experienced team ensures a smooth and worry-free move across Melbourne and surrounding suburbs. With local expertise and modern equipment, we handle every step of your move with precision.
                     </p>
                 </div>
@@ -129,7 +129,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative w-full h-[500px]">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/allImages/truck1.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[440px] rounded-lg object-cover">
+                    <img src="{{ asset('assets/images/allImages/mcm-banner (6).webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] rounded-lg object-cover">
                 </div>
             </div>
 

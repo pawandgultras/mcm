@@ -20,9 +20,9 @@
       <!-- Top Row -->
       <div class="bg-black text-white text-sm font-medium">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row md:justify-end md:items-center space-y-2 md:space-y-0 md:space-x-4 py-2">
-          <a href="" class="hover:text-primary">About Us</a>
+          <a href="{{ route('about') }}" class="hover:text-primary">About Us</a>
           <span class="text-primary hidden md:inline">|</span>
-          <a href="/contact" class="hover:text-primary">Contact Us</a>
+          <a href="{{ route('contact') }}" class="hover:text-primary">Contact Us</a>
           <span class="text-primary hidden md:inline">|</span>
           <div class="flex items-center text-primary font-bold space-x-1">
             <img src="{{ asset('assets/images/icons/Call- green.webp') }}" alt="Phone Icon" class="h-6 w-6 md:h-10 md:w-10">
@@ -47,26 +47,31 @@
                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.108l3.71-3.877a.75.75 0 111.08 1.04l-4.25 4.44a.75.75 0 01-1.08 0l-4.25-4.44a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
               </svg>
             </div>
-            <div class="absolute hidden group-hover:block bg-white text-black rounded shadow-lg pt-2 w-60 z-50">
-              <a href="{{route('house-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">House Removals</a>
-              <a href="{{route('local-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Local Removals</a>
-              <a href="{{route('furniture-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Furniture Removals</a>
-              <a href="{{route('office-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Office Removals</a>
-              <a href="{{route('removalists-melbourne')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Removalists Melbourne</a>
-              <a href="{{route('flat-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Flat Removals</a>
-              <a href="{{route('commercial-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Commercial Removals</a>
-              <a href="{{route('hotel-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Hotel Removals</a>
-              <a href="{{route('antique-removalists')}}" class="block px-4 py-2 hover:bg-primary/10 hover:text-primary">Antique Removals</a>
+            <div class="absolute hidden group-hover:flex bg-white text-black rounded shadow-lg pt-2 min-w-[400px] max-h-[300px] flex-wrap flex-col z-50">
+              <a href="{{route('house-removalists')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">House Removals</a>
+              <a href="{{route('local-removalists')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Local Removals</a>
+              <a href="{{route('furniture-removalists')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Furniture Removals</a>
+              <a href="{{route('office-removalists')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Office Removals</a>
+              <a href="{{route('removalists-melbourne')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Removalists Melbourne</a>
+              <a href="{{route('school-removalists')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">School Removals</a>
+              <a href="{{route('piano-removalists')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Piano Removals</a>
+              <a href="{{route('retirement-moving')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Retirement Moving</a>
+              <a href="{{route('packing-services')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Packing Services</a>
+               <a href="{{route('flat-removalists')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Flat Removals</a>
+              <a href="{{route('commercial-removalists')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Commercial Removals</a>
+              <a href="{{route('hotel-removalists')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Hotel Removals</a>
+              <a href="{{route('antique-removalists')}}" class="px-4 py-2 hover:bg-primary/10 hover:text-primary">Antique Removals</a>
             </div>
+
           </div>
 
           <!-- Moving Office -->
           <div class="relative group">
             <div class="flex items-center gap-1 hover:text-primary cursor-pointer">
               <a href="/moving-office" class="py-3">Moving Office</a>
-             
+
             </div>
-           
+
           </div>
 
           <!-- Moving an Organisation -->
@@ -92,9 +97,9 @@
           <div class="relative group">
             <div class="flex items-center gap-1 hover:text-primary cursor-pointer">
               <a href="/moving-overseas" class="py-3">Moving Overseas</a>
-             
+
             </div>
-          
+
           </div>
 
           <!-- Storage -->

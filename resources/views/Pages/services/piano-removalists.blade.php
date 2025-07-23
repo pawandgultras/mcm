@@ -1,10 +1,9 @@
 @extends('Pages.layouts.app')
 @section('metadata')
-<title> MCM -Local Removalists in Melbourne</title>
+<title> MCM - Packing Services in Melbourne</title>
 
 <link rel="stylesheet" href="{{ asset('assets/css/services.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
-
 
 @endsection
 
@@ -12,18 +11,18 @@
 
 <section class="bg-gray text-white py-8 md:py-16 hidden md:block">
     <div class="md:max-w-[1380px]  mx-auto px-4 sm:px-6 ">
-        <div class="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 md:gap-12 lg:gap-16 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
 
             <!-- Left Content -->
             <div class="space-y-6 sm:space-y-8 order-2 lg:order-1">
-                
+
                 <!-- Main Heading -->
                 <div>
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                        Local Removalists
+                        Piano Removalists in Melbourne
                     </h1>
                     <p class="text-base md:text-md text-gray-300 leading-relaxed">
-                        Our friendly team of local removalists handle the heavy lifting so that you can enjoy making your new house a home.
+                        Looking for professional piano removalists in Melbourne? At Melbourne Central Movers, we specialise in moving upright and grand pianos with precision and care. Our team understands the unique challenges of transporting these delicate and heavy instruments. With advanced equipment and years of experience, we guarantee your piano is relocated without a single scratch, dent, or misalignment.
                     </p>
                 </div>
 
@@ -99,7 +98,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/allImages/mcm-banner (7).webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] rounded-lg object-cover">
+                    <img src="{{ asset('assets/images/allImages/mcm-banner (2).webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[440px] rounded-lg object-cover">
                 </div>
             </div>
 
@@ -108,45 +107,45 @@
 </section>
 
 <section class="block md:hidden bg-white text-black ">
-  <!-- Background Image Section -->
-  <div class="relative w-full">
-    <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}"
-         alt="Moving Team"
-         class="w-full h-64 object-cover " />
-    <div class="absolute inset-0 bg-black/40 rounded-lg"></div>
+    <!-- Background Image Section -->
+    <div class="relative w-full">
+        <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}"
+            alt="Moving Team"
+            class="w-full h-64 object-cover " />
+        <div class="absolute inset-0 bg-black/40 rounded-lg"></div>
 
-    <!-- Text Overlay -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
-      <h2 class="text-3xl font-bold mb-2">Stress-Free Moves Start Here</h2>
-      <p class="text-md">Trusted Removalists for Home, Office & Storage</p>
-      <p class="text-md mt-1">Over 13 years of experience with 4.8★ ratings</p>
+        <!-- Text Overlay -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
+            <h2 class="text-3xl font-bold mb-2">Stress-Free Moves Start Here</h2>
+            <p class="text-md">Trusted Removalists for Home, Office & Storage</p>
+            <p class="text-md mt-1">Over 13 years of experience with 4.8★ ratings</p>
+        </div>
     </div>
-  </div>
 
-  <!-- Quote Form -->
-  <div class="bg-primary p-6 mx-4 rounded-xl shadow-lg -mt-10 z-10 relative">
-    <input type="text" placeholder="From suburb"
-           class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
-    <input type="text" placeholder="To suburb"
-           class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
-    <button class="w-full bg-black hover:bg-white text-white hover:text-black py-2 font-semibold rounded-md transition">
-      Get a Quote
-    </button>
-  </div>
-
-  <!-- Ratings Section -->
-  <div class="flex flex-col items-center mt-6">
-    <div class="flex gap-1 text-yellow-400 text-xl">
-      <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+    <!-- Quote Form -->
+    <div class="bg-primary p-6 mx-4 rounded-xl shadow-lg -mt-10 z-10 relative">
+        <input type="text" placeholder="From suburb"
+            class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+        <input type="text" placeholder="To suburb"
+            class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+        <button class="w-full bg-black hover:bg-white text-white hover:text-black py-2 font-semibold rounded-md transition">
+            Get a Quote
+        </button>
     </div>
-    <p class="text-sm mt-1 text-gray-700">4.8 from 3755+ reviews</p>
 
-    <!-- Social icons (if needed) -->
-    <div class="flex gap-4 mt-2">
-      <img src="{{ asset('assets/images/allImages/Google.webp') }}" class="h-12" alt="Google" />
-      <img src="{{ asset('assets/images/allImages/Trustpilot.webp') }}" class="h-12" alt="Trustpilot" />
+    <!-- Ratings Section -->
+    <div class="flex flex-col items-center mt-6">
+        <div class="flex gap-1 text-yellow-400 text-xl">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="text-sm mt-1 text-gray-700">4.8 from 3755+ reviews</p>
+
+        <!-- Social icons (if needed) -->
+        <div class="flex gap-4 mt-2">
+            <img src="{{ asset('assets/images/allImages/Google.webp') }}" class="h-12" alt="Google" />
+            <img src="{{ asset('assets/images/allImages/Trustpilot.webp') }}" class="h-12" alt="Trustpilot" />
+        </div>
     </div>
-  </div>
 </section>
 
 
@@ -155,11 +154,9 @@
     <div class="md:max-w-7xl w-full mx-auto md:px-4 px-10 lg:px-8">
         <!-- Section Header -->
         <div class="mb-6 sm:mb-8 md:mb-10">
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-black">Our Moving Services</h2>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-black">Our Piano Moving Services</h2>
             <p class="text-sm sm:text-base md:text-lg text-gray mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed">
-                Our team's goal is to deliver a standard of excellence that surpasses customer expectations and delivers on service, quality
-                and value. You can place your trust in our professional team to remove the stress and make your move easy.
-            </p>
+                We provide comprehensive piano moving solutions for homes, concert venues, schools, and studios. Every step, from preparation to placement, is handled with precision and unmatched professionalism to safeguard your prized instrument.</p>
         </div>
 
         <!-- Progress Bar -->
@@ -176,8 +173,9 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">House Moving</h3>
-                        <p class="text-white text-base md:text-base mb-2 sm:mb-3 leading-relaxed">Safe and efficient moving for homes of all sizes.</p>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Upright Piano Removals</h3>
+                        <p class="clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">
+                            Moving upright pianos requires skill, strength, and careful planning. Our experts use protective padding, heavy-duty straps, and customised dollies to prevent any movement-related damage. We navigate stairs, narrow hallways, and tight spaces without compromising the piano’s structure or finish. </p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
@@ -190,8 +188,8 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Packing Services</h3>
-                        <p class="text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Full or partial packing with quality materials and care.</p>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Grand Piano Removals</h3>
+                        <p class="clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Grand pianos demand expert handling due to their size and fragility. Our team disassembles components like legs and pedals, wraps each part securely, and transports them with care. At your new location, we reassemble and position your piano perfectly, ready for your next performance.</p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
@@ -204,8 +202,8 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Storage Solutions</h3>
-                        <p class="text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Secure storage facilities for your belongings.</p>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Concert & Studio Piano Relocations</h3>
+                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Timing is critical when relocating pianos in professional spaces. We work around rehearsal schedules, events, and studio operations to move your piano efficiently, ensuring zero disruption to your workflow or performances.</p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
@@ -218,8 +216,9 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Business Moving</h3>
-                        <p class="text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Professional commercial relocation services.</p>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Long-Distance Piano Moving</h3>
+                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Interstate piano moves require special precautions. We use climate-controlled trucks to shield your piano from temperature fluctuations and humidity, keeping it in optimal condition throughout the journey.
+                        </p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
@@ -232,12 +231,41 @@
 
                     <!-- Overlay -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
-                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Interstate Moving</h3>
-                        <p class="text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Long-distance moving across state borders.</p>
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Piano Hoisting & Balcony Access
+                        </h3>
+                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">For apartments or upper-level homes, we offer specialised hoisting services. Using cranes or balcony lifts, our team can safely move your piano in or out of spaces where stairs or elevators aren’t an option.</p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
                 </div>
             </div>
+            <!-- Slide 5 -->
+            <div class="px-2 sm:px-3">
+                <div class="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-64 sm:h-72 md:h-80">
+                    <img src="{{ asset('assets/images/allImages/Our Moving Services 1.webp') }}" alt="Interstate Moving" class="w-full h-full object-cover" />
+
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Piano Storage Solutions</h3>
+                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">Need temporary storage during renovations or in between moves? We offer climate-controlled, secure piano storage facilities designed to protect your instrument from dust, humidity, and temperature changes.</p>
+                        <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="px-2 sm:px-3">
+                <div class="relative rounded-lg sm:rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 h-64 sm:h-72 md:h-80">
+                    <img src="{{ asset('assets/images/allImages/Our Moving Services 1.webp') }}" alt="Interstate Moving" class="w-full h-full object-cover" />
+
+                    <!-- Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
+                        <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">Insurance & Condition Reporting</h3>
+                        <p class=" clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">For peace of mind, we provide detailed condition reports before and after the move. Comprehensive insurance coverage ensures your piano is fully protected against unforeseen events during transit or storage.</p>
+                        <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </section>
@@ -248,11 +276,9 @@
         <!-- Section Header -->
         <div class="text-center mb-12">
             <h2 class="text-2xl md:text-4xl font-bold text-black mb-4">
-                What Makes Us the Best Removalists in Melbourne?
-            </h2>
+                Why Choose Us for Piano Removals in Melbourne?</h2>
             <p class="md:text-lg text-base text-primary font-medium max-w-3xl mx-auto">
-                At MCM, we don't just move furniture — we move lives. Here's why our clients trust us time and again.
-            </p>
+                Choosing the right removalist can make all the difference when moving out of your flat. At Melbourne Central Movers, we focus on providing a stress-free, efficient, and affordable moving experience tailored to your needs. </p>
         </div>
 
         <!-- Benefits Grid - 3 columns, 2 rows -->
@@ -265,10 +291,9 @@
                         <img src="{{ asset('assets/images/servicesImages/Friendly & Professional.webp') }}" alt="Friendly & Professional" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Friendly & Professional</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Specialised Piano Moving Expertise</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 block">
-                    Moving can be overwhelming, but not with MCM. We make it feel easy with our friendly team, smart planning, and professional handling. Whether you're moving across the street or across town, we treat every job with care — big or small.
-                </p>
+                    Our team understands the intricate mechanics and weight distribution of pianos, allowing us to plan and execute every move with utmost precision. Your instrument’s safety is our highest priority.</p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs  text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See less
@@ -283,10 +308,9 @@
                         <img src="{{ asset('assets/images/servicesImages/End-to-End Moving Solutions.webp') }}" alt="End-to-End Moving Solutions" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">End-to-End Moving Solutions</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Advanced Equipment for Safe Handling</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                    From packing to unpacking, we handle every aspect of your move with precision and care. Our comprehensive service ensures nothing is left to chance.
-                </p>
+                    From piano trolleys and skid boards to protective covers and climate-controlled transport, we use the right tools for safe handling even in complex locations.</p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
@@ -301,10 +325,9 @@
                         <img src="{{ asset('assets/images/servicesImages/Local Know-How.webp') }}" alt="Local Know-How" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Local Know-How</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Comprehensive Insurance for Peace of Mind</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                    Melbourne experts who know the city inside and out for efficient, stress-free moves. We understand local regulations and the best routes.
-                </p>
+                    Each move includes transit insurance, and we offer extended coverage options for high-value or antique pianos to give you complete confidence. </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
@@ -319,10 +342,9 @@
                         <img src="{{ asset('assets/images/servicesImages/People-Focused Approach.webp') }}" alt="People-Focused Approach" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">People-Focused Approach</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Flexible Scheduling Tailored to You</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                    We put people first, treating your belongings and your home with the utmost respect and care. Your satisfaction is our priority.
-                </p>
+                    We provide after-hours and weekend services, ensuring your piano move fits seamlessly around your personal or professional commitments. </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
@@ -337,10 +359,9 @@
                         <img src="{{ asset('assets/images/servicesImages/Flexible & Transparent.webp') }}" alt="Flexible & Transparent" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Flexible & Transparent</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Attention to Detail at Every Step</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                    No hidden fees, flexible scheduling, and transparent pricing you can trust. We believe in honest, upfront communication.
-                </p>
+                    From wrapping delicate surfaces to reassembling intricate components, we approach every task with meticulous care, treating your piano as a work of art. </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
@@ -355,10 +376,9 @@
                         <img src="{{ asset('assets/images/servicesImages/Customised for You.webp') }}" alt="Customised for You" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Customised for You</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Expertise in Local & Interstate Moves</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                    Tailored moving solutions designed to meet your specific needs and requirements. Every move is unique, and so is our approach.
-                </p>
+                    Whether across Melbourne suburbs or interstate, our experienced drivers and movers guarantee a seamless journey for your piano.</p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
@@ -372,33 +392,20 @@
                         <img src="{{ asset('assets/images/servicesImages/Fast. Careful. Affordable..webp') }}" alt="Customised for You" class="w-full h-full object-cover rounded-full">
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Fast. Careful. Affordable.</h3>
+                <h3 class="text-xl font-bold text-black mb-3 text-center">Friendly, Professional Team Committed to Service</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                    Tailored moving solutions designed to meet your specific needs and requirements. Every move is unique, and so is our approach.
-                </p>
+                    Our movers keep you informed throughout the process, ensuring clear communication and peace of mind from start to finish. </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
                         See more
                     </button>
                 </div>
             </div>
-            <!-- Customised for You -->
-            <div class="benefit-card bg-white border-2 border-primary rounded-lg p-3 text-center hover:shadow-lg transition-shadow md:col-span-1 md:row-span-1 relative" data-card="customised">
-                <div class="flex justify-center mb-2">
-                    <div class="w-12 h-12 rounded-full flex items-center justify-center">
-                        <img src="{{ asset('assets/images/servicesImages/Your Move, Our Mission.webp') }}" alt="Your Move, Our Mission" class="w-full h-full object-cover rounded-full">
-                    </div>
-                </div>
-                <h3 class="text-xl font-bold text-black mb-3 text-center">Your Move, Our Mission</h3>
-                <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                    Tailored moving solutions designed to meet your specific needs and requirements. Every move is unique, and so is our approach.
-                </p>
-                <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
-                    <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
-                        See more
-                    </button>
-                </div>
-            </div>
+
+
+
+
+
 
         </div>
     </div>
@@ -451,23 +458,18 @@
         <!-- Section Header -->
         <div class="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
             <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-3 sm:mb-4 md:mb-6">
-                Moving Process
-            </h2>
-            <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-primary font-medium">
-                Effortless Move, Simplify Process
-            </p>
+                How Our Piano Moving Process Works</h2>
+            <p class="md:text-lg text-base text-primary font-medium max-w-3xl mx-auto">
+                At Melbourne Central Movers, we follow a simple and organised process to ensure your flat removal in Melbourne is smooth and stress-free. Here’s how we work: </p>
         </div>
 
         <!-- Process Container -->
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10 items-start">
-            
-            <!-- Left Side - Process Steps -->
+
             <div class="lg:col-span-2 space-y-0 sm:space-y-0">
-                
-                <!-- Step 1: Contact us & Quotation -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="contact">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Contact us & Quotation</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Consultation & Free Quote</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
                                 <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Contact us & Quotation Icon" class="w-full h-full object-contain">
@@ -485,7 +487,7 @@
                 <!-- Step 2: Booking -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="booking">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Booking</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Pre-Move Preparation</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
                                 <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Booking Icon" class="w-full h-full object-contain">
@@ -503,7 +505,7 @@
                 <!-- Step 3: Before Moving Day -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="before">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Before Moving Day</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Secure Wrapping & Disassembly</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
                                 <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Before Moving Day Icon" class="w-full h-full object-contain">
@@ -521,7 +523,7 @@
                 <!-- Step 4: Moving Day -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="moving">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Moving Day</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Safe Loading & Transportation</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
                                 <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="Moving Day Icon" class="w-full h-full object-contain">
@@ -539,7 +541,7 @@
                 <!-- Step 5: After the move -->
                 <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="after">
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">After the move</h3>
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Unloading & Expert Reassembly</h3>
                         <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                             <div class="activeshow">
                                 <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="After the move Icon" class="w-full h-full object-contain">
@@ -553,6 +555,25 @@
                         <div class="h-full bg-gray-400 rounded w-0 transition-all duration-300"></div>
                     </div>
                 </div>
+                <!-- Step 5: After the move -->
+                <div class="process-item bg-white rounded-lg py-1 sm:py-2 md:px-4 sm:px-4 cursor-pointer transition-all duration-300 hover:shadow-md" data-step="final">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-base sm:text-lg md:text-xl font-semibold text-black pr-4">Final Inspection & Tuning Advice</h3>
+                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
+                            <div class="activeshow">
+                                <img src="{{ asset('assets/images/servicesImages/Contact us & Quotation.webp') }}" alt="After the move Icon" class="w-full h-full object-contain">
+                            </div>
+                            <div class="inactiveshow hidden">
+                                <img src="{{ asset('assets/images/servicesImages/Booking.webp') }}" alt="After the move Icon" class="w-full h-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-2 sm:mt-3 h-1 bg-gray-200 rounded">
+                        <div class="h-full bg-gray-400 rounded w-0 transition-all duration-300"></div>
+                    </div>
+                </div>
+
+
             </div>
 
             <!-- Right Side - Content Display -->
@@ -568,122 +589,49 @@
                 <!-- Content for Contact us & Quotation -->
                 <div class="process-content active" data-content="contact">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                Contact us for price by <span class="text-primary font-semibold">filling out the form</span> or call us <span class="text-primary font-semibold">1300 163 694</span> or via <span class="text-primary font-semibold">facebook</span>.
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                Our sales representative will contact you within 30 minutes to take your requirements and ask questions about your move.
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                Once we gather enough information, our sales staff will then make the best suggestion regarding the following: truck size, pricing and general suggestions. Our staff will give you enough information to make an informed decision and to make you feel comfortable booking in a move with us on the spot.
-                            </span>
-                        </li>
+                        <p>
+                            We gather details about your piano, access points, and moving requirements to provide a comprehensive and transparent quote tailored to your situation. </p>
                     </ul>
                 </div>
 
                 <!-- Content for Booking -->
                 <div class="process-content hidden" data-content="booking">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                Once you decide to book with us, we'll secure your preferred moving date and time slot.
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                We'll send you a confirmation email with all the details including crew information and contact numbers.
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                A deposit may be required to secure your booking, with the balance due on completion of the move.
-                            </span>
-                        </li>
+                        <p>Our team develops a custom plan, prepares protective gear for floors and walls, and organises specialised equipment to execute your move without a hitch.</p>
                     </ul>
                 </div>
 
                 <!-- Content for Before Moving Day -->
                 <div class="process-content hidden" data-content="before">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                We'll call you 24-48 hours before your move to confirm all details and answer any questions.
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                Pack and prepare your belongings, or let us handle the packing for you with our professional packing service.
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                Ensure parking permits are arranged if required, and clear pathways for easy access.
-                            </span>
-                        </li>
+                        <p>
+                            Your piano is carefully wrapped in thick padded covers, and sensitive parts like legs and pedals are disassembled to prevent damage during handling.</p>
                     </ul>
                 </div>
 
                 <!-- Content for Moving Day -->
                 <div class="process-content hidden" data-content="moving">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                Our professional team arrives on time, ready to handle your move with care and efficiency.
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                We'll wrap and protect your furniture, load everything safely, and transport to your new location.
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                Upon arrival, we'll unload and place items in their designated rooms as per your instructions.
-                            </span>
-                        </li>
+                        <p>Using skid boards and heavy-duty straps, we load your piano securely into our trucks. During transit, climate-controlled interiors and secure fastening keep your instrument stable and protected.
+                        </p>
                     </ul>
                 </div>
 
                 <!-- Content for After the move -->
                 <div class="process-content hidden" data-content="after">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                We'll do a final walkthrough with you to ensure everything is in its right place.
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                Payment is collected upon completion, and we'll provide you with a receipt for your records.
-                            </span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span class="text-sm sm:text-base md:text-lg leading-relaxed">
-                                We'll follow up within a few days to ensure you're completely satisfied with our service.
-                            </span>
-                        </li>
+                        <p>
+                            At your destination, we carefully unload, reassemble, and place your piano exactly where you want it, ready for use.</p>
                     </ul>
                 </div>
+                <!-- Content for After the move -->
+                <div class="process-content hidden" data-content="final">
+                    <ul class="space-y-3 sm:space-y-4 text-gray-700">
+                        <p>
+                            We ensure your piano is level and stable after setup and recommend waiting a few weeks before tuning to allow it to adjust to its new environment.</p>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
@@ -739,14 +687,14 @@
         <div class="flex flex-row items-center justify-center gap-2">
             <span class="text-2xl md:text-4xl font-bold text-black">4.2</span>
             <span class="text-sm">Out of <br> 5 Star</span>
-           <div class="flex md:flex-row flex-col items-center md:gap-2">
-             <div class="flex gap-1 text-yellow-400 md:text-3xl text-xl">
-                <span>★</span><span>★</span><span>★</span><span>★</span><span class="text-gray-300">★</span>
-            </div> 
-            <div class="flex items-start flex-col gap-0">
-                <img src="{{ asset('assets/images/allImages/Google.webp') }}" alt="Google" class="md:h-20 h-10 w-auto ml-2" />
+            <div class="flex md:flex-row flex-col items-center md:gap-2">
+                <div class="flex gap-1 text-yellow-400 md:text-3xl text-xl">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span class="text-gray-300">★</span>
+                </div>
+                <div class="flex items-start flex-col gap-0">
+                    <img src="{{ asset('assets/images/allImages/Google.webp') }}" alt="Google" class="md:h-20 h-10 w-auto ml-2" />
+                </div>
             </div>
-           </div>
         </div>
     </div>
 </section>
@@ -991,8 +939,7 @@
         <!-- Section Header -->
         <div class="text-center mb-12">
             <h2 class="text-2xl md:text-4xl font-bold text-black mb-2">
-                Frequently Asked Questions.
-            </h2>
+                FAQs – Piano Removalists in Melbourne</h2>
             <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-primary font-medium">
                 Moving soon? Here at The MCM we understand that you might have some moving questions when preparing for your upcoming relocation. Here are some of our most frequently asked questions (FAQ's) by our customers.
             </p>
@@ -1005,7 +952,7 @@
                 <ul class="space-y-0">
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1 md:text-xl text-md font-semibold text-black pr-4">What factors affect the cost of hiring removalists?</span>
+                            <span class="flex-1 md:text-xl text-md font-semibold text-black pr-4">Can you move both upright and grand pianos?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1015,7 +962,24 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                    Several factors influence the cost of hiring removalists, including the distance of your move, the size and weight of your belongings, the time of year, additional services required (like packing or storage), and accessibility at both locations. We provide transparent pricing with no hidden fees.
+                                 Yes, we are experienced in relocating all types of pianos, including upright, baby grand, and full-size concert grand models.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="border-b-2 border-gray">
+                        <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
+                            <span class="flex-1  md:text-xl text-md font-semibold text-black pr-4">Do you provide interstate piano moving?</span>
+                            <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+                            <div class="pb-5 pr-12">
+                                <p class="text-gray-600 md:text-base text-xs leading-relaxed">
+                                Absolutely. Our long-distance moving services ensure your piano is transported securely across state lines with the same level of care as local moves.
                                 </p>
                             </div>
                         </div>
@@ -1023,7 +987,7 @@
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-xl text-md font-semibold text-black pr-4">Are there any hidden fees with Melbourne Central Movers?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Will my piano need tuning after the move?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1033,15 +997,14 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                    No, we pride ourselves on transparent pricing. All costs are clearly outlined in your quote, and we don't charge any hidden fees. What you see in your estimate is what you pay, with no surprise charges.
-                                </p>
+                                 It’s common for pianos to require tuning after relocation due to vibrations and environmental changes. We recommend tuning 2–3 weeks post-move.</p>
                             </div>
                         </div>
                     </li>
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Are your removalists experienced and insured?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">How far in advance should I book a piano move?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1051,15 +1014,14 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                    Yes, all our removalists are highly experienced professionals with years of training in safe moving practices. We are fully licensed and insured, providing you with peace of mind knowing your belongings are protected throughout the moving process.
-                                </p>
+                                Booking at least 1–2 weeks in advance is ideal, though we also accommodate urgent requests whenever possible.</p>
                             </div>
                         </div>
                     </li>
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Can I book a moving service for a specific time?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Is your service insured for piano moves?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1069,15 +1031,14 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                    Yes, we offer flexible scheduling to accommodate your preferred moving time. We recommend booking in advance to secure your preferred date and time slot, especially during peak moving seasons.
-                                </p>
+                                Yes, basic transit insurance is included, and additional coverage can be arranged for higher-value instruments.</p>
                             </div>
                         </div>
                     </li>
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">What should I do if I need to reschedule my move?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Do you handle stairs and tight access areas?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1087,15 +1048,14 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                    We understand that plans can change. Please contact us as soon as possible if you need to reschedule. We'll do our best to accommodate your new preferred date and time, subject to availability.
-                                </p>
+                                  Yes, our team is equipped and trained to move pianos upstairs, through narrow corridors, and through complex entryways safely and efficiently.</p>
                             </div>
                         </div>
                     </li>
 
                     <li class="border-b-2 border-gray">
                         <button class="relative flex gap-2 items-center w-full py-3 text-left group" aria-expanded="false" onclick="toggleFAQ(this)">
-                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">How do I get started with Melbourne Central Movers?</span>
+                            <span class="flex-1  md:text-lg text-md font-semibold text-black pr-4">Can you relocate pianos for concerts or studios?</span>
                             <div class=" flex items-center justify-center transition-transform duration-200 group-aria-expanded:rotate-45">
                                 <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -1105,11 +1065,11 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                    Getting started is easy! Simply contact us for a free quote by phone, email, or through our online form. We'll assess your moving needs and provide you with a detailed, transparent estimate. Once you're ready, we'll schedule your move at your convenience.
-                                </p>
+                                  Yes, we frequently assist with concert and studio piano moves, coordinating with schedules for a seamless and discreet relocation.
                             </div>
                         </div>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -1132,8 +1092,8 @@
 @section('scripts')
 
 <script type="module">
-    
-    </script>
-    <script type="module" src="{{ asset('assets/js/services.js') }}"></script>
+
+</script>
+<script type="module" src="{{ asset('assets/js/services.js') }}"></script>
 
 @endsection

@@ -49,11 +49,11 @@
 
                 <!-- Main Heading -->
                 <div>
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                    <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white md:mb-4 mb-6 leading-tight">
                         Furniture Removalists in Melbourne
                     </h1>
-                    <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
-                        Searching for reliable furniture removalists in Melbourne? At Melbourne Central Movers, we specialise in safe and efficient furniture relocation services tailored for homes, offices, and commercial spaces. Our expert team is trained to handle everything from heavy wardrobes to delicate antiques, ensuring each piece reaches its destination in perfect condition. 
+                    <p class="text-base md:text-md text-gray-300 leading-relaxed">
+                        Searching for reliable furniture removalists in Melbourne? At Melbourne Central Movers, we specialise in safe and efficient furniture relocation services tailored for homes, offices, and commercial spaces. Our expert team is trained to handle everything from heavy wardrobes to delicate antiques, ensuring each piece reaches its destination in perfect condition.
                     </p>
                 </div>
 
@@ -129,7 +129,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/allImages/truck1.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[430px] rounded-lg object-cover">
+                    <img src="{{ asset('assets/images/allImages/mcm-banner (4).webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] rounded-lg object-cover">
                 </div>
             </div>
 

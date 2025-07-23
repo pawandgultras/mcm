@@ -1,6 +1,6 @@
 <!-- Contact Section -->
-<section class="bg-gray py-6 sm:py-8 px-4">
-  <div class="max-w-5xl mx-auto">
+<section class="bg-gray py-6 sm:py-8 px-4 contact-remove">
+  <div class="max-w-6xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
       <!-- Left Side - Contact Info -->
       <div class="text-white">
@@ -85,7 +85,7 @@
 </section>
 
 <!-- Business Information Section -->
-<section class="py-8 sm:py-10 lg:py-12 bg-white">
+<section class="py-8 sm:py-10 lg:py-12 bg-white contact-remove">
   <div class="max-w-7xl mx-auto md:px-4 px-6 ">
     <!-- Header with Business Info -->
     <div class="text-center mb-6 sm:mb-8">
@@ -131,7 +131,7 @@
 
 <footer class="bg-black mt-10 text-white text-sm">
   <!-- Top Green Bar -->
-  <div class="bg-primary text-white py-8 px-4">
+  <div class="bg-primary text-white py-8 px-4 contact-remove">
     <div class="flex flex-row flex-wrap justify-center md:gap-6 gap-4 text-center sm:text-left">
 
       <!-- Box 1: Call Help -->

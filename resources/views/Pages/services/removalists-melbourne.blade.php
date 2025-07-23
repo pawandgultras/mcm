@@ -22,7 +22,7 @@
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
                         Removalists Melbourne
                     </h1>
-                    <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
+                    <p class="text-base md:text-md text-gray-300 leading-relaxed ">
                         Looking for trusted removalists in Melbourne? At Melbourne Central Movers, we make moving stress-free with smooth, safe, and affordable relocation services. Whether it’s your home, office, or apartment, our experienced team delivers reliable moving solutions across Melbourne and nearby suburbs. With local expertise and modern equipment, we ensure every move is quick and hassle-free.
                     </p>
                 </div>
@@ -99,7 +99,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/servicesImages/Local Removalists.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[460px] rounded-lg">
+                    <img src="{{ asset('assets/images/allImages/mcm-banner (3).webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] object-cover rounded-lg">
                 </div>
             </div>
 

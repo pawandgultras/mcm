@@ -19,12 +19,12 @@
 
                 <!-- Main Heading -->
                 <div>
-                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                        Hotel Removalist in Melbourne – Melbourne Central Movers
+                    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white md:mb-4 mb-6 leading-tight">
+                        Hotel Removalist in Melbourne 
                     </h1>
-                    <p class="text-base sm:text-md md:text-md text-gray-300 leading-relaxed max-w-lg">
+                    <p class="text-base md:text-md text-gray-300 leading-relaxed">
                         Looking for reliable hotel removalists in Melbourne? At Melbourne Central Movers, we specialize in smooth and stress-free hotel relocations across Melbourne and surrounding suburbs. Whether you're moving a small boutique hotel or a large hospitality property, our experienced team ensures safe, timely, and efficient removals.
-                        We understand the unique needs of the hotel industry—from furniture and kitchen equipment to bedding and reception items. Our professionals handle everything with care and precision, using high-quality packing materials and modern tools to protect your valuable assets.
+                        We understand the unique needs of the hotel industry—from furniture and kitchen equipment to bedding and reception items. 
 
 
 
@@ -103,7 +103,7 @@
             <!-- Right Content - Truck Image -->
             <div class="order-1 lg:order-2 relative">
                 <div class="relative">
-                    <img src="{{ asset('assets/images/servicesImages/truck1.webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full h-[460px] rounded-lg">
+                    <img src="{{ asset('assets/images/allImages/mcm-banner (5).webp') }}" alt="MCM Melbourne Central Movers Truck" class="w-full md:min-h-[420px] object-cover rounded-lg">
                 </div>
             </div>
 

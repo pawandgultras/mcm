@@ -2,18 +2,19 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\formController;
 
 Route::get('/', function () {
     return view('Pages.home');
 });
 
 Route::get('/about', function () {
-    return view('Pages.about');
-});
+    return view('Pages.about-us');
+})->name('about');
 
 Route::get('/contact', function () {
-    return view('Pages.contact');
-});
+    return view('Pages.contact-us');
+})->name('contact');
 
 Route::group(['prefix' => 'services'], function () {
     Route::get('/local-removalists', function () {
@@ -52,23 +53,28 @@ Route::group(['prefix' => 'services'], function () {
         return view('Pages.services.hotel-removalist');
     })->name('hotel-removalists');
 
-    Route::get('/packing-service', function () {
-        return view('Pages.services.packing-service');
-    })->name('packing-service');
+    Route::get('/packing-services', function () {
+        return view('Pages.services.packing-services');
+    })->name('packing-services');
 
-    Route::get('/piano-removals', function () {
-        return view('Pages.services.piano-removals');
-    })->name('piano-removals');
+    Route::get('/piano-removalists', function () {
+        return view('Pages.services.piano-removalists');
+    })->name('piano-removalists');
 
     Route::get('/retirement-moving', function () {
         return view('Pages.services.retirement-moving');
     })->name('retirement-moving');
 
+    Route::get('/school-removalists', function () {
+        return view('Pages.services.school-removalists');
+    })->name('school-removalists');
     
 
 });
 
-
+Route::get('/enquiry/address', [formController::class, 'showAddressForm'])->name('enquiry');
+Route::get('/enquiry/property', [formController::class, 'submitAddressForm'])->name('property.form');
+Route::get('/enquiry/date', [formController::class, 'showDateForm'])->name('date.form');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -79,5 +85,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
 
 require __DIR__ . '/auth.php';

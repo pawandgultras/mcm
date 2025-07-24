@@ -22,12 +22,12 @@
     <!-- Breadcrumb Navigation (No Links) -->
     <nav class="bg-gray-100 px-4 py-6 ">
         <ol class="flex items-center space-x-2 md:text-[16px] text-[12px] text-black">
-            <li><span>1. Removals</span></li>
+            <li><span>Removals</span></li>
             <li><span class="text-black">›</span></li>
-            <li><span class=" text-black">2. Address</span></li>
-            <li><span class=" text-black">›</span></li>
+            <li><span class="text-black">Address</span></li>
+            <li><span class="text-black">›</span></li>
             @if(isset($moving_from))
-            <li><span class="text-black font-semibold">3. Property</span></li>
+            <li><span class="text-black font-semibold">Property</span></li>
             @else
             return view('Pages.form.address', [
             'moving_from' => '{{ $moving_from }}',
@@ -35,12 +35,14 @@
             ]);
             @endif
             <li><span class="text-black">›</span></li>
-            <li><span>4. Date</span></li>
+            <li><span>Date</span></li>
             <li><span class="text-black">›</span></li>
-            <li><span>5. Details</span></li>
+            <li><span>Details</span></li>
         </ol>
     </nav>
+    <a href="{{ redirect()->back()->getTargetUrl() }}" class="text-primary px-2 py-1">Back</a>
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
         <form action="{{ route('date.form') }}" method="GET" class="md:col-span-2 rounded-md shadow-[0_0_20px_rgba(0,0,0,0.20)] p-6 w-full  mx-auto">
 
             <input type="hidden" name="moving_from" value="{{ $moving_from ?? '' }}">
@@ -106,11 +108,11 @@
                 <h3 class="md:text-[16px] text-[12px] font-semibold text-black mb-2">Summary</h3>
                 <div class="flex justify-between text-sm text-black">
                     <div>Pickup</div>
-                    <div class="font-bold md:text-[16px] text-[12px] min-w-[100px] text-left">{{ $moving_from }}<br><span class="font-normal">870</span></div>
+                    <div class="font-bold md:text-[16px] text-[12px] min-w-[100px] text-left">{{ $moving_from }}</div>
                 </div>
                 <div class="flex justify-between mt-2  md:text-[16px] text-[12px] text-black">
                     <div>Delivery</div>
-                    <div class="font-bold md:text-[16px] text-[12px]  mb-2 min-w-[100px] text-left deliveryLocation">{{ $moving_to ?? '' }}<br><span class="font-normal">3260</span></div>
+                    <div class="font-bold md:text-[16px] text-[12px]  mb-2 min-w-[100px] text-left deliveryLocation">{{ $moving_to ?? '' }}</div>
                 </div>
 
                 <!-- Dynamic selected type & room -->
@@ -131,7 +133,7 @@
             <!-- Contact Box -->
             <div class="bg-white rounded-md shadow-[0_0_20px_rgba(0,0,0,0.20)] p-6 text-sm text-black">
                 <h3 class="font-semibold mb-2">Don't want to fill out a form?</h3>
-                <p class="text-primary font-semibold mb-2 address-form-contact"> 1300 465 569</p>
+                <p class="text-primary font-semibold mb-2 address-form-contact flex items-center"><a href="tel:1300 163 694">1300 163 694</a></p>
                 <div class="mb-4 flex items-center justify-start gap-6">
                     <p class="">Monday to Friday: <br> 8:00 AM - 6:00 PM</p>
                     <p class="">Saturday: <br> 8:00 AM - 2:00 PM</p>
@@ -206,50 +208,66 @@
         const roomDiv = document.getElementById('room-options');
         const otherBox = document.getElementById('otherDetails');
         const label = document.getElementById('room-label');
-
-        roomDiv.innerHTML = '';
-
         const selectedPropertyTypeSpan = document.getElementById('selectedPropertyType');
         const selectedRoomSizeSpan = document.getElementById('selectedRoomSize');
+
+        roomDiv.innerHTML = '';
+        selectedPropertyTypeSpan.textContent = selectedType;
+        selectedRoomSizeSpan.textContent = '';
 
         if (selectedType === 'Other') {
             otherBox.classList.remove('hidden');
             label.classList.add('hidden');
-            selectedPropertyTypeSpan.textContent = 'Other';
-            let otherDetailsInput = document.getElementById('otherDetailsInput');
-            otherDetailsInput.addEventListener('input', function() {
-                selectedRoomSizeSpan.textContent = otherDetailsInput.value;
+
+            const otherDetailsInput = document.getElementById('otherDetailsInput');
+
+            // Remove old hidden input if exists
+            const oldHidden = document.getElementById('otherPropertySizeHidden');
+            if (oldHidden) oldHidden.remove();
+
+            // Create new hidden input to store custom value
+            const hiddenInput = document.createElement('input');
+            hiddenInput.type = 'hidden';
+            hiddenInput.name = 'property_size';
+            hiddenInput.id = 'otherPropertySizeHidden';
+            hiddenInput.required = true;
+            roomDiv.appendChild(hiddenInput);
+
+            // Set initial value and span
+            hiddenInput.value = otherDetailsInput.value;
+            selectedRoomSizeSpan.textContent = otherDetailsInput.value;
+
+            otherDetailsInput.addEventListener('input', function () {
+                hiddenInput.value = this.value;
+                selectedRoomSizeSpan.textContent = this.value;
             });
+
         } else {
             otherBox.classList.add('hidden');
             label.classList.remove('hidden');
-            selectedPropertyTypeSpan.textContent = selectedType;
 
-            // Add room options
+            // Add radio options
             (roomOptionsMap[selectedType] || []).forEach(option => {
                 const id = 'room_' + option.replace(/\s+/g, '_');
-                roomDiv.innerHTML += `
-                <label class="cursor-pointer group">
-                    <input type="radio" name="room_size" value="${option}" class="hidden peer" required onchange="updateSelectedRoom('${option}')">
-                    <div class="border border-gray-300 rounded-md text-center py-2 px-1 text-xs md:text-sm text-black group-hover:bg-primary group-hover:text-white peer-checked:bg-primary peer-checked:text-white transition font-medium">
-                        ${option}
-                    </div>
-                </label>
-            `;
-            });
 
-            // Reset room size display
-            selectedRoomSizeSpan.textContent = '';
+                const labelHTML = `
+                    <label class="cursor-pointer group">
+                        <input type="radio" name="property_size" value="${option}" class="hidden peer" required onchange="updateSelectedRoom('${option}')">
+                        <div class="border border-gray-300 rounded-md text-center py-2 px-1 text-xs md:text-sm text-black group-hover:bg-primary group-hover:text-white peer-checked:bg-primary peer-checked:text-white transition font-medium">
+                            ${option}
+                        </div>
+                    </label>
+                `;
+                roomDiv.innerHTML += labelHTML;
+            });
         }
     }
 
     function updateSelectedRoom(value) {
         document.getElementById('selectedRoomSize').textContent = value;
     }
-    // Call once on page load if needed
-    document.addEventListener('DOMContentLoaded', updatePropertyImages);
-</script>
 
+    document.addEventListener('DOMContentLoaded', updatePropertyImages);
 </script>
 
 @endsection

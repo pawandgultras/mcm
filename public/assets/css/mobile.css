@@ -24,5 +24,20 @@
         left: 0;
         color: #4caf50;
     }
-    
+
+    .slick-next.slick-arrow::before {
+        display: none !important;
+    }
+
+    .slick-prev.slick-arrow::before {
+        display: none !important;
+
+    }
+    .slick-next{
+        right: 0px !important;
+    }
+    .slick-prev{
+        left: 0px !important;
+    }
+
 }

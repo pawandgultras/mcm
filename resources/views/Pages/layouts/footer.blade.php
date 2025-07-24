@@ -4,26 +4,26 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
       <!-- Left Side - Contact Info -->
       <div class="text-white">
-        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">
+        <h2 class="md:text-[32px] text-[24px] font-bold md:mb-4 mb-2">
           Contact The Melbourne Central Movers
         </h2>
 
-        <h3 class="text-xl font-bold mb-4">Have you got a moving question?</h3>
+        <h3 class="md:text-[20px] text-[16px] font-semibold mb-2">Have you got a moving question?</h3>
 
-        <p class="text-gray-300 leading-relaxed mb-8">
+        <p class="md:text-[16px] text-[12px] font-normal mb-8">
           The Moving Company - NZ Best Movers are here to help with any queries you might have about relocating within New Zealand or international moving. Get in touch with our friendly team using the form and we will get back to you as soon as we can. We'd love to help you get moving!
         </p>
 
         <a href="tel:1300163694" class="">
-          <div class="inline-flex items-center gap-4 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg shadow-lg transition-colors duration-200">
-            <img src="{{ asset('assets/images/icons/Call- white.webp') }}" alt="Phone Icon" class="w-6 h-6">
-            <span class="text-lg font-semibold">1300 163 694</span>
+          <div class="inline-flex items-center gap-4 bg-primary hover:bg-primary/90 text-white px-6 md:py-3 py-2 rounded-lg shadow-lg transition-colors duration-200">
+            <img src="{{ asset('assets/images/icons/Call- white.webp') }}" alt="Phone Icon" class="w-6 h-6 " >
+            <span class="md:text-[20px] text-[16px] font-semibold">1300 163 694</span>
           </div>
         </a>
       </div>
 
       <!-- Right Side - Contact Form -->
-      <div class="bg-gray-600 p-6 rounded-lg border-2 border-primary">
+      <div class="bg-gray-600 md:p-6 p-3 rounded-lg border-2 border-primary">
         <div class="mb-3">
           <h3 class="text-primary text-2xl font-bold italic mb-2">Contact Us !</h3>
           <p class="text-white font-semibold text-sm">Fill out the form below to contact our team.</p>
@@ -34,11 +34,11 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
               <label class="block text-white text-sm font-medium mb-1">Your full Name</label>
-              <input type="text" class="w-full px-4 py-2 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="text" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
             <div>
               <label class="block text-white text-sm font-medium mb-1">Phone Number</label>
-              <input type="tel" class="w-full px-4 py-2 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="tel" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
           </div>
 
@@ -46,11 +46,11 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label class="block text-white text-sm font-medium mb-1">Your Email</label>
-              <input type="email" class="w-full px-4 py-2 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="email" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
             <div>
               <label class="block text-white text-sm font-medium mb-1">Date</label>
-              <input type="date" class="w-full px-4 py-2 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="date" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
           </div>
 
@@ -58,18 +58,18 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label class="block text-white text-sm font-medium mb-1">Moving from?</label>
-              <input type="text" class="w-full px-4 py-2 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="text" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
             <div>
               <label class="block text-white text-sm font-medium mb-1">Moving to?</label>
-              <input type="text" class="w-full px-4 py-2 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="text" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
           </div>
 
           <!-- Message -->
           <div>
             <label class="block text-white text-sm font-medium mb-1">Your Message</label>
-            <textarea rows="4" class="w-full px-4 py-2 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 resize-none"></textarea>
+            <textarea rows="4" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 resize-none"></textarea>
           </div>
 
           <!-- Submit Button -->
@@ -94,13 +94,13 @@
       <!-- Top Info Bar -->
       <div class="flex flex-wrap justify-center items-center md:gap-4 gap-6  text-xs sm:text-sm text-gray-700 mb-6 sm:mb-8">
         <!-- Business Hours -->
-        <div class="flex items-center justify-start gap-2 text-center">
+        <div class="flex items-center justify-start gap-2 text-center flex-none flex-shrink-0">
           <img src="{{ asset('assets/images/icons/Map- timing.webp') }}" alt="Business Hours" class="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0">
           <span class="font-medium">Mon - Fri: 8am - 5pm, <br class="sm:hidden"> Sat: 9am - 2pm, Sun: Closed</span>
         </div>
 
         <!-- Address -->
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 flex-none flex-shrink-0">
           <img src="{{ asset('assets/images/icons/map-address.webp') }}" alt="Address" class="w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0">
           <span class="font-medium">12 Queen Lane, Melbourne VIC 3004</span>
         </div>
@@ -132,7 +132,7 @@
 <footer class="bg-black mt-10 text-white text-sm">
   <!-- Top Green Bar -->
   <div class="bg-primary text-white py-8 px-4 contact-remove">
-    <div class="flex flex-row flex-wrap justify-center md:gap-6 gap-4 text-center sm:text-left">
+    <div class="flex flex-row justify-center md:gap-6 gap-4 text-center sm:text-left">
 
       <!-- Box 1: Call Help -->
       <div class="flex md:flex-row flex-col items-center space-x-3 sm:space-x-4 md:px-4 px-0 py-2 w-full sm:w-auto justify-center gap-2">

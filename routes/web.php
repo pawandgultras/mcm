@@ -72,9 +72,15 @@ Route::group(['prefix' => 'services'], function () {
 
 });
 
+Route::get('/demo', function () {
+    return view('Pages.form.demo');
+})->name('demo');
+
 Route::get('/enquiry/address', [formController::class, 'showAddressForm'])->name('enquiry');
 Route::get('/enquiry/property', [formController::class, 'submitAddressForm'])->name('property.form');
 Route::get('/enquiry/date', [formController::class, 'showDateForm'])->name('date.form');
+Route::get('/enquiry/details', [formController::class, 'showDetailsForm'])->name('details.form');
+Route::post('/enquiry/details/submit', [formController::class, 'store'])->name('submit.details');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

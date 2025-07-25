@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Quote;
 use App\Mail\QuoteSubmitted;
 use Illuminate\Http\Request;
+use App\Mail\ContactFormMail;
+use App\Models\ContactSubmission;
 use Illuminate\Support\Facades\Mail;
 
 class formController extends Controller
@@ -116,12 +118,34 @@ class formController extends Controller
         $validated['addons'] = json_encode($request->input('addons'));
 
         $quote = Quote::create($validated);
+        $mailid = "mcmcentralmovers@gmail.com";
 
-        // Send email to admin (or to user)
-        Mail::to('admin@example.com')->send(new QuoteSubmitted($quote));
+        Mail::to($mailid)->send(new QuoteSubmitted($quote));
 
-        return view('Pages.form.thank-you')->with('success', 'Quote submitted successfully!');
+        return view('Pages.form.thank-you')->with('success', 'Thank you for your enquiry! We will get back to you soon.');
+    }
 
 
+
+    public function contactUsFormStore(Request $request)
+    {
+        $formData = $request->validate([
+            'name'     => 'required|string|max:255',
+            'email'    => 'required|email|max:255',
+            'phone'    => 'nullable|string|max:50',
+            'move_date'     => 'nullable|string|max:255',
+            'move_from'     => 'nullable|string|max:255',
+            'move_to'       => 'nullable|string|max:255',
+            'message'  => 'nullable|string',
+        ]);
+
+        // Store in database
+        ContactSubmission::create($formData);
+
+        $mailid = "mcmcentralmovers@gmail.com";
+        // Send email
+        Mail::to($mailid)->send(new ContactFormMail($formData));
+
+        return redirect()->back()->with('success', 'Thank you for contacting us! We will get back to you soon.');
     }
 }

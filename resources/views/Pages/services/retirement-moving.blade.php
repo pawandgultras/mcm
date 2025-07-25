@@ -1,6 +1,8 @@
 @extends('Pages.layouts.app')
 @section('metadata')
-<title> MCM - Retirement Moving Services in Melbourne</title>
+<title>Retirement Moving Specialists | Hassle-Free Senior Relocation</title>
+<meta name="description" content="Trust Melbourne Central Movers for compassionate, dependable retirement moving services. Our caring team assists with downsizing, packing, transport, and unpacking—so seniors can settle comfortably into their new home.">
+
 
 <link rel="stylesheet" href="{{ asset('assets/css/services.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
@@ -743,105 +745,133 @@
     <div class="max-w-7xl mx-auto md:px-4 px-8 lg:px-8">
         <!-- Testimonial Card -->
         <div class="testimonial-card">
-            <div class="px-3">
-                <div class="bg-white rounded-md shadow-md py-5 px-6">
-                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-                        <div class="text-yellow-500 text-sm">★★★★★</div>
-                        <span>a month ago</span>
-                    </div>
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-                        <div>
-                            <p class="font-semibold text-sm">James T. Richmond</p>
-                            <p class="text-xs text-gray-500">Melbourne City</p>
-                        </div>
-                    </div>
-                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
-                        Moved my entire apartment in just a few hours.* Super professional and affordable. I’ll be using them again for sure.
-                    </p>
-                    <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a>
-                </div>
+             <div class="px-3">
+        <div class="bg-white rounded-md shadow-md py-5 px-6">
+          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+            <div class="text-yellow-500 text-sm">★★★★★</div>
+            <span>a month ago</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+            <div>
+              <p class="font-semibold text-sm">- jhon Leo</p>
+              <p class="text-xs text-gray-500">Melbourne City</p>
             </div>
-            <div class="px-3">
-                <div class="bg-white rounded-md shadow-md py-5 px-6">
-                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-                        <div class="text-yellow-500 text-sm">★★★★★</div>
-                        <span>a month ago</span>
-                    </div>
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+          </div>
+          <p class="text-sm text-gray-800 leading-relaxed mb-3">
+            I am happy to say that MCM Vanlines are one of the best house removalists I've ever made use of. They were very professional, got the job done in a timely manner, and did not leave any mess! I had no complaints, so you should hire them
+            if you need removalist services.I would highly recommend MCM Vanlines for moving.
+          </p>
+          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+        </div>
+      </div>
+      <div class="px-3">
+        <div class="bg-white rounded-md shadow-md py-5 px-6">
+          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+            <div class="text-yellow-500 text-sm">★★★★★</div>
+            <span>few days ago</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
 
-                        <div>
-                            <p class="font-semibold text-sm">James T. Richmond</p>
-                            <p class="text-xs text-gray-500">Melbourne City</p>
-                        </div>
-                    </div>
-                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
-                        Moved my entire apartment in just a few hours.* Super professional and affordable. I’ll be using them again for sure.
-                    </p>
-                    <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a>
-                </div>
+            <div>
+              <p class="font-semibold text-sm">- Kaser Portgas</p>
+              <p class="text-xs text-gray-500">Melbourne City</p>
             </div>
+          </div>
+          <p class="text-sm text-gray-800 leading-relaxed mb-3">
+            MCM Vanlines does a fantastic job. I tried hiring some other removalists but the prices were way too expensive for the work. MCM is more reasonably priced than most of their rivals and they are always willing to work with you on your budget.
+            I would highly recommend MCM for someone who knows how to get the job done well and quickly!
 
-            <div class="px-3">
-                <div class="bg-white rounded-md shadow-md py-5 px-6">
-                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-                        <div class="text-yellow-500 text-sm">★★★★★</div>
-                        <span>a month ago</span>
-                    </div>
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-                        <div>
-                            <p class="font-semibold text-sm">James T. Richmond</p>
-                            <p class="text-xs text-gray-500">Melbourne City</p>
-                        </div>
-                    </div>
-                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
-                        Moved my entire apartment in just a few hours.* Super professional and affordable. I’ll be using them again for sure.
-                    </p>
-                    <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a>
-                </div>
-            </div>
+          </p>
+          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+        </div>
+      </div>
 
-            <div class="px-3">
-                <div class="bg-white rounded-md shadow-md py-5 px-6">
-                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-                        <div class="text-yellow-500 text-sm">★★★★★</div>
-                        <span>a month ago</span>
-                    </div>
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-                        <div>
-                            <p class="font-semibold text-sm">James T. Richmond</p>
-                            <p class="text-xs text-gray-500">Melbourne City</p>
-                        </div>
-                    </div>
-                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
-                        Moved my entire apartment in just a few hours.* Super professional and affordable. I’ll be using them again for sure.
-                    </p>
-                    <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a>
-                </div>
+      <div class="px-3">
+        <div class="bg-white rounded-md shadow-md py-5 px-6">
+          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+            <div class="text-yellow-500 text-sm">★★★★★</div>
+            <span>a month ago</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+            <div>
+              <p class="font-semibold text-sm">- jack davies</p>
+              <p class="text-xs text-gray-500">Melbourne City</p>
             </div>
+          </div>
+          <p class="text-sm text-gray-800 leading-relaxed mb-3">
 
-            <div class="px-3">
-                <div class="bg-white rounded-md shadow-md py-5 px-6">
-                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-                        <div class="text-yellow-500 text-sm">★★★★★</div>
-                        <span>a month ago</span>
-                    </div>
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-                        <div>
-                            <p class="font-semibold text-sm">James T. Richmond</p>
-                            <p class="text-xs text-gray-500">Melbourne City</p>
-                        </div>
-                    </div>
-                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
-                        Moved my entire apartment in just a few hours.* Super professional and affordable. I’ll be using them again for sure.
-                    </p>
-                    <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a>
-                </div>
+            I hired MCM Vanlines to move from my old home to a new one and I can tell you that they were amazing. They did the entire job by themselves in just three hours! Not only did they handle everything quickly but they also made sure I didn't have to lift a finger.
+            I would highly recommend MCM Vanlines for any removal services in Melbourne
+          </p>
+          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+        </div>
+      </div>
+
+      <div class="px-3">
+        <div class="bg-white rounded-md shadow-md py-5 px-6">
+          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+            <div class="text-yellow-500 text-sm">★★★★★</div>
+            <span>a month ago</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+            <div>
+              <p class="font-semibold text-sm">- Carloman Bert</p>
+              <p class="text-xs text-gray-500">Melbourne City</p>
             </div>
+          </div>
+          <p class="text-sm text-gray-800 leading-relaxed mb-3">
+            I've never had a job so easy and simple as working with MCM Vanlines. They are the best house removalists in Melbourne. I was able to organize my move from Melbourne to Sydney in just a few hours,
+            which is impossible when you're moving within the same city.They were really fast and professional and I will definitely be using them again in future.
+          </p>
+          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+        </div>
+      </div>
+
+      <div class="px-3">
+        <div class="bg-white rounded-md shadow-md py-5 px-6">
+          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+            <div class="text-yellow-500 text-sm">★★★★★</div>
+            <span>a month ago</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+            <div>
+              <p class="font-semibold text-sm">- Devin Pham </p>
+              <p class="text-xs text-gray-500">Melbourne City</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-800 leading-relaxed mb-3">
+            MCM Vanlines did a fantastic job of removals. It was a simple move from home to office but the process was very smooth. They took my furniture, bedding, and other things into consideration in the quote, so I could be completely sure that they would
+            take care of everything with no extra costs or hassles. Contact MCM Vanlines for best moving.
+          </p>
+          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+        </div>
+      </div>
+
+      <div class="px-3">
+        <div class="bg-white rounded-md shadow-md py-5 px-6">
+          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+            <div class="text-yellow-500 text-sm">★★★★★</div>
+            <span>a month ago</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+            <div>
+              <p class="font-semibold text-sm">- Kaser Portgas </p>
+              <p class="text-xs text-gray-500">Melbourne City</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-800 leading-relaxed mb-3">
+            They offer an affordable price and the staff is very professional. I had one service with them before and they were great .I was a bit apprehensive when I called MCM Vanlines because they are cheaper than some of the other removalists in Melbourne.
+            But luckily, I ended up with a great company who treated me well and charged me less!
+          </p>
+          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+        </div>
+      </div>
 
         </div>
     </div>

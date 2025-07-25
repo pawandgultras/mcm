@@ -21,7 +21,7 @@
   </style>
 </head>
 
-<body class="font-poppins antialiased bg-white text-gray-900">
+<body class="font-poppins antialiased bg-white text-gray-900 w-full max-w-full overflow-x-hidden">
   @include('Pages.layouts.header')
   @yield('homepage')
   @yield('content')

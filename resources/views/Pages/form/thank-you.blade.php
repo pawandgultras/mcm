@@ -19,6 +19,24 @@
 
 <!-- Main Content Section -->
 <div class="max-w-6xl mx-auto mt-4">
+    <div class="message">
+        @if (session('success'))
+        <div class="bg-green-100 text-green-800 p-4 rounded mb-4">
+            {{ session('success') }}
+        </div>
+        @endif
+
+        @if ($errors->any())
+        <div class="bg-red-100 text-red-800 p-4 rounded mb-4">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+    </div>
+
 
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 items-start justify-start place-content-center">
 

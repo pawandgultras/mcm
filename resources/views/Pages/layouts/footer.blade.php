@@ -11,7 +11,9 @@
         <h3 class="md:text-[20px] text-[16px] font-semibold mb-2">Have you got a moving question?</h3>
 
         <p class="md:text-[16px] text-[12px] font-normal mb-8">
-          The Moving Company - NZ Best Movers are here to help with any queries you might have about relocating within New Zealand or international moving. Get in touch with our friendly team using the form and we will get back to you as soon as we can. We'd love to help you get moving!
+        Melbourne Central Movers is the best moving company in town. We have over 10 years of experience, and we're fully insured so you can relax knowing your belongings are in safe hands.
+
+
         </p>
 
         <a href="tel:1300163694" class="">
@@ -28,17 +30,35 @@
           <h3 class="text-primary text-2xl font-bold italic mb-2">Contact Us !</h3>
           <p class="text-white font-semibold text-sm">Fill out the form below to contact our team.</p>
         </div>
+          <div class="message">
+                @if (session('success'))
+                <div class="bg-green-100 text-green-800 p-4 rounded mb-4">
+                    {{ session('success') }}
+                </div>
+                @endif
 
-        <form class="space-y-1">
+                @if ($errors->any())
+                <div class="bg-red-100 text-red-800 p-4 rounded mb-4">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
+            </div>
+
+        <form class="space-y-1" method="POST" action="{{ route('contact.submit') }}">
+          @csrf 
           <!-- Name and Phone Row -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
               <label class="block text-white text-sm font-medium mb-1">Your full Name</label>
-              <input type="text" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="text" name="name" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
             <div>
               <label class="block text-white text-sm font-medium mb-1">Phone Number</label>
-              <input type="tel" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="tel" name="phone" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
           </div>
 
@@ -46,11 +66,11 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label class="block text-white text-sm font-medium mb-1">Your Email</label>
-              <input type="email" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="email" name="email" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
             <div>
               <label class="block text-white text-sm font-medium mb-1">Date</label>
-              <input type="date" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="date" name="move_date" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
           </div>
 
@@ -58,18 +78,18 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label class="block text-white text-sm font-medium mb-1">Moving from?</label>
-              <input type="text" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="text" name="move_from" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
             <div>
               <label class="block text-white text-sm font-medium mb-1">Moving to?</label>
-              <input type="text" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="text" name="move_to" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
           </div>
 
           <!-- Message -->
           <div>
             <label class="block text-white text-sm font-medium mb-1">Your Message</label>
-            <textarea rows="4" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 resize-none"></textarea>
+            <textarea rows="4" name="message" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 resize-none"></textarea>
           </div>
 
           <!-- Submit Button -->

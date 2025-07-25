@@ -82,6 +82,9 @@ Route::get('/enquiry/date', [formController::class, 'showDateForm'])->name('date
 Route::get('/enquiry/details', [formController::class, 'showDetailsForm'])->name('details.form');
 Route::post('/enquiry/details/submit', [formController::class, 'store'])->name('submit.details');
 
+Route::post('/contact/submit', [formController::class, 'contactUsFormStore'])->name('contact.submit');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

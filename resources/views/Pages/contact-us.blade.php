@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
 
 <style>
-    .contact-remove{
+    .contact-remove {
         display: none;
     }
 </style>
@@ -38,7 +38,8 @@
                 </div>
             </div>
             <h4 class="font-semibold text-lg mt-4">Our Address</h4>
-            <p class="text-gray-600">5th Street, 21st Floor, New York<br />99508, USA.</p>
+            <p class="text-gray-600">12 Queen Lane,
+                Melbourne VIC 3004</p>
         </div>
 
         <!-- Phone -->
@@ -66,7 +67,7 @@
                 </div>
             </div>
             <h4 class="font-semibold text-lg mt-4">Email Address</h4>
-            <p class="text-gray-600">themeht23@gmail.com<br />themeht23@gmail.com</p>
+            <p class="text-gray-600">info@melbournemovers.com.au</p>
         </div>
     </div>
 </div>
@@ -91,30 +92,43 @@
         <div class="md:col-span-2">
             <p class="text-primary font-semibold uppercase text-sm mb-2">Contact Us</p>
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Drop Us a Line !</h2>
+            <div class="message">
+                @if (session('success'))
+                <div class="bg-green-100 text-green-800 p-4 rounded mb-4">
+                    {{ session('success') }}
+                </div>
+                @endif
 
-            <form class="space-y-4">
+                @if ($errors->any())
+                <div class="bg-red-100 text-red-800 p-4 rounded mb-4">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
+            </div>
+
+            <form class="space-y-4" action="{{ route('contact.submit') }}" method="POST">
+                @csrf
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="Your Name" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
-                    <input type="email" placeholder="Your Email" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
+                    <input type="email" name="email" placeholder="Your Email" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="tel" placeholder="Your Phone number" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
-                    <select class="w-full p-3 bg-gray-100 border border-gray-200 rounded text-gray-500 outline-none focus:border-none focus:ring-2 focus:ring-primary">
-                        <option disabled selected>Select City</option>
-                        <option>London</option>
-                        <option>Paris</option>
-                        <option>New York</option>
-                        <option>Tokyo</option>
-                    </select>
+                    <input type="tel" name="phone" placeholder="Your Phone number" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
+
+                    <input type="date" name="move_date" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="Move From" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
-                    <input type="text" placeholder="Move To" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
+                    <input type="text" name="move_from" placeholder="Moving From" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
+                    <input type="text" name="move_to" placeholder="Moving To" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
                 </div>
 
-                <textarea rows="4" placeholder="Message" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary"></textarea>
+                <textarea rows="4" name="message" placeholder="Message" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary"></textarea>
 
                 <button type="submit" class="bg-primary text-white px-6 py-3 rounded font-semibold hover:bg-white hover:text-primary border hover:border-primary transition">
                     SEND MESSAGE

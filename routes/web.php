@@ -6,7 +6,7 @@ use App\Http\Controllers\formController;
 
 Route::get('/', function () {
     return view('Pages.home');
-});
+})->name('home');
 
 Route::get('/about', function () {
     return view('Pages.about-us');

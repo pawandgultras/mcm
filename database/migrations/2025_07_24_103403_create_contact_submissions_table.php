@@ -15,11 +15,11 @@ return new class extends Migration
         $table->id();
         $table->string('name');
         $table->string('email');
-        $table->string('phone');
+        $table->string('phone')->nullable();
         $table->date('move_date')->nullable(); // Added move_date field
-        $table->string('move_from');
-        $table->string('move_to');
-        $table->text('message');
+        $table->string('move_from')->nullable();
+        $table->string('move_to')->nullable();
+        $table->text('message')->nullable();
         $table->timestamps();
     });
     }

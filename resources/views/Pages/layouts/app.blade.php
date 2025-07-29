@@ -82,66 +82,52 @@
   @yield('form')
   @include('Pages.layouts.footer')
 
-  <div id="singleModalForm" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-    <div class="bg-[#3a3a3a] p-6 rounded border border-[#78be3c] w-full max-w-2xl relative">
+  <div id="singleModalForm" class="hidden fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50 px-4">
+    <div class="bg-[#3a3a3a] p-6 rounded border border-[#78be3c] w-[400px] relative">
+
       <!-- Close Button -->
-      <button type="button" onclick="closeModal()" class="absolute top-2 right-3 text-white text-2xl leading-none hover:text-[#78be3c]">&times;</button>
+      <button type="button" onclick="closeModal()"
+        class="absolute top-2 right-3 text-white text-2xl leading-none hover:text-[#78be3c]">
+        &times;
+      </button>
 
-      <h2 id="modalTitle" class="text-lg font-bold text-[#78be3c] italic mb-1">Contact Us !</h2>
-      <p class="text-white mb-5">Fill out the form below to contact our team.</p>
+      <!-- Modal Header -->
+      <h2 id="modalTitle" class="text-lg md:text-xl font-bold text-[#78be3c] italic mb-1">
+        Contact Us!
+      </h2>
+      <p class="text-white mb-5 text-sm md:text-base">
+        Fill out the form below to contact our team.
+      </p>
 
-      <form id="dynamicForm" method="POST" action="/submit-form">
+      <!-- Form -->
+      <form id="dynamicForm" method="POST" action="" class="space-y-4">
         @csrf
         <input type="hidden" name="form_type" id="formType">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label class="text-white text-sm mb-1 block">Your full Name</label>
+        <div class="grid grid-cols-1 gap-4">
+          <div class="">
+            <label class="text-white text-sm mb-1 block">Your Full Name</label>
             <input type="text" name="name"
               class="w-full p-2 border border-[#78be3c] rounded bg-[#2e2e2e] text-white"
               required>
           </div>
-          <div>
+          
+          <div class="">
             <label class="text-white text-sm mb-1 block">Phone Number</label>
             <input type="tel" name="phone"
               class="w-full p-2 border border-[#78be3c] rounded bg-[#2e2e2e] text-white"
               required>
           </div>
 
-          <div>
+          <div class="">
             <label class="text-white text-sm mb-1 block">Your Email</label>
             <input type="email" name="email"
               class="w-full p-2 border border-[#78be3c] rounded bg-[#2e2e2e] text-white"
               required>
           </div>
-          <div>
-            <label class="text-white text-sm mb-1 block">Date</label>
-            <input type="date" name="move_date"
-              class="w-full p-2 border border-[#78be3c] rounded bg-[#2e2e2e] text-white"
-              required>
-          </div>
-
-          <div>
-            <label class="text-white text-sm mb-1 block">Moving from?</label>
-            <input type="text" name="move_from"
-              class="w-full p-2 border border-[#78be3c] rounded bg-[#2e2e2e] text-white autocomplete"
-              required>
-          </div>
-          <div>
-            <label class="text-white text-sm mb-1 block">Moving to?</label>
-            <input type="text" name="move_to"
-              class="w-full p-2 border border-[#78be3c] rounded bg-[#2e2e2e] text-white autocomplete"
-              required>
-          </div>
         </div>
 
-        <div class="mt-4">
-          <label class="text-white text-sm mb-1 block">Your Message</label>
-          <textarea name="message" rows="4"
-            class="w-full p-2 border border-[#78be3c] rounded bg-[#2e2e2e] text-white"
-            required></textarea>
-        </div>
-
+        <!-- Submit Button -->
         <div class="flex justify-center mt-6">
           <button type="submit"
             class="bg-[#78be3c] hover:bg-lime-400 text-black font-semibold px-6 py-2 rounded w-full md:w-1/2 transition">
@@ -149,8 +135,10 @@
           </button>
         </div>
       </form>
+
     </div>
   </div>
+
 
   <div id="thankYouModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div class="bg-white p-6 rounded shadow-md w-full max-w-md text-center">
@@ -194,10 +182,12 @@
       document.getElementById("modalTitle").textContent = formTitle;
       document.getElementById("formType").value = formTitle;
       document.getElementById("singleModalForm").classList.remove("hidden");
+      document.getElementById("singleModalForm").classList.add("flex");
     }
 
     function closeModal() {
       document.getElementById("singleModalForm").classList.add("hidden");
+      document.getElementById("singleModalForm").classList.remove("flex");
     }
   </script>
 

@@ -28,17 +28,17 @@
     "src": "public/assets/images/icons/What Can We Move-icon.webp"
   },
   "resources/css/app.css": {
-    "file": "assets/app-Bx6DNsMi.css",
+    "file": "assets/app-CI4wkW3i.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-C6LZu1Qv.js",
+    "file": "assets/app-CpsmCsuj.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app-BpMIzqeB.css"
+      "assets/app-CS6EpIml.css"
     ],
     "assets": [
       "assets/ajax-loader-BcnMEykj.gif",

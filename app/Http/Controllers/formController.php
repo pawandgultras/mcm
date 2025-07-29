@@ -168,19 +168,8 @@ class formController extends Controller
             'name'     => 'required|string|max:255',
             'email'    => 'required|email|max:255',
             'phone'    => 'nullable|string|max:50',
-            'move_date'     => 'nullable|string|max:255',
-            'move_from'     => 'nullable|string|max:255',
-            'move_to'       => 'nullable|string|max:255',
-            'message'  => 'nullable|string',
+            
         ]);
-
-
-        if ($formData['move_date']) {
-            $movingDate = \Carbon\Carbon::parse($formData['move_date'])->format('Y-m-d');
-        } else {
-            $movingDate = ''; // fallback in case of parse error
-        }
-
 
         // Store in database
         ContactSubmission::create($formData);

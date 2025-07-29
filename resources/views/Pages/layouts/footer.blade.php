@@ -224,12 +224,12 @@
       <div class=" pl-4">
         <h4 class="text-primary underline underline-offset-8  decoration-2 text-lg font-semibold mb-3">Quick Links</h4>
         <ul class="space-y-1">
-          <li><a href="#" class="text-white hover:text-primary">Home</a></li>
-          <li><a href="#" class="text-white hover:text-primary">About Us</a></li>
+          <li><a href="{{ route('home') }}" class="text-white hover:text-primary">Home</a></li>
+          <li><a href="{{ route('about') }}" class="text-white hover:text-primary">About Us</a></li>
           <li><a href="#" class="text-white hover:text-primary">Client Reviews</a></li>
           <li><a href="#" class="text-white hover:text-primary">Work With Us</a></li>
           <li><a href="#" class="text-white hover:text-primary">Partners</a></li>
-          <li><a href="#" class="text-white hover:text-primary">Reach Us</a></li>
+          <li><a href="{{ route('contact') }}" class="text-white hover:text-primary">Reach Us</a></li>
           <li><a href="#" class="text-white hover:text-primary">Video Reviews</a></li>
           <li><a href="#" class="text-white hover:text-primary">Blog</a></li>
           <li><a href="#" class="text-white hover:text-primary">News</a></li>
@@ -263,13 +263,13 @@
       <div>
         <h4 class="text-primary underline underline-offset-8  decoration-2 text-lg font-semibold mb-3">Moving Local</h4>
         <ul class="space-y-1">
-          <li><a href="#" class="text-white hover:text-primary">House Removalists</a></li>
-          <li><a href="#" class="text-white hover:text-primary">Furniture Removals</a></li>
-          <li><a href="#" class="text-white hover:text-primary">Office Relocation</a></li>
+          <li><a href="{{ route('house-removalists') }}" class="text-white hover:text-primary">House Removalists</a></li>
+          <li><a href="{{ route('furniture-removalists') }}" class="text-white hover:text-primary">Furniture Removals</a></li>
+          <li><a href="{{ route('office-removalists') }}" class="text-white hover:text-primary">Office Relocation</a></li>
           <li><a href="#" class="text-white hover:text-primary">Two Men and a Truck</a></li>
-          <li><a href="#" class="text-white hover:text-primary">Movers and Packers</a></li>
+          <li><a href="{{ route('packing-services') }}" class="text-white hover:text-primary">Movers and Packers</a></li>
           <li><a href="#" class="text-white hover:text-primary">Loading and Unloading</a></li>
-          <li><a href="#" class="text-white hover:text-primary">Piano Movers</a></li>
+          <li><a href="{{ route('piano-removalists') }}" class="text-white hover:text-primary">Piano Movers</a></li>
           <li><a href="#" class="text-white hover:text-primary">Pool Table Movers</a></li>
           <li><a href="#" class="text-white hover:text-primary">Safe Removalists</a></li>
           <li><a href="#" class="text-white hover:text-primary">Labour Hire</a></li>

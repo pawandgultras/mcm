@@ -41,19 +41,19 @@
 </style>
 <style>
   .custom-hero-banner {
-    background-image: url('assets/images/banner/MCM header mobile banner.webp');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50vh;
+    background-image: url('assets/images/banner/mobile-banner.jpeg');
+    background-size: contain;
+    background-position: bottom;
+
   }
 
   @media (min-width: 768px) {
     .custom-hero-banner {
       background-image: url('assets/images/allImages/hero-banner.webp');
-      height: 70vh;
     }
+
   }
+  
 </style>
 
 
@@ -64,42 +64,44 @@
 @section('homepage')
 <!-- HERO SECTION -->
 <section
-  class="custom-hero-banner relative max-w-full md:h-[70vh] h-[60vh] bg-cover bg-center text-white flex items-center justify-center">
-  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
-  <x-heading-subheading
-    mainClass="home-banner_heading_main_div"
-    headingClass="home-banner_heading"
-    subheadingClass="home-banner_subheading"
-    heading="Welcome to Melbourne Central Movers "
-    subheading="Are You Looking for Removalists Melbourne? Move with Melbourne Central Movers, Australia’s Biggest Trusted Moving Company helping you move for over 10 years. Hire Movers Melbourne Now." />
+  class="custom-hero-banner md:relative max-w-full md:h-[70vh] h-[22vh] md:bg-cover bg-center text-white flex md:flex-row flex-col pt-16 md:items-center md:justify-center">
 
 
-  <!-- Quote Form Box -->
-  <div class="absolute md:bottom-[-48px] bottom-[-10%] left-1/2 transform -translate-x-1/2 z-20 w-full max-w-5xl px-4">
-    <form action="{{ route('enquiry') }}" method="GET" class="bg-primary rounded-2xl lg:rounded-full flex flex-col lg:flex-row items-center md:items-end justify-between md:py-6 py-3 md:px-12 px-4 md:space-y-2 md:space-x-4">
 
-      <!-- Moving From -->
-      <div class="flex flex-col w-full ">
-        <div class="text-sm font-medium text-black md:mb-2 mb-1 text-center lg:text-left">Moving from</div>
-        <input type="text" name="moving_from" placeholder="Enter Location" class="autocomplete w-full md:py-3 py-2 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20" required>
-      </div>
+    <x-heading-subheading
+      mainClass="home-banner_heading_main_div"
+      headingClass="home-banner_heading"
+      subheadingClass="home-banner_subheading"
+      heading="Welcome to Melbourne Central Movers "
+      subheading="Are You Looking for Removalists Melbourne? Move with Melbourne Central Movers, Australia’s Biggest Trusted Moving Company helping you move for over 10 years. Hire Movers Melbourne Now." />
 
-      <!-- Moving To -->
-      <div class="flex flex-col w-full mt-3">
-        <div class="text-sm font-medium text-black mb-2 text-center lg:text-left lg:mb-1">Moving to</div>
-        <input type="text"  name="moving_to" placeholder="Enter Location" class=" autocomplete w-full md:py-3 py-2 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20" required>
-      </div>
 
-      <!-- Get Quote Button -->
-      <div class="w-full lg:w-auto pt-2 mt-5 lg:pt-0">
-        <button type="submit" class="bg-black text-white text-base font-medium px-8 py-3 rounded-lg hover:bg-white hover:text-black border border-transparent hover:border-primary transition whitespace-nowrap w-full lg:w-auto block text-center shadow-lg">Get a Free Quote</button>
-      </div>
-    </form>
-  </div>
+    <!-- Quote Form Box -->
+    <div class="md:absolute md:bg-inherit bg-slate-500  md:py-0 md:bottom-[-48px] md:left-1/2 md:transform md:-translate-x-1/2 z-20 md:w-full md:mt-0 md:max-w-5xl px-4">
+      <form action="{{ route('enquiry') }}" method="GET" class="bg-primary rounded-2xl lg:rounded-full flex flex-col lg:flex-row items-center md:items-end justify-between md:py-6 py-3 md:px-12 px-4 md:space-y-2 md:space-x-4 mb-10 md:mb-0">
+
+        <!-- Moving From -->
+        <div class="flex flex-col w-full ">
+          <div class="text-sm font-medium text-black md:mb-2 mb-1 text-center lg:text-left">Moving from</div>
+          <input type="text" name="moving_from" placeholder="Enter Location" class="autocomplete w-full md:py-3 py-2 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20" required>
+        </div>
+
+        <!-- Moving To -->
+        <div class="flex flex-col w-full mt-3">
+          <div class="text-sm font-medium text-black mb-2 text-center lg:text-left lg:mb-1">Moving to</div>
+          <input type="text" name="moving_to" placeholder="Enter Location" class=" autocomplete w-full md:py-3 py-2 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20" required>
+        </div>
+
+        <!-- Get Quote Button -->
+        <div class="w-full lg:w-auto pt-2 mt-5 lg:pt-0">
+          <button type="submit" class="bg-black text-white text-base font-medium px-8 py-3 rounded-lg hover:bg-white hover:text-black border border-transparent hover:border-primary transition whitespace-nowrap w-full lg:w-auto block text-center shadow-lg">Get a Free Quote</button>
+        </div>
+      </form>
+    </div>
+
 </section>
 
-<section class="bg-white text-black md:py-12 pb-4 pt-12 md:mt-10 mt-12">
+<section class="bg-white text-black md:py-12 pb-4 pt-12 md:mt-10 mt-[500px]">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
     <!-- Top Ratings -->
@@ -128,7 +130,7 @@
     </div>
 
     <!-- Title -->
-    <h2 class="text-xl md:text-3xl mt-4 md:mt-12 font-bold mb-4 md:mb-12">Your Trusted Local Moving Company</h2>
+    <h2 class="text-xl md:text-3xl mt-4 md:mt-12  font-bold mb-4 md:mb-12">Your Trusted Local Moving Company</h2>
 
     <section class="bg-primary py-4 md:py-6 md:px-8 md:max-w-6xl mx-auto rounded-lg shadow-lg relative">
 
@@ -204,7 +206,7 @@
       <p class="text-primary font-medium md:text-[16px] text-[12px] md:mb-4 mb-2">We Provide Emergency Moving Assistance</p>
       <p class="font-medium md:text-[16px] text-[12px] mb-4">At Melbourne Central Movers, we’re ready when you need us. Our team ensures your move is smooth, safe, and stress-free, whether you’re shifting a single room or an entire office. Let us handle the heavy lifting so you can focus on settling into your new space with ease. We’re here to make your moving day simpler, faster, and worry-free.</p>
       <a href="#" onclick="openForm('Get a Quote')" class="bg-primary text-white md:text-[16px] text-[12px] px-8 inline-flex  py-2 md:px-10 md:py-3 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">Get a Quote</a>
-    </div>  
+    </div>
 
     <!-- Image -->
     <div class="w-[300px]">
@@ -258,7 +260,7 @@
         <p>Glass tables</p>
       </div>
 
-      
+
     </div>
 
     <!-- Right: Image Boxes (without images) -->
@@ -280,7 +282,7 @@
 </section>
 
 
-<section class="bg-white md:py-12 md:mt-0 -mt-10 px-4 md:px-10">
+<section class="bg-white md:py-0 md:mt-0 -mt-10 px-4 md:px-10">
   <div class="mx-auto md:px-8 w-full md:max-w-6xl">
     <h2 class="text-xl md:text-3xl font-bold mb-2 text-center">Tips for a Smooth House Move in Melbourne</h2>
     <p class="md:text-[16px] text-[12px]  text-primary font-medium max-w-3xl mx-auto text-center mb-4 md:mb-6">Planning your house move properly can save you time, money, and stress. Here’s how to ensure a seamless relocation in Melbourne:</p>
@@ -571,9 +573,7 @@
         <div class="relative">
           <img src="{{ asset('assets/images/allImages/Benefits of choosing - MCM.webp') }}" alt="MCM Team" class="rounded-lg h-96 shadow-md">
           <!-- Optional call icon (just for visual) -->
-          <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-primary text-white p-3 rounded-full shadow-lg">
-            <img src="{{ asset('assets/images/allImages/Call- Icon.webp') }}" alt="" class="w-10 h-10">
-          </div>
+         
         </div>
       </div>
 

@@ -47,21 +47,22 @@
             <input type="hidden" name="property_type" value="{{ $property_type ?? '' }}">
             <input type="hidden" name="property_size" value="{{ $property_size ?? '' }}">
             <input type="hidden" name="other_details" value="{{ $other_details ?? '' }}">
+            <input type="hidden" name="final_moving_date" id="final_moving_date" value="">
 
             <!-- Date Type Selection -->
             <div class="mb-6">
                 <h2 class="text-base md:text-lg font-semibold text-black mb-3">When are you planning to move?</h2>
                 <div class="grid grid-cols-3 md:grid-cols-4 gap-4" id="property-options">
                     @php
-                    $propertyTypes = ['Specific Date', 'Within 2 Weeks', 'Within 3 Months', 'Unsure'];
+                    $propertyTypes = ['Specific Date'];
                     @endphp
                     @foreach($propertyTypes as $type)
                     <label class="cursor-pointer group">
                         <input type="radio" name="moving_date" value="{{ $type }}" class="hidden peer" required>
                         <div class="flex flex-col items-center border border-gray-300 rounded-md py-6 px-1 text-sm text-black group-hover:bg-primary group-hover:text-white peer-checked:bg-primary peer-checked:text-white transition font-medium">
-                            <img src="{{ asset('assets/images/property-icons/' . strtolower($type) . '.svg') }}"
-                                data-default="{{ asset('assets/images/property-icons/' . strtolower($type) . '.svg') }}"
-                                data-selected="{{ asset('assets/images/property-icons/' . strtolower($type) . ' white' . '.svg') }}"
+                            <img src="{{ asset('assets/images/property-icons/' . $type . '.png') }}"
+                                data-default="{{ asset('assets/images/property-icons/' . $type . '.png') }}"
+                                data-selected="{{ asset('assets/images/property-icons/' . $type . ' white' . '.png') }}"
                                 alt="{{ $type }}" class="h-12 mb-2 icon-image transition">
                             {{ $type }}
                         </div>
@@ -214,57 +215,52 @@
     });
 </script>
 <script type="module">
-    document.addEventListener('DOMContentLoaded', function() {
-        const radios = document.querySelectorAll('input[name="moving_date"]');
-        const dateOutput = document.getElementById('selectedDate');
-        const specificDate2 = document.getElementById('specificDate');
+    document.addEventListener('DOMContentLoaded', function () {
+    const radios = document.querySelectorAll('input[name="moving_date"]');
+    const dateOutput = document.getElementById('selectedDate');
+    const specificDate2 = document.getElementById('specificDate');
+    const finalDateInput = document.getElementById('final_moving_date');
 
-        function updateDateSelection() {
-            if (radios.values === 'Specific Date') {
-                document.getElementById('datePickerContainer').classList.remove('hidden');
-            }
-
-            radios.forEach(radio => {
-                const img = radio.closest('label').querySelector('img');
-                if (radio.checked) {
-                    img.src = img.dataset.selected;
-                    if (radio.value !== 'Specific Date') {
-                        dateOutput.textContent = radio.value;
-                        document.getElementById('datePickerContainer').classList.add('hidden');
-                        const specificDate = document.getElementById('specific_date');
-                        specificDate.required = false;
-                        specificDate.value = ''; // Clear the date input if not needed
-                        specificDate2.textContent = '';
-                    } else {
-                        document.getElementById('datePickerContainer').classList.remove('hidden');
-                        const specificDate = document.getElementById('specific_date');
-                        dateOutput.textContent = '';
-                        specificDate.required = true;
-                        specificDate.addEventListener('change', function() {
-                            const date = new Date(this.value);
-                            const options = {
-                                day: 'numeric',
-                                month: 'long',
-                                year: 'numeric'
-                            };
-                            const formattedDate = date.toLocaleDateString('en-US', options); // Example: "23 July 2025"
-
-                            specificDate2.textContent = formattedDate;
-                        });
-                    }
-                } else {
-                    img.src = img.dataset.default;
-                }
-            });
-        }
-
+    function updateDateSelection() {
         radios.forEach(radio => {
-            radio.addEventListener('change', updateDateSelection);
-        });
+            const img = radio.closest('label').querySelector('img');
+            if (radio.checked) {
+                img.src = img.dataset.selected;
 
-        // Run once on page load (in case pre-selected)
-        updateDateSelection();
+                if (radio.value !== 'Specific Date') {
+                    dateOutput.textContent = radio.value;
+                    document.getElementById('datePickerContainer').classList.add('hidden');
+                    const specificDate = document.getElementById('specific_date');
+                    specificDate.required = false;
+                    specificDate.value = '';
+                    specificDate2.textContent = '';
+                    finalDateInput.value = radio.value; // Send this to webhook
+                } else {
+                    document.getElementById('datePickerContainer').classList.remove('hidden');
+                    const specificDate = document.getElementById('specific_date');
+                    dateOutput.textContent = '';
+                    specificDate.required = true;
+
+                    specificDate.addEventListener('change', function () {
+                        const date = new Date(this.value);
+                        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+                        const formattedDate = date.toLocaleDateString('en-US', options);
+                        specificDate2.textContent = formattedDate;
+                        finalDateInput.value = this.value; // YYYY-MM-DD format
+                    });
+                }
+            } else {
+                img.src = img.dataset.default;
+            }
+        });
+    }
+
+    radios.forEach(radio => {
+        radio.addEventListener('change', updateDateSelection);
     });
+
+    updateDateSelection();
+});
 </script>
 
 @endsection

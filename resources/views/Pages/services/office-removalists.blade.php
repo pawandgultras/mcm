@@ -28,17 +28,18 @@
 
                 <!-- Quote Form -->
                 <div class="bg-primary rounded-full px-10 sm:px-8 py-3 sm:py-5 max-w-3xl">
-                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-end">
+                    <form action="{{ route('enquiry') }}" method="GET" class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-end">
+
                         <!-- Moving From -->
                         <div class="flex-1 min-w-0">
                             <label class="block text-xs sm:text-sm font-medium text-black mb-1 ml-2 sm:mb-2">Moving from</label>
-                            <input type="text" placeholder="Enter Location" class="w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
+                            <input type="text" name="moving_from" placeholder="Enter Location" class="autocomplete w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
                         </div>
 
                         <!-- Moving To -->
                         <div class="flex-1 min-w-0">
                             <label class="block text-xs sm:text-sm font-medium text-black mb-1 ml-2 sm:mb-2">Moving to</label>
-                            <input type="text" placeholder="Enter Location" class="w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
+                            <input type="text" name="moving_to" placeholder="Enter Location" class="autocomplete w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
                         </div>
 
                         <!-- Quote Button -->
@@ -47,7 +48,7 @@
                                 Get a Free Quote
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
                 <!-- Service Links -->
@@ -124,13 +125,15 @@
 
     <!-- Quote Form -->
     <div class="bg-primary p-6 mx-4 rounded-xl shadow-lg -mt-10 z-10 relative">
-        <input type="text" placeholder="From suburb"
-            class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
-        <input type="text" placeholder="To suburb"
-            class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
-        <button class="w-full bg-black hover:bg-white text-white hover:text-black py-2 font-semibold rounded-md transition">
-            Get a Quote
-        </button>
+        <form action="{{ route('enquiry') }}" method="GET">
+            <input type="text" placeholder="From suburb" name="moving_from"
+                class="autocomplete w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+            <input type="text" placeholder="To suburb" name="moving_to"
+                class="autocomplete w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+            <button class="w-full bg-black hover:bg-white text-white hover:text-black py-2 font-semibold rounded-md transition">
+                Get a Quote
+            </button>
+        </form>
     </div>
 
     <!-- Ratings Section -->
@@ -699,9 +702,9 @@
             </svg>
             1300 163 694
         </button>
-        <button class="px-6 py-3 bg-primary text-white rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
+  <a href="#" onclick="openForm('Get a Quote')" class="px-6 py-3 bg-primary text-white rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
             Get a Quote
-        </button>
+</a>
     </div>
 
 
@@ -730,133 +733,133 @@
     <div class="max-w-7xl mx-auto md:px-4 px-8 lg:px-8">
         <!-- Testimonial Card -->
         <div class="testimonial-card">
-             <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>a month ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-            <div>
-              <p class="font-semibold text-sm">- jhon Leo</p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>a month ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+                        <div>
+                            <p class="font-semibold text-sm">- jhon Leo</p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
+                        I am happy to say that MCM Vanlines are one of the best house removalists I've ever made use of. They were very professional, got the job done in a timely manner, and did not leave any mess! I had no complaints, so you should hire them
+                        if you need removalist services.I would highly recommend MCM Vanlines for moving.
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
-            I am happy to say that MCM Vanlines are one of the best house removalists I've ever made use of. They were very professional, got the job done in a timely manner, and did not leave any mess! I had no complaints, so you should hire them
-            if you need removalist services.I would highly recommend MCM Vanlines for moving.
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
-      <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>few days ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>few days ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
 
-            <div>
-              <p class="font-semibold text-sm">- Kaser Portgas</p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+                        <div>
+                            <p class="font-semibold text-sm">- Kaser Portgas</p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
+                        MCM Vanlines does a fantastic job. I tried hiring some other removalists but the prices were way too expensive for the work. MCM is more reasonably priced than most of their rivals and they are always willing to work with you on your budget.
+                        I would highly recommend MCM for someone who knows how to get the job done well and quickly!
+
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
-            MCM Vanlines does a fantastic job. I tried hiring some other removalists but the prices were way too expensive for the work. MCM is more reasonably priced than most of their rivals and they are always willing to work with you on your budget.
-            I would highly recommend MCM for someone who knows how to get the job done well and quickly!
 
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>a month ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+                        <div>
+                            <p class="font-semibold text-sm">- jack davies</p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
 
-      <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>a month ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-            <div>
-              <p class="font-semibold text-sm">- jack davies</p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+                        I hired MCM Vanlines to move from my old home to a new one and I can tell you that they were amazing. They did the entire job by themselves in just three hours! Not only did they handle everything quickly but they also made sure I didn't have to lift a finger.
+                        I would highly recommend MCM Vanlines for any removal services in Melbourne
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
 
-            I hired MCM Vanlines to move from my old home to a new one and I can tell you that they were amazing. They did the entire job by themselves in just three hours! Not only did they handle everything quickly but they also made sure I didn't have to lift a finger.
-            I would highly recommend MCM Vanlines for any removal services in Melbourne
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
-
-      <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>a month ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-            <div>
-              <p class="font-semibold text-sm">- Carloman Bert</p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>a month ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+                        <div>
+                            <p class="font-semibold text-sm">- Carloman Bert</p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
+                        I've never had a job so easy and simple as working with MCM Vanlines. They are the best house removalists in Melbourne. I was able to organize my move from Melbourne to Sydney in just a few hours,
+                        which is impossible when you're moving within the same city.They were really fast and professional and I will definitely be using them again in future.
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
-            I've never had a job so easy and simple as working with MCM Vanlines. They are the best house removalists in Melbourne. I was able to organize my move from Melbourne to Sydney in just a few hours,
-            which is impossible when you're moving within the same city.They were really fast and professional and I will definitely be using them again in future.
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
 
-      <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>a month ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-            <div>
-              <p class="font-semibold text-sm">- Devin Pham </p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>a month ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+                        <div>
+                            <p class="font-semibold text-sm">- Devin Pham </p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
+                        MCM Vanlines did a fantastic job of removals. It was a simple move from home to office but the process was very smooth. They took my furniture, bedding, and other things into consideration in the quote, so I could be completely sure that they would
+                        take care of everything with no extra costs or hassles. Contact MCM Vanlines for best moving.
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
-            MCM Vanlines did a fantastic job of removals. It was a simple move from home to office but the process was very smooth. They took my furniture, bedding, and other things into consideration in the quote, so I could be completely sure that they would
-            take care of everything with no extra costs or hassles. Contact MCM Vanlines for best moving.
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
 
-      <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>a month ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-            <div>
-              <p class="font-semibold text-sm">- Kaser Portgas </p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>a month ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+                        <div>
+                            <p class="font-semibold text-sm">- Kaser Portgas </p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
+                        They offer an affordable price and the staff is very professional. I had one service with them before and they were great .I was a bit apprehensive when I called MCM Vanlines because they are cheaper than some of the other removalists in Melbourne.
+                        But luckily, I ended up with a great company who treated me well and charged me less!
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
-            They offer an affordable price and the staff is very professional. I had one service with them before and they were great .I was a bit apprehensive when I called MCM Vanlines because they are cheaper than some of the other removalists in Melbourne.
-            But luckily, I ended up with a great company who treated me well and charged me less!
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
 
         </div>
     </div>
@@ -1058,7 +1061,7 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                  Absolutely. Our movers are trained in handling servers, computers, and other electronics with anti-static materials and secure packaging to prevent any damage.
+                                    Absolutely. Our movers are trained in handling servers, computers, and other electronics with anti-static materials and secure packaging to prevent any damage.
 
                                 </p>
                             </div>
@@ -1077,7 +1080,7 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                  Yes, we provide flexible scheduling options, including evenings and weekends, so your office operations are not disrupted during the move.
+                                    Yes, we provide flexible scheduling options, including evenings and weekends, so your office operations are not disrupted during the move.
 
                                 </p>
                             </div>
@@ -1096,7 +1099,7 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                 Basic transit insurance is included in every move. For added peace of mind, we offer comprehensive coverage tailored to your business needs.
+                                    Basic transit insurance is included in every move. For added peace of mind, we offer comprehensive coverage tailored to your business needs.
                                 </p>
                             </div>
                         </div>
@@ -1114,7 +1117,7 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                   Pricing depends on office size, distance, complexity, and additional services like packing or setup. All quotes are clear and include no hidden fees.
+                                    Pricing depends on office size, distance, complexity, and additional services like packing or setup. All quotes are clear and include no hidden fees.
                                 </p>
                             </div>
                         </div>
@@ -1131,21 +1134,21 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                   Yes, we provide sturdy boxes, bubble wrap, and labels designed for office items, ensuring everything is packed securely for transport.
+                                    Yes, we provide sturdy boxes, bubble wrap, and labels designed for office items, ensuring everything is packed securely for transport.
                                 </p>
                             </div>
                         </div>
                     </li>
-                   
+
                 </ul>
             </div>
         </div>
         <!-- Ask Question Button - Takes 4 columns on large screens -->
         <div class="m-auto mt-4 flex justify-center lg:justify-center lg:gap-8 lg:w-4/12">
             <div class="mt-8 lg:mt-0">
-                <button class="bg-primary hover:bg-white hover:text-black border border-transparent hover:border-primary text-white px-16 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full lg:w-auto">
+                <a href="#" onclick="openForm('Ask your question')" class="inline-block bg-primary hover:bg-white hover:text-black border border-transparent hover:border-primary text-white px-16 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full lg:w-auto">
                     Ask your question
-                </button>
+                </a>
             </div>
         </div>
     </div>

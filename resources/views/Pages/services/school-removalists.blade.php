@@ -29,17 +29,18 @@
 
                 <!-- Quote Form -->
                 <div class="bg-primary rounded-full px-10 sm:px-8 py-3 sm:py-5 max-w-3xl">
-                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-end">
+                    <form action="{{ route('enquiry') }}" method="GET" class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-end">
+
                         <!-- Moving From -->
                         <div class="flex-1 min-w-0">
                             <label class="block text-xs sm:text-sm font-medium text-black mb-1 ml-2 sm:mb-2">Moving from</label>
-                            <input type="text" placeholder="Enter Location" class="w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
+                            <input type="text" name="moving_from" placeholder="Enter Location" class="autocomplete w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
                         </div>
 
                         <!-- Moving To -->
                         <div class="flex-1 min-w-0">
                             <label class="block text-xs sm:text-sm font-medium text-black mb-1 ml-2 sm:mb-2">Moving to</label>
-                            <input type="text" placeholder="Enter Location" class="w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
+                            <input type="text" name="moving_to" placeholder="Enter Location" class="autocomplete w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
                         </div>
 
                         <!-- Quote Button -->
@@ -48,7 +49,7 @@
                                 Get a Free Quote
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
                 <!-- Service Links -->
@@ -125,13 +126,15 @@
 
     <!-- Quote Form -->
     <div class="bg-primary p-6 mx-4 rounded-xl shadow-lg -mt-10 z-10 relative">
-        <input type="text" placeholder="From suburb"
-            class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
-        <input type="text" placeholder="To suburb"
-            class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
-        <button class="w-full bg-black hover:bg-white text-white hover:text-black py-2 font-semibold rounded-md transition">
-            Get a Quote
-        </button>
+        <form action="{{ route('enquiry') }}" method="GET">
+            <input type="text" placeholder="From suburb" name="moving_from"
+                class="autocomplete w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+            <input type="text" placeholder="To suburb" name="moving_to"
+                class="autocomplete w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+            <button class="w-full bg-black hover:bg-white text-white hover:text-black py-2 font-semibold rounded-md transition">
+                Get a Quote
+            </button>
+        </form>
     </div>
 
     <!-- Ratings Section -->
@@ -634,9 +637,9 @@
             </svg>
             1300 163 694
         </button>
-        <button class="px-6 py-3 bg-primary text-white rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
+        <a href="#" onclick="openForm('Get a Quote')" class="px-6 py-3 bg-primary text-white rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
             Get a Quote
-        </button>
+        </a>
     </div>
 
 
@@ -1066,9 +1069,9 @@
         <!-- Ask Question Button - Takes 4 columns on large screens -->
         <div class="m-auto mt-4 flex justify-center lg:justify-center lg:gap-8 lg:w-4/12">
             <div class="mt-8 lg:mt-0">
-                <button class="bg-primary hover:bg-white hover:text-black border border-transparent hover:border-primary text-white px-16 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full lg:w-auto">
+                <a href="#" onclick="openForm('Ask your question')" class="inline-block bg-primary hover:bg-white hover:text-black border border-transparent hover:border-primary text-white px-16 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full lg:w-auto">
                     Ask your question
-                </button>
+                </a>
             </div>
         </div>
     </div>

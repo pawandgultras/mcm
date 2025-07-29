@@ -160,11 +160,7 @@
                             <div>
                                 <p class="font-semibold flex items-center gap-2">
                                     Insurance
-                                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/QBE_Insurance_logo.svg/1200px-QBE_Insurance_logo.svg.png"
-                                        class="h-5" alt="QBE Logo">
-                                    <img
-                                        src="https://upload.wikimedia.org/wikipedia/en/thumb/2/23/Australian_Insurance_Council_logo.svg/1920px-Australian_Insurance_Council_logo.svg.png"
-                                        class="h-5" alt="AIC Logo">
+                                   
                                 </p>
                                 <p class="text-sm text-gray-600">Get peace of mind with coverage for your belongings during transit and
                                     storage.</p>
@@ -327,12 +323,6 @@
                     <li class="form-description-list">Fixed & Hourly Quotes</li>
                     <li class="form-description-list">Trained Removalists</li>
                 </ul>
-
-                <div class="flex space-x-2 mt-4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" class="h-6">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" class="h-6">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Amex_logo.svg" alt="Amex" class="h-6">
-                </div>
             </div>
         </div>
     </div>

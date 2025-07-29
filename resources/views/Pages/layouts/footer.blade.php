@@ -78,11 +78,11 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label class="block text-white text-sm font-medium mb-1">Moving from?</label>
-              <input type="text" name="move_from" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="text" name="move_from" class="autocomplete w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
             <div>
               <label class="block text-white text-sm font-medium mb-1">Moving to?</label>
-              <input type="text" name="move_to" class="w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+              <input type="text" name="move_to" class="autocomplete w-full px-4 md:py-2 py-1 rounded-lg bg-transparent border-2 border-primary text-white placeholder-gray-400 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
             </div>
           </div>
 
@@ -224,20 +224,20 @@
       <div class=" pl-4">
         <h4 class="text-primary underline underline-offset-8  decoration-2 text-lg font-semibold mb-3">Quick Links</h4>
         <ul class="space-y-1">
-          <li><a href="" class="text-white hover:text-primary">Home</a></li>
-          <li><a href="" class="text-white hover:text-primary">About Us</a></li>
-          <li><a href="" class="text-white hover:text-primary">Client Reviews</a></li>
-          <li><a href="" class="text-white hover:text-primary">Work With Us</a></li>
-          <li><a href="" class="text-white hover:text-primary">Partners</a></li>
-          <li><a href="" class="text-white hover:text-primary">Reach Us</a></li>
-          <li><a href="" class="text-white hover:text-primary">Video Reviews</a></li>
-          <li><a href="" class="text-white hover:text-primary">Blog</a></li>
-          <li><a href="" class="text-white hover:text-primary">News</a></li>
-          <li><a href="" class="text-white hover:text-primary">FAQ's</a></li>
-          <li><a href="" class="text-white hover:text-primary">Sitemap</a></li>
-          <li><a href="" class="text-white hover:text-primary">Premium Services</a></li>
-          <li><a href="" class="text-white hover:text-primary">Storage Service</a></li>
-          <li><a href="" class="text-white hover:text-primary">Privacy Policy</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Home</a></li>
+          <li><a href="#" class="text-white hover:text-primary">About Us</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Client Reviews</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Work With Us</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Partners</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Reach Us</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Video Reviews</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Blog</a></li>
+          <li><a href="#" class="text-white hover:text-primary">News</a></li>
+          <li><a href="#" class="text-white hover:text-primary">FAQ's</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Sitemap</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Premium Services</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Storage Service</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Privacy Policy</a></li>
         </ul>
       </div>
 
@@ -245,17 +245,17 @@
       <div>
         <h4 class="text-primary underline underline-offset-8  decoration-2 text-lg font-semibold mb-3">Local Removals</h4>
         <ul class="space-y-1">
-          <li><a href="" class="text-white hover:text-primary">Adelaide Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Brisbane Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Ballarat Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Canberra Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Geelong Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Gold Coast Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Melbourne Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Sydney Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Parramatta Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Perth Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Our Prices</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Adelaide Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Brisbane Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Ballarat Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Canberra Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Geelong Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Gold Coast Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Melbourne Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Sydney Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Parramatta Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Perth Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Our Prices</a></li>
         </ul>
       </div>
 
@@ -263,16 +263,16 @@
       <div>
         <h4 class="text-primary underline underline-offset-8  decoration-2 text-lg font-semibold mb-3">Moving Local</h4>
         <ul class="space-y-1">
-          <li><a href="" class="text-white hover:text-primary">House Removalists</a></li>
-          <li><a href="" class="text-white hover:text-primary">Furniture Removals</a></li>
-          <li><a href="" class="text-white hover:text-primary">Office Relocation</a></li>
-          <li><a href="" class="text-white hover:text-primary">Two Men and a Truck</a></li>
-          <li><a href="" class="text-white hover:text-primary">Movers and Packers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Loading and Unloading</a></li>
-          <li><a href="" class="text-white hover:text-primary">Piano Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Pool Table Movers</a></li>
-          <li><a href="" class="text-white hover:text-primary">Safe Removalists</a></li>
-          <li><a href="" class="text-white hover:text-primary">Labour Hire</a></li>
+          <li><a href="#" class="text-white hover:text-primary">House Removalists</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Furniture Removals</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Office Relocation</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Two Men and a Truck</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Movers and Packers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Loading and Unloading</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Piano Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Pool Table Movers</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Safe Removalists</a></li>
+          <li><a href="#" class="text-white hover:text-primary">Labour Hire</a></li>
         </ul>
       </div>
     </div>

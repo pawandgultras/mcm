@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Exception;
 use App\Models\Quote;
 use App\Mail\QuoteSubmitted;
 use Illuminate\Http\Request;
 use App\Mail\ContactFormMail;
 use App\Models\ContactSubmission;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 
 class formController extends Controller
@@ -92,8 +94,6 @@ class formController extends Controller
             ->with('success', 'Form submitted successfully!');
     }
 
-
-
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -114,15 +114,50 @@ class formController extends Controller
             'contact_time' => 'required|string',
         ]);
 
+        // Format values
         $validated['previous_booking'] = $request->has('previous_booking');
         $validated['addons'] = json_encode($request->input('addons'));
+        $validated['mobile_number'] = substr(preg_replace('/[^0-9+]/', '', $validated['mobile_number']), 0, 15);
 
+        // Decide final moving date to be sent to Pabbly
+        if ($validated['moving_date'] === 'Specific Date' && !empty($validated['specific_date'])) {
+            try {
+                $movingDate = \Carbon\Carbon::parse($validated['specific_date'])->format('Y-m-d');
+            } catch (\Exception $e) {
+                $movingDate = ''; // fallback in case of parse error
+            }
+        } else {
+            $movingDate = $validated['moving_date'];
+        }
+
+        // Save to DB
         $quote = Quote::create($validated);
-        $mailid = "mcmcentralmovers@gmail.com";
 
-        Mail::to($mailid)->send(new QuoteSubmitted($quote));
+        // Send email to internal team
+        Mail::to("mcmcentralmovers@gmail.com")->send(new QuoteSubmitted($quote));
 
-        return view('Pages.form.thank-you')->with('success', 'Thank you for your enquiry! We will get back to you soon.');
+        // // Send data to Pabbly webhook
+        // $pabblyData = [
+        //     'moving_from' => $validated['moving_from'],
+        //     'moving_to' => $validated['moving_to'],
+        //     'property_type' => $validated['property_type'],
+        //     'moving_date' => $movingDate,
+        //     'specific_date' => $validated['specific_date'], // You may remove this if not needed
+        //     'other_details' => $validated['other_details'],
+        //     'enquiry' => $validated['enquiry'],
+        //     'quote_type' => $validated['quote_type'],
+        //     'previous_booking' => $validated['previous_booking'] ? 'Yes' : 'No',
+        //     'first_name' => $validated['first_name'],
+        //     'last_name' => $validated['last_name'],
+        //     'email' => $validated['email'],
+        //     'mobile_number' => $validated['mobile_number'],
+        //     'addons' => $validated['addons'],
+        //     'contact_time' => $validated['contact_time'],
+        // ];
+
+        // Http::post('https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZhMDYzNTA0MzA1MjY1NTUzNTUxMzAi_pc', $pabblyData);
+
+        return view('Pages.thankyou')->with('success', 'Thank you for your enquiry! We will get back to you soon.');
     }
 
 
@@ -139,6 +174,14 @@ class formController extends Controller
             'message'  => 'nullable|string',
         ]);
 
+
+        if ($formData['move_date']) {
+            $movingDate = \Carbon\Carbon::parse($formData['move_date'])->format('Y-m-d');
+        } else {
+            $movingDate = ''; // fallback in case of parse error
+        }
+
+
         // Store in database
         ContactSubmission::create($formData);
 
@@ -146,6 +189,22 @@ class formController extends Controller
         // Send email
         Mail::to($mailid)->send(new ContactFormMail($formData));
 
-        return redirect()->back()->with('success', 'Thank you for contacting us! We will get back to you soon.');
+        // $pabblyData = [
+        //     'moving_from' => $formData['move_from'],
+        //     'moving_to' => $formData['move_to'],
+        //     'first_name' => $formData['name'],
+        //     'email' => $formData['email'],
+        //     'mobile_number' => $formData['phone'],
+        //     'moving_date' => $movingDate,
+            
+        // ];
+        // Http::post('https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZhMDYzNTA0MzA1MjY1NTUzNTUxMzAi_pc', $pabblyData);
+
+        return view('Pages.thankyou')->with('success', 'Thank you for contacting us! We will get back to you soon.');
+    }
+
+    public function thankyou(Request $request)
+    {
+        return view('Pages.thankyou');
     }
 }

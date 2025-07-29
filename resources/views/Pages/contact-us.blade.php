@@ -118,14 +118,14 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="tel" name="phone" placeholder="Your Phone number" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
+                    <input type="tel" name="phone" placeholder="Your Phone number" class=" w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
 
                     <input type="date" name="move_date" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" name="move_from" placeholder="Moving From" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
-                    <input type="text" name="move_to" placeholder="Moving To" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
+                    <input type="text" name="move_from" placeholder="Moving From" class="autocomplete w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
+                    <input type="text" name="move_to" placeholder="Moving To" class="autocomplete w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary" />
                 </div>
 
                 <textarea rows="4" name="message" placeholder="Message" class="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-none focus:ring-2 focus:ring-primary"></textarea>

@@ -126,8 +126,8 @@
 
         <!-- Buttons -->
         <div class="flex flex-row justify-start gap-2 items-center space-y-2 md:space-y-0 md:space-x-3">
-          <a href="#" class="border border-primary text-white px-4 py-1 rounded hover:bg-primary hover:text-black text-sm transition">Request Call Back</a>
-          <a href="#" class="bg-primary text-white px-4 py-1 rounded hover:bg-primary/90 text-sm transition">Get a Quote</a>
+          <a href="#" class="border border-primary text-white px-4 py-1 rounded hover:bg-primary hover:text-black text-sm transition" onclick="openForm('Request Call Back')">Request Call Back</a>
+          <a href="#" class="bg-primary text-white px-4 py-1 rounded hover:bg-primary/90 text-sm transition" onclick="openForm('Get a Quote')">Get a Quote</a>
         </div>
 
       </div>

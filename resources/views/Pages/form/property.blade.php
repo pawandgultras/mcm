@@ -58,9 +58,9 @@
                     <label class="cursor-pointer group">
                         <input type="radio" name="property_type" value="{{ $type }}" class="hidden peer" required onchange="updatePropertyImages()">
                         <div class="flex flex-col items-center border border-gray-300 rounded-md py-2 px-1 text-sm text-black group-hover:bg-primary group-hover:text-white peer-checked:bg-primary peer-checked:text-white transition font-medium">
-                            <img src="{{ asset('assets/images/property-icons/' . strtolower($type) . '.webp') }}"
-                                data-default="{{ asset('assets/images/property-icons/' . strtolower($type) . '.webp') }}"
-                                data-selected="{{ asset('assets/images/property-icons/' . strtolower($type) . '.webp') }}"
+                            <img src="{{ asset('assets/images/property-icons/' . $type . '.webp') }}"
+                                data-default="{{ asset('assets/images/property-icons/' . $type . '.webp') }}"
+                                data-selected="{{ asset('assets/images/property-icons/' . $type . '.webp') }}"
                                 alt="{{ $type }}" class="h-20 mb-2 icon-image transition">
                             {{ $type }}
                         </div>

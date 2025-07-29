@@ -32,17 +32,18 @@
 
                 <!-- Quote Form -->
                 <div class="bg-primary rounded-full px-10 sm:px-8 py-3 sm:py-5 max-w-3xl">
-                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-end">
+                    <form action="{{ route('enquiry') }}" method="GET" class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-end">
+
                         <!-- Moving From -->
                         <div class="flex-1 min-w-0">
                             <label class="block text-xs sm:text-sm font-medium text-black mb-1 ml-2 sm:mb-2">Moving from</label>
-                            <input type="text" placeholder="Enter Location" class="w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
+                            <input type="text" name="moving_from" placeholder="Enter Location" class="autocomplete w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
                         </div>
 
                         <!-- Moving To -->
                         <div class="flex-1 min-w-0">
                             <label class="block text-xs sm:text-sm font-medium text-black mb-1 ml-2 sm:mb-2">Moving to</label>
-                            <input type="text" placeholder="Enter Location" class="w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
+                            <input type="text" name="moving_to" placeholder="Enter Location" class="autocomplete w-full md:py-2 py-1.5 px-3 sm:px-4 text-sm sm:text-base rounded-md outline-none text-black placeholder-gray-500 focus:ring-2 focus:ring-black/20 border-0">
                         </div>
 
                         <!-- Quote Button -->
@@ -51,7 +52,7 @@
                                 Get a Free Quote
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
 
                 <!-- Service Links -->
@@ -128,13 +129,15 @@
 
     <!-- Quote Form -->
     <div class="bg-primary p-6 mx-4 rounded-xl shadow-lg -mt-10 z-10 relative">
-        <input type="text" placeholder="From suburb"
-            class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
-        <input type="text" placeholder="To suburb"
-            class="w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
-        <button class="w-full bg-black hover:bg-white text-white hover:text-black py-2 font-semibold rounded-md transition">
-            Get a Quote
-        </button>
+        <form action="{{ route('enquiry') }}" method="GET">
+            <input type="text" placeholder="From suburb" name="moving_from"
+                class="autocomplete w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+            <input type="text" placeholder="To suburb" name="moving_to"
+                class="autocomplete w-full mb-3 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
+            <button class="w-full bg-black hover:bg-white text-white hover:text-black py-2 font-semibold rounded-md transition">
+                Get a Quote
+            </button>
+        </form>
     </div>
 
     <!-- Ratings Section -->
@@ -160,7 +163,7 @@
         <div class="mb-6 sm:mb-8 md:mb-10">
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-black">Our Antique Removal Services</h2>
             <p class="text-sm sm:text-base md:text-lg text-gray mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed">
-             Every antique move is unique. That’s why we offer a tailored, end-to-end moving experience built around safety, protection, and reliability.
+                Every antique move is unique. That’s why we offer a tailored, end-to-end moving experience built around safety, protection, and reliability.
             </p>
         </div>
 
@@ -180,7 +183,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-3 sm:p-4 md:p-5 flex flex-col justify-end">
                         <h3 class="text-white text-2xl sm:text-lg md:text-xl font-semibold mb-1 sm:mb-2 italic">On-Site Assessment and Quote</h3>
                         <p class="clamp-2-lines text-white text-base sm:text-sm md:text-base mb-2 sm:mb-3 leading-relaxed">
-                          We start with a detailed consultation to assess your antiques, discuss any special handling needs, and provide a customised quote. This ensures we bring the right packing supplies, equipment, and vehicle for the job.
+                            We start with a detailed consultation to assess your antiques, discuss any special handling needs, and provide a customised quote. This ensures we bring the right packing supplies, equipment, and vehicle for the job.
                         </p>
                         <a href="#" class="text-primary font-semibold text-lg md:text-base italic underline hover:text-white transition-colors duration-200">Learn more...</a>
                     </div>
@@ -243,7 +246,7 @@
                     </div>
                 </div>
             </div>
-          
+
         </div>
     </div>
 </section>
@@ -273,7 +276,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-black mb-3 text-center">Specialised Experience with Antiques</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 block">
-                  Our team has years of experience moving rare, vintage, and fragile items. We know how to handle age-worn furniture, delicate veneers, and sensitive finishes that require extra attention.
+                    Our team has years of experience moving rare, vintage, and fragile items. We know how to handle age-worn furniture, delicate veneers, and sensitive finishes that require extra attention.
 
 
                 </p>
@@ -293,7 +296,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-black mb-3 text-center">Gentle, Detail-Oriented Approach</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                  We treat every antique as if it were our own. Our methods are designed to minimise stress on joints, surfaces, and glass elements — ensuring a damage-free move from start to finish.
+                    We treat every antique as if it were our own. Our methods are designed to minimise stress on joints, surfaces, and glass elements — ensuring a damage-free move from start to finish.
                 </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
@@ -308,10 +311,10 @@
                     <div class="w-12 h-12 rounded-full flex items-center justify-center">
                         <img src="{{ asset('assets/images/servicesImages/Local Know-How.webp') }}" alt="Local Know-How" class="w-full h-full object-cover rounded-full">
                     </div>
-                </div>  
+                </div>
                 <h3 class="text-xl font-bold text-black mb-3 text-center">Transparent Pricing and Flexible Options</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                 We offer competitive pricing with no hidden charges. Whether you need a full antique house move or help with just one fragile item, we’ll tailor a solution to suit your budget and timeline.
+                    We offer competitive pricing with no hidden charges. Whether you need a full antique house move or help with just one fragile item, we’ll tailor a solution to suit your budget and timeline.
                 </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
@@ -329,7 +332,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-black mb-3 text-center">Fully Equipped Moving Fleet</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                   From padded trucks to hydraulic lifts and specialty crates, we bring the right equipment to every job to make sure your antiques are protected at every stage.
+                    From padded trucks to hydraulic lifts and specialty crates, we bring the right equipment to every job to make sure your antiques are protected at every stage.
                 </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
@@ -347,7 +350,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-black mb-3 text-center">Optional Storage for Valuable Items</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                   Need a safe place to store antiques temporarily? We offer secure, climate-aware storage options ideal for preserving fragile or valuable items before they’re ready to be placed.
+                    Need a safe place to store antiques temporarily? We offer secure, climate-aware storage options ideal for preserving fragile or valuable items before they’re ready to be placed.
 
                 </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
@@ -366,7 +369,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-black mb-3 text-center">Trained and Insured Professionals</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                   Our team is not only experienced — we’re fully trained in handling antiques and insured for your peace of mind. You can trust us to treat every item with the highest level of care and accountability.
+                    Our team is not only experienced — we’re fully trained in handling antiques and insured for your peace of mind. You can trust us to treat every item with the highest level of care and accountability.
                 </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
@@ -383,7 +386,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-black mb-3 text-center">Custom Packing Solutions</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                 No two antiques are the same. We use tailor-made packing methods with acid-free paper, cushioning foam, and custom-built crates to ensure every item is secured for safe transport.
+                    No two antiques are the same. We use tailor-made packing methods with acid-free paper, cushioning foam, and custom-built crates to ensure every item is secured for safe transport.
                 </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
@@ -391,7 +394,7 @@
                     </button>
                 </div>
             </div>
-           
+
             <!-- Customised for You -->
             <div class="benefit-card bg-white border-2 border-primary rounded-lg p-3 text-center hover:shadow-lg transition-shadow md:col-span-1 md:row-span-1 relative" data-card="customised">
                 <div class="flex justify-center mb-2">
@@ -401,7 +404,7 @@
                 </div>
                 <h3 class="text-xl font-bold text-black mb-3 text-center">Optional Storage for Valuable Items</h3>
                 <p class="card-content text-gray-600 text-sm leading-relaxed mb-4 hidden">
-                 Need a safe place to store antiques temporarily? We offer secure, climate-aware storage options ideal for preserving fragile or valuable items before they’re ready to be placed.
+                    Need a safe place to store antiques temporarily? We offer secure, climate-aware storage options ideal for preserving fragile or valuable items before they’re ready to be placed.
                 </p>
                 <div class="text-center absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-[50%]">
                     <button class="toggle-btn bg-primary md:text-sm text-xs text-white px-4 py-1 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition font-medium">
@@ -409,7 +412,7 @@
                     </button>
                 </div>
             </div>
-           
+
 
         </div>
     </div>
@@ -462,10 +465,10 @@
         <!-- Section Header -->
         <div class="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
             <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-3 sm:mb-4 md:mb-6">
-        How Our Antique Moving Process Works
+                How Our Antique Moving Process Works
             </h2>
             <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-primary font-medium">
-               Moving antiques is different from a standard home move. Our team follows a step-by-step process designed for maximum safety:
+                Moving antiques is different from a standard home move. Our team follows a step-by-step process designed for maximum safety:
             </p>
         </div>
 
@@ -564,7 +567,7 @@
                         <div class="h-full bg-gray-400 rounded w-0 transition-all duration-300"></div>
                     </div>
                 </div>
-                
+
             </div>
 
             <!-- Right Side - Content Display -->
@@ -580,16 +583,16 @@
                 <!-- Content for Contact us & Quotation -->
                 <div class="process-content active" data-content="contact">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                       <p>
-                        We begin with a phone consultation or in-person assessment to evaluate your antiques and outline specific care requirements.
-                       </p>
+                        <p>
+                            We begin with a phone consultation or in-person assessment to evaluate your antiques and outline specific care requirements.
+                        </p>
                     </ul>
                 </div>
 
                 <!-- Content for Booking -->
                 <div class="process-content hidden" data-content="booking">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                      <p> Our movers arrive with professional-grade packing supplies and individually wrap each antique, using custom solutions for extra-fragile or high-value pieces..</p>
+                        <p> Our movers arrive with professional-grade packing supplies and individually wrap each antique, using custom solutions for extra-fragile or high-value pieces..</p>
                     </ul>
                 </div>
 
@@ -597,7 +600,7 @@
                 <div class="process-content hidden" data-content="before">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
                         <p>
-                    Items are carefully lifted and placed into our vehicles using ramps, padded trolleys, and tie-down systems to eliminate shifting during transport.
+                            Items are carefully lifted and placed into our vehicles using ramps, padded trolleys, and tie-down systems to eliminate shifting during transport.
                         </p>
                     </ul>
                 </div>
@@ -605,8 +608,8 @@
                 <!-- Content for Moving Day -->
                 <div class="process-content hidden" data-content="moving">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
-                     <p>We choose the safest route, avoid rough surfaces, and drive cautiously to maintain a steady environment inside the moving truck.
-</p>
+                        <p>We choose the safest route, avoid rough surfaces, and drive cautiously to maintain a steady environment inside the moving truck.
+                        </p>
                     </ul>
                 </div>
 
@@ -614,11 +617,11 @@
                 <div class="process-content hidden" data-content="after">
                     <ul class="space-y-3 sm:space-y-4 text-gray-700">
                         <p>
-                    On arrival, we unload and place each item where instructed — taking the same care with positioning and reassembly as we did during packing.
+                            On arrival, we unload and place each item where instructed — taking the same care with positioning and reassembly as we did during packing.
                         </p>
                     </ul>
                 </div>
-              
+
             </div>
         </div>
     </div>
@@ -659,9 +662,9 @@
             </svg>
             1300 163 694
         </button>
-        <button class="px-6 py-3 bg-primary text-white rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
+        <a href="#" onclick="openForm('Get a Quote')" class="px-6 py-3 bg-primary text-white rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
             Get a Quote
-        </button>
+        </a>
     </div>
 
 
@@ -691,132 +694,132 @@
         <!-- Testimonial Card -->
         <div class="testimonial-card">
             <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>a month ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-            <div>
-              <p class="font-semibold text-sm">- jhon Leo</p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>a month ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+                        <div>
+                            <p class="font-semibold text-sm">- jhon Leo</p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
+                        I am happy to say that MCM Vanlines are one of the best house removalists I've ever made use of. They were very professional, got the job done in a timely manner, and did not leave any mess! I had no complaints, so you should hire them
+                        if you need removalist services.I would highly recommend MCM Vanlines for moving.
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
-            I am happy to say that MCM Vanlines are one of the best house removalists I've ever made use of. They were very professional, got the job done in a timely manner, and did not leave any mess! I had no complaints, so you should hire them
-            if you need removalist services.I would highly recommend MCM Vanlines for moving.
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
-      <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>few days ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>few days ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
 
-            <div>
-              <p class="font-semibold text-sm">- Kaser Portgas</p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+                        <div>
+                            <p class="font-semibold text-sm">- Kaser Portgas</p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
+                        MCM Vanlines does a fantastic job. I tried hiring some other removalists but the prices were way too expensive for the work. MCM is more reasonably priced than most of their rivals and they are always willing to work with you on your budget.
+                        I would highly recommend MCM for someone who knows how to get the job done well and quickly!
+
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
-            MCM Vanlines does a fantastic job. I tried hiring some other removalists but the prices were way too expensive for the work. MCM is more reasonably priced than most of their rivals and they are always willing to work with you on your budget.
-            I would highly recommend MCM for someone who knows how to get the job done well and quickly!
 
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>a month ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+                        <div>
+                            <p class="font-semibold text-sm">- jack davies</p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
 
-      <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>a month ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-            <div>
-              <p class="font-semibold text-sm">- jack davies</p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+                        I hired MCM Vanlines to move from my old home to a new one and I can tell you that they were amazing. They did the entire job by themselves in just three hours! Not only did they handle everything quickly but they also made sure I didn't have to lift a finger.
+                        I would highly recommend MCM Vanlines for any removal services in Melbourne
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
 
-            I hired MCM Vanlines to move from my old home to a new one and I can tell you that they were amazing. They did the entire job by themselves in just three hours! Not only did they handle everything quickly but they also made sure I didn't have to lift a finger.
-            I would highly recommend MCM Vanlines for any removal services in Melbourne
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
-
-      <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>a month ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-            <div>
-              <p class="font-semibold text-sm">- Carloman Bert</p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>a month ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+                        <div>
+                            <p class="font-semibold text-sm">- Carloman Bert</p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
+                        I've never had a job so easy and simple as working with MCM Vanlines. They are the best house removalists in Melbourne. I was able to organize my move from Melbourne to Sydney in just a few hours,
+                        which is impossible when you're moving within the same city.They were really fast and professional and I will definitely be using them again in future.
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
-            I've never had a job so easy and simple as working with MCM Vanlines. They are the best house removalists in Melbourne. I was able to organize my move from Melbourne to Sydney in just a few hours,
-            which is impossible when you're moving within the same city.They were really fast and professional and I will definitely be using them again in future.
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
 
-      <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>a month ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-            <div>
-              <p class="font-semibold text-sm">- Devin Pham </p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>a month ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+                        <div>
+                            <p class="font-semibold text-sm">- Devin Pham </p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
+                        MCM Vanlines did a fantastic job of removals. It was a simple move from home to office but the process was very smooth. They took my furniture, bedding, and other things into consideration in the quote, so I could be completely sure that they would
+                        take care of everything with no extra costs or hassles. Contact MCM Vanlines for best moving.
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
-            MCM Vanlines did a fantastic job of removals. It was a simple move from home to office but the process was very smooth. They took my furniture, bedding, and other things into consideration in the quote, so I could be completely sure that they would
-            take care of everything with no extra costs or hassles. Contact MCM Vanlines for best moving.
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
 
-      <div class="px-3">
-        <div class="bg-white rounded-md shadow-md py-5 px-6">
-          <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
-            <div class="text-yellow-500 text-sm">★★★★★</div>
-            <span>a month ago</span>
-          </div>
-          <div class="flex items-center gap-3 mb-4">
-            <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
-            <div>
-              <p class="font-semibold text-sm">- Kaser Portgas </p>
-              <p class="text-xs text-gray-500">Melbourne City</p>
+            <div class="px-3">
+                <div class="bg-white rounded-md shadow-md py-5 px-6">
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-2">
+                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                        <span>a month ago</span>
+                    </div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="{{ asset('assets/images/logos/images.jpeg') }}" alt="Reviewer" class="rounded-full w-10 h-10 object-cover" />
+                        <div>
+                            <p class="font-semibold text-sm">- Kaser Portgas </p>
+                            <p class="text-xs text-gray-500">Melbourne City</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-800 leading-relaxed mb-3">
+                        They offer an affordable price and the staff is very professional. I had one service with them before and they were great .I was a bit apprehensive when I called MCM Vanlines because they are cheaper than some of the other removalists in Melbourne.
+                        But luckily, I ended up with a great company who treated me well and charged me less!
+                    </p>
+                    <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
+                </div>
             </div>
-          </div>
-          <p class="text-sm text-gray-800 leading-relaxed mb-3">
-            They offer an affordable price and the staff is very professional. I had one service with them before and they were great .I was a bit apprehensive when I called MCM Vanlines because they are cheaper than some of the other removalists in Melbourne.
-            But luckily, I ended up with a great company who treated me well and charged me less!
-          </p>
-          <!-- <a href="#" class="text-primary text-sm font-medium hover:underline">Read More</a> -->
-        </div>
-      </div>
 
         </div>
     </div>
@@ -954,7 +957,7 @@
         <!-- Section Header -->
         <div class="text-center mb-12">
             <h2 class="text-2xl md:text-4xl font-bold text-black mb-2">
-             Frequently Asked Questions
+                Frequently Asked Questions
             </h2>
             <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-primary font-medium">
                 Moving soon? Here at The MCM we understand that you might have some moving questions when preparing for your upcoming relocation. Here are some of our most frequently asked questions (FAQ's) by our customers.
@@ -996,7 +999,7 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                We offer optional transit insurance for added protection. Please let us know the estimated value of your items so we can provide the right coverage.
+                                    We offer optional transit insurance for added protection. Please let us know the estimated value of your items so we can provide the right coverage.
                                 </p>
                             </div>
                         </div>
@@ -1014,7 +1017,7 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                  Absolutely. We specialise in moving fragile items including antique mirrors, glass displays, and china cabinets. We use additional padding and crating as needed.
+                                    Absolutely. We specialise in moving fragile items including antique mirrors, glass displays, and china cabinets. We use additional padding and crating as needed.
 
                                 </p>
                             </div>
@@ -1033,7 +1036,7 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                Yes, if you prefer to manage transport yourself, we can provide professional antique packing services using premium materials.
+                                    Yes, if you prefer to manage transport yourself, we can provide professional antique packing services using premium materials.
                                 </p>
                             </div>
                         </div>
@@ -1051,7 +1054,7 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                                 Yes, we offer short- and long-term storage options ideal for antiques. Our facilities are secure, clean, and suited to sensitive pieces.
+                                    Yes, we offer short- and long-term storage options ideal for antiques. Our facilities are secure, clean, and suited to sensitive pieces.
                                 </p>
                             </div>
                         </div>
@@ -1069,22 +1072,22 @@
                         <div class="transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
                             <div class="pb-5 pr-12">
                                 <p class="text-gray-600 md:text-base text-xs leading-relaxed">
-                              We recommend booking at least one week in advance to allow for a detailed pre-move plan, especially for rare or complex antique collections.
+                                    We recommend booking at least one week in advance to allow for a detailed pre-move plan, especially for rare or complex antique collections.
                                 </p>
                             </div>
                         </div>
                     </li>
-                   
-                   
+
+
                 </ul>
             </div>
         </div>
         <!-- Ask Question Button - Takes 4 columns on large screens -->
         <div class="m-auto mt-4 flex justify-center lg:justify-center lg:gap-8 lg:w-4/12">
             <div class="mt-8 lg:mt-0">
-                <button class="bg-primary hover:bg-white hover:text-black border border-transparent hover:border-primary text-white px-16 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full lg:w-auto">
+                <a href="#" onclick="openForm('Ask your question')" class="inline-block bg-primary hover:bg-white hover:text-black border border-transparent hover:border-primary text-white px-16 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full lg:w-auto">
                     Ask your question
-                </button>
+                </a>
             </div>
         </div>
     </div>

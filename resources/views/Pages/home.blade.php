@@ -16,60 +16,46 @@
     margin-bottom: 20px;
   }
 </style>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRwtGvywDWGOX4ULNCXZNxFiW-Qutu9Bc&libraries=places"></script>
-<script>
-  function initAutocomplete() {
-    const fromInput = document.getElementById("autocomplete");
-    const toInput = document.getElementById("autocomplete2");
+<style>
+  /* Optional: Customize more with raw media queries */
+  @media (max-width: 768px) {
+    .text-center h1 {
+      font-size: 1.5rem !important;
+      /* fallback if Tailwind fails */
+    }
 
-    const options = {
-      componentRestrictions: {
-        country: "AU"
-      },
-      types: ["geocode"],
-
-    };
-
-    const autocompleteFrom = new google.maps.places.Autocomplete(fromInput, options);
-    autocompleteFrom.addListener("place_changed", function() {
-      formatAndSetPlace(autocompleteFrom, fromInput);
-    });
-
-    const autocompleteTo = new google.maps.places.Autocomplete(toInput, options);
-    autocompleteTo.addListener("place_changed", function() {
-      formatAndSetPlace(autocompleteTo, toInput);
-    });
-
-    function formatAndSetPlace(autocompleteInstance, inputElement) {
-      const place = autocompleteInstance.getPlace();
-
-      let postcode = "";
-      let city = "";
-
-      if (place.address_components) {
-        console.log(place.address_components);
-
-        place.address_components.forEach(component => {
-          if (component.types.includes("postal_code")) {
-            postcode = component.long_name;
-          }
-          if (component.types.includes("locality") || component.types.includes("administrative_area_level_1")) {
-            city = component.long_name.toUpperCase();
-          }
-        });
-
-        // Set the formatted value only if all parts are present
-        if (postcode && city) {
-          inputElement.value = `${postcode} ${city}`;
-        } else {
-          inputElement.value = place.formatted_address; // fallback
-        }
-      }
+    .text-center p {
+      font-size: 0.9rem !important;
     }
   }
 
-  window.onload = initAutocomplete;
-</script>
+  @media (min-width: 1024px) {
+    .text-center h1 {
+      font-size: 3rem !important;
+    }
+
+    .text-center p {
+      font-size: 1.25rem !important;
+    }
+  }
+</style>
+<style>
+  .custom-hero-banner {
+    background-image: url('assets/images/banner/MCM header mobile banner.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+
+  @media (min-width: 768px) {
+    .custom-hero-banner {
+      background-image: url('assets/images/allImages/hero-banner.webp');
+      height: 70vh;
+    }
+  }
+</style>
+
 
 @endsection
 
@@ -77,7 +63,8 @@
 
 @section('homepage')
 <!-- HERO SECTION -->
-<section class="relative max-w-full md:h-[70vh] h-[50vh] bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('{{ asset('assets/images/allImages/hero-banner.webp') }}');">
+<section
+  class="custom-hero-banner relative max-w-full md:h-[70vh] h-[60vh] bg-cover bg-center text-white flex items-center justify-center">
   <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
   <x-heading-subheading
@@ -89,19 +76,19 @@
 
 
   <!-- Quote Form Box -->
-  <div class="absolute md:bottom-[-48px] bottom-[-30%] left-1/2 transform -translate-x-1/2 z-20 w-full max-w-5xl px-4">
+  <div class="absolute md:bottom-[-48px] bottom-[-10%] left-1/2 transform -translate-x-1/2 z-20 w-full max-w-5xl px-4">
     <form action="{{ route('enquiry') }}" method="GET" class="bg-primary rounded-2xl lg:rounded-full flex flex-col lg:flex-row items-center md:items-end justify-between md:py-6 py-3 md:px-12 px-4 md:space-y-2 md:space-x-4">
 
       <!-- Moving From -->
       <div class="flex flex-col w-full ">
         <div class="text-sm font-medium text-black md:mb-2 mb-1 text-center lg:text-left">Moving from</div>
-        <input type="text" id="autocomplete" name="moving_from" placeholder="Enter Location" class="w-full md:py-3 py-2 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20" required>
+        <input type="text" name="moving_from" placeholder="Enter Location" class="autocomplete w-full md:py-3 py-2 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20" required>
       </div>
 
       <!-- Moving To -->
       <div class="flex flex-col w-full mt-3">
         <div class="text-sm font-medium text-black mb-2 text-center lg:text-left lg:mb-1">Moving to</div>
-        <input type="text" id="autocomplete2" name="moving_to" placeholder="Enter Location" class="w-full md:py-3 py-2 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20" required>
+        <input type="text"  name="moving_to" placeholder="Enter Location" class=" autocomplete w-full md:py-3 py-2 px-4 rounded-lg lg:rounded-md outline-none text-black text-center lg:text-left placeholder-gray-500 focus:ring-2 focus:ring-black/20" required>
       </div>
 
       <!-- Get Quote Button -->
@@ -112,7 +99,7 @@
   </div>
 </section>
 
-<section class="bg-white text-black md:py-12 pb-4 pt-12 md:mt-10 mt-28">
+<section class="bg-white text-black md:py-12 pb-4 pt-12 md:mt-10 mt-12">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
     <!-- Top Ratings -->
@@ -216,8 +203,8 @@
       <h3 class="text-lg md:text-3xl font-bold mb-2">MCM Moving Services – Here When You Need Us Most</h3>
       <p class="text-primary font-medium md:text-[16px] text-[12px] md:mb-4 mb-2">We Provide Emergency Moving Assistance</p>
       <p class="font-medium md:text-[16px] text-[12px] mb-4">At Melbourne Central Movers, we’re ready when you need us. Our team ensures your move is smooth, safe, and stress-free, whether you’re shifting a single room or an entire office. Let us handle the heavy lifting so you can focus on settling into your new space with ease. We’re here to make your moving day simpler, faster, and worry-free.</p>
-      <a href="#" class="bg-primary text-white md:text-[16px] text-[12px] px-8 inline-flex  py-2 md:px-10 md:py-3 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">Get a Quote</a>
-    </div>
+      <a href="#" onclick="openForm('Get a Quote')" class="bg-primary text-white md:text-[16px] text-[12px] px-8 inline-flex  py-2 md:px-10 md:py-3 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">Get a Quote</a>
+    </div>  
 
     <!-- Image -->
     <div class="w-[300px]">
@@ -238,7 +225,7 @@
     </div>
 
     <!-- Button -->
-    <a href="#" class="bg-primary font-semibold text-white md:text-[16px] text-[12px] px-8 inline-flex  py-2 md:px-10 md:py-3 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">Get a Free Quote</a>
+    <a href="#" onclick="openForm('Get a Free Quote')" class="bg-primary font-semibold text-white md:text-[16px] text-[12px] px-8 inline-flex  py-2 md:px-10 md:py-3 rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">Get a Free Quote</a>
 
   </div>
 </section>
@@ -271,15 +258,7 @@
         <p>Glass tables</p>
       </div>
 
-      <!-- Business Hours -->
-      <div class="mt-10">
-        <h2 class="text-xl md:text-3xl font-bold text-black mb-3">Business Hours</h2>
-        <p class="md:text-[18px] text-[14px] font-medium text-black leading-relaxed">
-          MCM will work closely with customer success team to ensure your move is completed seamlessly and
-          according to schedule. As well as standard business hours, our team is available around the clock
-          to ensure your move is a success.
-        </p>
-      </div>
+      
     </div>
 
     <!-- Right: Image Boxes (without images) -->
@@ -474,9 +453,9 @@
     </div>
 
     <!-- Button -->
-    <button class="mt-6 px-6 md:py-3 py-2 bg-primary text-black font-medium rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
+    <a href="#" onclick="openForm('Get a Free Quote')" class="inline-block mt-6 px-6 md:py-3 py-2 bg-primary text-black font-medium rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
       Get a Free Quote
-    </button>
+    </a>
   </div>
 </section>
 
@@ -672,9 +651,9 @@
       </svg>
       1300 163 694
     </button>
-    <button class="px-6 py-3 bg-primary text-white rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
+    <a href="#" onclick="openForm('Get a Quote')" class="px-6 py-3 bg-primary text-white rounded-md hover:bg-white hover:text-black border border-transparent hover:border-primary transition">
       Get a Quote
-    </button>
+    </a>
   </div>
 
 
@@ -1073,9 +1052,9 @@
     <!-- Ask Question Button - Takes 4 columns on large screens -->
     <div class="m-auto mt-4 flex justify-center lg:justify-center lg:gap-8 lg:w-4/12">
       <div class="mt-8 lg:mt-0">
-        <button class="bg-primary hover:bg-white hover:text-black border border-transparent hover:border-primary text-white md:px-16 px-10 md:py-4 py-2 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full lg:w-auto">
+        <a href="#" onclick="openForm('Ask Your Questions')" class="inline-block bg-primary hover:bg-white hover:text-black border border-transparent hover:border-primary text-white md:px-16 px-10 md:py-4 py-2 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl w-full lg:w-auto">
           Ask your question
-        </button>
+        </a>
       </div>
     </div>
   </div>

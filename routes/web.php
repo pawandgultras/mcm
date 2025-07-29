@@ -80,9 +80,10 @@ Route::get('/enquiry/address', [formController::class, 'showAddressForm'])->name
 Route::get('/enquiry/property', [formController::class, 'submitAddressForm'])->name('property.form');
 Route::get('/enquiry/date', [formController::class, 'showDateForm'])->name('date.form');
 Route::get('/enquiry/details', [formController::class, 'showDetailsForm'])->name('details.form');
-Route::post('/enquiry/details/submit', [formController::class, 'store'])->name('submit.details');
+Route::post('/thank-you', [formController::class, 'store'])->name('submit.details');
 
 Route::post('/contact/submit', [formController::class, 'contactUsFormStore'])->name('contact.submit');
+Route::get('/thank-you' , [formController::class , 'thankYou'])->name('thankyou');
 
 
 Route::get('/dashboard', function () {

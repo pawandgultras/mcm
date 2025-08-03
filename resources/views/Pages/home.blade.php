@@ -44,12 +44,13 @@
     background-image: url('assets/images/banner/mobile-banner.jpeg');
     background-size: contain;
     background-position: bottom;
+    background-repeat: no-repeat;
 
   }
 
   @media (min-width: 768px) {
     .custom-hero-banner {
-      background-image: url('assets/images/allImages/hero-banner.webp');
+      background-image: url('assets/images/banner/mobile-banner.jpeg');
     }
 
   }
@@ -77,7 +78,7 @@
 
 
     <!-- Quote Form Box -->
-    <div class="md:absolute md:bg-inherit bg-slate-500  md:py-0 md:bottom-[-48px] md:left-1/2 md:transform md:-translate-x-1/2 z-20 md:w-full md:mt-0 md:max-w-5xl px-4">
+    <div class="md:absolute md:bg-inherit bg-[#2D2D2D]  md:py-0 md:bottom-[-48px] md:left-1/2 md:transform md:-translate-x-1/2 z-20 md:w-full md:mt-0 md:max-w-5xl px-4">
       <form action="{{ route('enquiry') }}" method="GET" class="bg-primary rounded-2xl lg:rounded-full flex flex-col lg:flex-row items-center md:items-end justify-between md:py-6 py-3 md:px-12 px-4 md:space-y-2 md:space-x-4 mb-10 md:mb-0">
 
         <!-- Moving From -->

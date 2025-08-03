@@ -34,9 +34,22 @@
         z-index: 10;
     }
 </style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXC2V2D');</script>
+<!-- End Google Tag Manager -->
+
 @endsection
 
 @section('content')
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXC2V2D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <section class="relative w-full md:h-[40vh] h-[30vh] bg-cover bg-center text-white flex items-center justify-center" style="background-image: url('{{ asset('assets/images/allImages/How it works in 4 steps BG.webp') }}');">
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     <div class=" z-10 text-left w-full max-w-6xl px-4">

@@ -42,15 +42,19 @@
 <style>
   .custom-hero-banner {
     background-image: url('assets/images/banner/mobile-banner.jpeg');
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
-    background-repeat: no-repeat;
+ background-repeat: no-repeat;
 
   }
 
   @media (min-width: 768px) {
     .custom-hero-banner {
-      background-image: url('assets/images/banner/mobile-banner.jpeg');
+      background-image: url('assets/images/banner/hero-banner.webp');
+       background-repeat: no-repeat;
+    background-position: bottom;
+
+    
     }
 
   }
@@ -276,7 +280,7 @@
 
       <!-- Bottom Image Placeholder -->
       <div class="absolute top-40 md:left-16 rounded-lg overflow-hidden z-30 shadow-lg bg-gray-200 w-[260px] h-auto">
-        <img src="{{ asset('assets/images/allImages/What Can We Move- Front.webp') }}" alt="..." class="md:w-full md:h-auto object-cover">
+        <img src="{{ asset('assets/images/allImages/what-can-we-move.webp') }}" alt="..." class="md:w-full md:h-auto object-cover">
       </div>
     </div>
   </div>

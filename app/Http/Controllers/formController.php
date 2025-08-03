@@ -157,7 +157,7 @@ class formController extends Controller
 
         // Http::post('https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZhMDYzNTA0MzA1MjY1NTUzNTUxMzAi_pc', $pabblyData);
 
-        return view('Pages.thankyou')->with('success', 'Thank you for your enquiry! We will get back to you soon.');
+           return redirect('/thank-you')->with('success', 'Form submitted!');
     }
 
 
@@ -168,7 +168,11 @@ class formController extends Controller
             'name'     => 'required|string|max:255',
             'email'    => 'required|email|max:255',
             'phone'    => 'nullable|string|max:50',
-            
+            'message'  => 'nullable|string|max:1000',
+            'move_date'    => 'nullable|date',
+            'move_from' => 'nullable|string|max:255',
+            'move_to' => 'nullable|string|max:255',
+
         ]);
 
         // Store in database
@@ -189,7 +193,8 @@ class formController extends Controller
         // ];
         // Http::post('https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZhMDYzNTA0MzA1MjY1NTUzNTUxMzAi_pc', $pabblyData);
 
-        return view('Pages.thankyou')->with('success', 'Thank you for contacting us! We will get back to you soon.');
+           return redirect('/thank-you')->with('success', 'Form submitted!');
+
     }
 
     public function thankyou(Request $request)
